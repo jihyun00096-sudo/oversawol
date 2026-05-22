@@ -17,7 +17,7 @@ export default function HeroSection() {
     <section
       ref={heroRef}
       id="hero"
-      className="relative w-full min-h-screen flex flex-col justify-end overflow-hidden"
+      className="relative w-full min-h-screen flex flex-col justify-end overflow-hidden bg-[var(--bg-main)] text-[var(--text-dark)]"
     >
       {/* Background — cinematic gradient + abstract shapes */}
       <div
@@ -27,9 +27,9 @@ export default function HeroSection() {
         {/* Deep atmospheric gradient */}
         <div className="absolute inset-0" style={{
           background: `
-            radial-gradient(ellipse 80% 60% at 30% 70%, rgba(125,140,122,0.12) 0%, transparent 60%),
-            radial-gradient(ellipse 60% 80% at 75% 20%, rgba(125,140,122,0.07) 0%, transparent 55%),
-            linear-gradient(175deg, #0a0a0a 0%, #111111 40%, #141612 100%)
+            radial-gradient(circle at 25% 20%, rgba(215,255,100,0.16) 0%, transparent 30%),
+            radial-gradient(circle at 80% 12%, rgba(17,17,17,0.06) 0%, transparent 25%),
+            linear-gradient(180deg, #ffffff 0%, #F7F8F5 60%, #F7F8F5 100%)
           `,
         }} />
 
@@ -48,12 +48,12 @@ export default function HeroSection() {
               y1={0}
               x2={200 + i * 80}
               y2={900}
-              stroke="white"
+              stroke="rgba(17,17,17,0.08)"
               strokeWidth="0.5"
             />
           ))}
-          <circle cx="720" cy="0" r="600" fill="none" stroke="white" strokeWidth="0.3" strokeDasharray="4 8" />
-          <circle cx="720" cy="0" r="400" fill="none" stroke="white" strokeWidth="0.3" strokeDasharray="4 12" />
+          <circle cx="720" cy="0" r="600" fill="none" stroke="rgba(17,17,17,0.08)" strokeWidth="0.3" strokeDasharray="4 8" />
+          <circle cx="720" cy="0" r="400" fill="none" stroke="rgba(17,17,17,0.08)" strokeWidth="0.3" strokeDasharray="4 12" />
         </svg>
 
         {/* Large textural circle — parachute canopy hint */}
@@ -78,7 +78,7 @@ export default function HeroSection() {
         }} />
 
         {/* Horizontal rule detail */}
-        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#7D8C7A]/20 to-transparent" />
+        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#D7FF64]/20 to-transparent" />
       </div>
 
       {/* Content */}
@@ -93,15 +93,15 @@ export default function HeroSection() {
             transition: 'opacity 1.2s ease 0.3s, transform 1.2s ease 0.3s',
           }}
         >
-          <span className="font-mono text-[10px] tracking-[0.35em] text-[#7D8C7A]">01 / OVERLAB</span>
-          <div className="h-px w-16 bg-[#7D8C7A]/40" />
-          <span className="font-mono text-[10px] tracking-[0.35em] text-[#7D8C7A]/50">ARCHIVE 2024</span>
+          <span className="font-mono text-[10px] tracking-[0.35em] text-[#D7FF64]">01 / OVERLAB</span>
+          <div className="h-px w-16 bg-[#D7FF64]/30" />
+          <span className="font-mono text-[10px] tracking-[0.35em] text-[rgba(17,17,17,0.65)]">ARCHIVE 2024</span>
         </div>
 
         {/* Main headline */}
         <div className="overflow-hidden mb-4">
           <h1
-            className="font-display text-[clamp(72px,14vw,200px)] leading-none tracking-tight text-[#D8D4CE]"
+            className="font-display text-[clamp(72px,14vw,200px)] leading-none tracking-tight text-[#111111]"
             style={{
               fontFamily: 'Bebas Neue, sans-serif',
               opacity: loaded ? 1 : 0,
@@ -118,7 +118,7 @@ export default function HeroSection() {
             style={{
               fontFamily: 'Bebas Neue, sans-serif',
               color: 'transparent',
-              WebkitTextStroke: '1px rgba(216,212,206,0.4)',
+              WebkitTextStroke: '1px rgba(17,17,17,0.35)',
               opacity: loaded ? 1 : 0,
               transform: loaded ? 'none' : 'translateY(100px)',
               transition: 'opacity 1s ease 0.65s, transform 1.1s cubic-bezier(0.16, 1, 0.3, 1) 0.65s',
@@ -129,7 +129,7 @@ export default function HeroSection() {
         </div>
         <div className="overflow-hidden mb-10 md:mb-14">
           <h1
-            className="font-display text-[clamp(72px,14vw,200px)] leading-none tracking-tight text-[#D8D4CE]"
+            className="font-display text-[clamp(72px,14vw,200px)] leading-none tracking-tight text-[#111111]"
             style={{
               fontFamily: 'Bebas Neue, sans-serif',
               opacity: loaded ? 1 : 0,
@@ -152,7 +152,7 @@ export default function HeroSection() {
         >
           <p
             className="font-serif text-[18px] md:text-[22px] italic leading-relaxed max-w-md"
-            style={{ color: 'rgba(216,212,206,0.55)' }}
+            style={{ color: 'rgba(17,17,17,0.72)' }}
           >
             레저 스포츠의 폐기 구조를 새로운 움직임으로.<br />
             소재의 두 번째 생을 설계합니다.
@@ -161,7 +161,7 @@ export default function HeroSection() {
           <div className="flex items-center gap-6">
             <a
               href="#archive"
-              className="group flex items-center gap-3 font-mono text-[11px] tracking-[0.25em] uppercase text-[#7D8C7A] hover:text-[#D8D4CE] transition-colors duration-400"
+              className="group flex items-center gap-3 font-mono text-[11px] tracking-[0.25em] uppercase text-[#111111] hover:text-[#D7FF64] transition-colors duration-400"
             >
               <span>Explore Archive</span>
               <svg width="28" height="12" viewBox="0 0 28 12" fill="none">
@@ -181,8 +181,8 @@ export default function HeroSection() {
           transition: 'opacity 1s ease 1.5s',
         }}
       >
-        <span className="font-mono text-[8px] tracking-[0.3em] text-[#7D8C7A] rotate-90 origin-center mb-6">SCROLL</span>
-        <div className="w-px h-16 bg-gradient-to-b from-[#7D8C7A]/60 to-transparent animate-pulse" />
+        <span className="font-mono text-[8px] tracking-[0.3em] text-[#111111] rotate-90 origin-center mb-6">SCROLL</span>
+        <div className="w-px h-16 bg-gradient-to-b from-[#D7FF64]/60 to-transparent animate-pulse" />
       </div>
     </section>
   );

@@ -2,12 +2,14 @@
 @import "tailwindcss";
 
 :root {
-  --black: #111111;
-  --off-white: #D8D4CE;
-  --sage: #7D8C7A;
-  --sage-dark: #5a6957;
-  --warm-grey: #888480;
-  --accent: #c8d4a0;
+  --bg-main: #F7F8F5;
+  --bg-surface: #FFFFFF;
+  --text-dark: #111111;
+  --text-muted: #4F4F4F;
+  --border: #EAEAEA;
+  --accent: #D7FF64;
+  --accent-soft: rgba(215, 255, 100, 0.18);
+  --shadow: rgba(17, 17, 17, 0.08);
 }
 
 * {
@@ -21,8 +23,8 @@ html {
 }
 
 body {
-  background-color: var(--black);
-  color: var(--off-white);
+  background-color: var(--bg-main);
+  color: var(--text-dark);
   font-family: 'Cormorant Garamond', serif;
   overflow-x: hidden;
   cursor: none;
@@ -58,10 +60,10 @@ body::before {
   content: '';
   position: fixed;
   inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.02'/%3E%3C/svg%3E");
   pointer-events: none;
   z-index: 8888;
-  opacity: 0.6;
+  opacity: 0.3;
 }
 
 /* Typography */
@@ -75,8 +77,8 @@ body::before {
   font-size: 10px;
   letter-spacing: 0.3em;
   text-transform: uppercase;
-  color: var(--sage);
-  opacity: 0.8;
+  color: var(--text-muted);
+  opacity: 0.9;
 }
 
 /* Scrollbar */
