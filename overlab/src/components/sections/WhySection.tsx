@@ -42,13 +42,13 @@ export default function WhySection() {
       ref={ref as React.RefObject<HTMLElement>}
       id="archive"
       className="relative py-28 md:py-40 px-6 md:px-12 lg:px-20 overflow-hidden"
-      style={{ background: 'radial-gradient(circle at 90% 10%, rgba(199,255,100,0.08), transparent 22%), linear-gradient(180deg, #F5F5F0 0%, #ECEDE7 100%)' }}
+      style={{ background: 'radial-gradient(circle at 90% 10%, rgba(168,183,106,0.08), transparent 22%), linear-gradient(180deg, #F5F5F0 0%, #ECEDE7 100%)' }}
     >
       {/* Decorative line */}
       <div
         className="absolute top-0 left-0 right-0 h-px origin-left"
         style={{
-          background: 'linear-gradient(90deg, transparent, rgba(199,255,100,0.28), transparent)',
+          background: 'linear-gradient(90deg, transparent, rgba(168,183,106,0.28), transparent)',
           transform: inView ? 'scaleX(1)' : 'scaleX(0)',
           transition: 'transform 1.4s cubic-bezier(0.16, 1, 0.3, 1)',
         }}
@@ -79,7 +79,7 @@ export default function WhySection() {
               }}
             >
               SECOND<br />
-              <span style={{ color: 'transparent', WebkitTextStroke: '1px rgba(199,255,100,0.3)' }}>
+              <span style={{ color: 'transparent', WebkitTextStroke: '1px rgba(168,183,106,0.3)' }}>
                 MOVEMENT
               </span>
             </h2>

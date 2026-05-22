@@ -27,12 +27,20 @@ export default function HeroSection() {
         {/* Deep atmospheric gradient */}
         <div className="absolute inset-0" style={{
           background: `
-            radial-gradient(circle at 22% 18%, rgba(199,255,100,0.14) 0%, transparent 24%),
-            radial-gradient(circle at 80% 10%, rgba(17,17,17,0.09) 0%, transparent 22%),
-            radial-gradient(circle at 55% 34%, rgba(215,255,138,0.08) 0%, transparent 16%),
-            linear-gradient(180deg, #F5F5F0 0%, #ECEDE7 42%, #F5F5F0 100%)
+            radial-gradient(circle at 16% 18%, rgba(168,183,106,0.18) 0%, transparent 22%),
+            radial-gradient(circle at 84% 12%, rgba(214,216,128,0.08) 0%, transparent 18%),
+            radial-gradient(circle at 48% 34%, rgba(17,17,17,0.06) 0%, transparent 17%),
+            linear-gradient(180deg, #F4F4EE 0%, #ECEDE7 44%, #F8F8F3 100%)
           `,
         }} />
+
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute left-[8%] top-[8%] w-[32rem] h-[32rem] rounded-full bg-[#A8B76A]/12 blur-[96px] opacity-90" />
+          <div className="absolute right-[12%] top-[10%] w-[20rem] h-[20rem] rounded-full bg-[#D6D8A0]/10 blur-[100px] opacity-95" />
+          <div className="absolute inset-x-0 top-1/3 flex justify-center">
+            <div className="w-[calc(100%-3rem)] max-w-6xl h-[26rem] rounded-[40px] border border-white/12 bg-white/8 shadow-[0_48px_120px_-48px_rgba(17,17,17,0.22)] backdrop-blur-[22px]" />
+          </div>
+        </div>
 
         {/* Abstract fabric / parachute texture lines */}
         <svg className="absolute inset-0 w-full h-full opacity-[0.06]" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice">
@@ -64,9 +72,9 @@ export default function HeroSection() {
           top: '-20vmax',
           left: '50%',
           transform: 'translateX(-50%)',
-          border: '1px solid rgba(199,255,100,0.1)',
+          border: '1px solid rgba(168,183,106,0.1)',
           borderRadius: '50%',
-          boxShadow: 'inset 0 0 80px rgba(199,255,100,0.07)',
+          boxShadow: 'inset 0 0 80px rgba(168,183,106,0.07)',
         }} />
         <div className="absolute" style={{
           width: '50vmax',
@@ -79,7 +87,7 @@ export default function HeroSection() {
         }} />
 
         {/* Horizontal rule detail */}
-        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#C7FF64]/18 to-transparent" />
+        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#A8B76A]/18 to-transparent" />
       </div>
 
       {/* Content */}
@@ -94,17 +102,18 @@ export default function HeroSection() {
             transition: 'opacity 1.2s ease 0.3s, transform 1.2s ease 0.3s',
           }}
         >
-          <span className="font-mono text-[10px] tracking-[0.35em] text-[#D7FF64]">01 / OVERLAB</span>
-          <div className="h-px w-16 bg-[#D7FF64]/30" />
-          <span className="font-mono text-[10px] tracking-[0.35em] text-[rgba(17,17,17,0.65)]">ARCHIVE 2024</span>
+          <span className="font-mono text-[10px] tracking-[0.35em] text-[#A8B76A]">01 / OVERLAB</span>
+          <div className="h-px w-16 bg-[#A8B76A]/35" />
+          <span className="font-mono text-[10px] tracking-[0.35em] text-[rgba(17,17,17,0.75)]">ARCHIVE 2024</span>
         </div>
 
         {/* Main headline */}
         <div className="overflow-hidden mb-4">
           <h1
-            className="font-display text-[clamp(72px,14vw,200px)] leading-none tracking-tight text-[#111111]"
+            className="font-display text-[clamp(72px,14vw,200px)] leading-[0.92] tracking-[-0.04em] text-[#111111]"
             style={{
               fontFamily: 'Bebas Neue, sans-serif',
+              textShadow: '0 10px 30px rgba(17,17,17,0.08)',
               opacity: loaded ? 1 : 0,
               transform: loaded ? 'none' : 'translateY(100px)',
               transition: 'opacity 1s ease 0.5s, transform 1.1s cubic-bezier(0.16, 1, 0.3, 1) 0.5s',
@@ -115,11 +124,11 @@ export default function HeroSection() {
         </div>
         <div className="overflow-hidden mb-4">
           <h1
-            className="font-display text-[clamp(72px,14vw,200px)] leading-none tracking-tight"
+            className="font-display text-[clamp(72px,14vw,200px)] leading-[0.92] tracking-[-0.04em]"
             style={{
               fontFamily: 'Bebas Neue, sans-serif',
               color: 'transparent',
-              WebkitTextStroke: '1px rgba(17,17,17,0.35)',
+              WebkitTextStroke: '1.2px rgba(17,17,17,0.42)',
               opacity: loaded ? 1 : 0,
               transform: loaded ? 'none' : 'translateY(100px)',
               transition: 'opacity 1s ease 0.65s, transform 1.1s cubic-bezier(0.16, 1, 0.3, 1) 0.65s',
@@ -130,9 +139,10 @@ export default function HeroSection() {
         </div>
         <div className="overflow-hidden mb-10 md:mb-14">
           <h1
-            className="font-display text-[clamp(72px,14vw,200px)] leading-none tracking-tight text-[#111111]"
+            className="font-display text-[clamp(72px,14vw,200px)] leading-[0.92] tracking-[-0.04em] text-[#111111]"
             style={{
               fontFamily: 'Bebas Neue, sans-serif',
+              textShadow: '0 10px 30px rgba(17,17,17,0.08)',
               opacity: loaded ? 1 : 0,
               transform: loaded ? 'none' : 'translateY(100px)',
               transition: 'opacity 1s ease 0.8s, transform 1.1s cubic-bezier(0.16, 1, 0.3, 1) 0.8s',
@@ -152,8 +162,8 @@ export default function HeroSection() {
           }}
         >
           <p
-            className="font-serif text-[18px] md:text-[22px] italic leading-relaxed max-w-md"
-            style={{ color: 'rgba(17,17,17,0.78)' }}
+            className="font-serif text-[18px] md:text-[22px] italic leading-[1.75] max-w-md"
+            style={{ color: 'rgba(17,17,17,0.78)', letterSpacing: '0.02em' }}
           >
             레저 스포츠의 폐기 구조를 새로운 움직임으로.<br />
             소재의 두 번째 생을 설계합니다.
@@ -162,7 +172,8 @@ export default function HeroSection() {
           <div className="flex items-center gap-6">
             <a
               href="#archive"
-              className="group flex items-center gap-3 font-mono text-[11px] tracking-[0.25em] uppercase text-[#111111] hover:text-[#C7FF64] transition-colors duration-400"
+              className="group flex items-center gap-3 font-mono text-[11px] tracking-[0.25em] uppercase text-[#111111] hover:text-[#A8B76A] transition-colors duration-400"
+              style={{ textShadow: '0 0 12px rgba(168,183,106,0.08)' }}
             >
               <span>Explore Archive</span>
               <svg width="28" height="12" viewBox="0 0 28 12" fill="none">
@@ -183,7 +194,7 @@ export default function HeroSection() {
         }}
       >
         <span className="font-mono text-[8px] tracking-[0.3em] text-[#111111] rotate-90 origin-center mb-6">SCROLL</span>
-        <div className="w-px h-16 bg-gradient-to-b from-[#C7FF64]/50 to-transparent animate-pulse" />
+        <div className="w-px h-16 bg-gradient-to-b from-[#A8B76A]/50 to-transparent animate-pulse" />
       </div>
     </section>
   );

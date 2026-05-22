@@ -55,7 +55,7 @@ export default function PopupExhibitionSection() {
       ref={ref as React.RefObject<HTMLElement>}
       id="exhibition"
       className="relative py-28 md:py-40 overflow-hidden"
-      style={{ background: 'radial-gradient(circle at 20% 15%, rgba(199,255,100,0.08), transparent 24%), linear-gradient(180deg, #F5F5F0 0%, #ECEDE7 100%)' }}
+      style={{ background: 'radial-gradient(circle at 20% 15%, rgba(168,183,106,0.08), transparent 24%), linear-gradient(180deg, #F5F5F0 0%, #ECEDE7 100%)' }}
     >
       <div className="px-6 md:px-12 lg:px-20 max-w-7xl mx-auto">
 
@@ -77,7 +77,7 @@ export default function PopupExhibitionSection() {
             }}
           >
             SPACE &<br />
-            <span style={{ color: '#C7FF64' }}>RECORD</span>
+            <span style={{ color: '#A8B76A' }}>RECORD</span>
           </h2>
         </div>
 
@@ -100,7 +100,7 @@ export default function PopupExhibitionSection() {
               <div
                 className="p-6 md:p-10 h-full transition-all duration-500"
                 style={{
-                  backgroundColor: activeEx === i ? 'rgba(199,255,100,0.08)' : 'rgba(255,255,255,0.74)',
+                  backgroundColor: activeEx === i ? 'rgba(168,183,106,0.08)' : 'rgba(255,255,255,0.74)',
                   border: '1px solid rgba(17,17,17,0.08)',
                   backdropFilter: 'blur(12px)',
                 }}
@@ -109,7 +109,7 @@ export default function PopupExhibitionSection() {
                 <div className="flex items-center justify-between mb-8">
                   <span
                     className="font-mono text-[9px] tracking-[0.3em]"
-                    style={{ color: ex.status === 'UPCOMING' ? '#C7FF64' : '#4A4A4A' }}
+                    style={{ color: ex.status === 'UPCOMING' ? '#A8B76A' : '#4A4A4A' }}
                   >
                     {ex.status === 'UPCOMING' ? '▶ UPCOMING' : `✓ ${ex.status}`}
                   </span>
@@ -141,7 +141,7 @@ export default function PopupExhibitionSection() {
                     className="absolute inset-0 transition-all duration-500"
                     style={{
                       background: activeEx === i
-                        ? 'linear-gradient(135deg, rgba(199,255,100,0.14) 0%, rgba(199,255,100,0.04) 100%)'
+                        ? 'linear-gradient(135deg, rgba(168,183,106,0.14) 0%, rgba(168,183,106,0.04) 100%)'
                         : 'linear-gradient(135deg, rgba(17,17,17,0.06) 0%, transparent 100%)',
                       border: '1px solid rgba(17,17,17,0.08)',
                     }}
@@ -164,7 +164,7 @@ export default function PopupExhibitionSection() {
                   )}
                   {ex.status === 'UPCOMING' && (
                     <div className="absolute inset-0 flex items-center justify-center">
-                      <span className="font-mono text-[9px] tracking-[0.4em] text-[#C7FF64]/75 border border-[#C7FF64]/20 px-3 py-1">
+                      <span className="font-mono text-[9px] tracking-[0.4em] text-[#A8B76A]/75 border border-[#A8B76A]/20 px-3 py-1">
                         COMING SOON
                       </span>
                     </div>

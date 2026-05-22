@@ -18,9 +18,10 @@ export default function Navigation() {
       <nav
         className="fixed top-0 left-0 right-0 z-[100] transition-all duration-700"
         style={{
-          backgroundColor: scrolled ? 'rgba(245,245,240,0.96)' : 'transparent',
-          backdropFilter: scrolled ? 'blur(12px)' : 'none',
+          backgroundColor: scrolled ? 'rgba(245,245,240,0.92)' : 'transparent',
+          backdropFilter: scrolled ? 'blur(14px)' : 'none',
           borderBottom: scrolled ? '1px solid rgba(17,17,17,0.08)' : 'none',
+          boxShadow: scrolled ? '0 36px 90px rgba(17,17,17,0.08)' : 'none',
         }}
       >
         <div className="flex items-center justify-between px-6 md:px-12 py-5 md:py-6">
@@ -37,6 +38,7 @@ export default function Navigation() {
                 key={item}
                 href={`#${item.toLowerCase()}`}
                 className="font-mono text-[10px] tracking-[0.25em] uppercase text-[#4F4F4F] hover:text-[#111111] transition-colors duration-300"
+                style={{ textShadow: '0 0 8px rgba(168,183,106,0.08)' }}
               >
                 {item}
               </a>
@@ -45,7 +47,8 @@ export default function Navigation() {
 
           {/* Right actions */}
           <div className="flex items-center gap-6">
-            <a href="#shop" className="hidden md:block font-mono text-[10px] tracking-[0.25em] uppercase border border-[#D7FF64]/30 text-[#111111] hover:border-[#D7FF64] hover:text-[#D7FF64] px-4 py-2 transition-all duration-300">
+            <a href="#shop" className="hidden md:block font-mono text-[10px] tracking-[0.25em] uppercase border border-[#A8B76A]/30 text-[#111111] hover:border-[#A8B76A] hover:text-[#A8B76A] px-4 py-2 transition-all duration-300"
+              style={{ boxShadow: '0 12px 40px rgba(168,183,106,0.08)' }}>
               Shop
             </a>
             {/* Mobile menu button */}
@@ -64,7 +67,7 @@ export default function Navigation() {
 
       {/* Mobile menu */}
       <div
-        className={`fixed inset-0 z-[90] bg-[#ECEDE7] flex flex-col justify-center px-10 transition-all duration-500 ${
+        className={`fixed inset-0 z-[90] bg-[rgba(245,245,240,0.98)] flex flex-col justify-center px-10 transition-all duration-500 ${
           menuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
         }`}
       >
@@ -74,7 +77,7 @@ export default function Navigation() {
               key={item}
               href={`#${item.toLowerCase()}`}
               onClick={() => setMenuOpen(false)}
-              className="font-display text-6xl text-[#111111] tracking-widest transition-colors duration-200 hover:text-[#D7FF64]"
+              className="font-display text-6xl text-[#111111] tracking-widest transition-colors duration-200 hover:text-[#A8B76A]"
               style={{
                 fontFamily: 'Bebas Neue, sans-serif',
                 transitionDelay: `${i * 40}ms`,

@@ -31,7 +31,7 @@ export default function CollaborationSection() {
       ref={ref as React.RefObject<HTMLElement>}
       id="collab"
       className="relative py-28 md:py-40 overflow-hidden"
-      style={{ background: 'radial-gradient(circle at 10% 15%, rgba(199,255,100,0.08), transparent 24%), linear-gradient(180deg, #F5F5F0 0%, #ECEDE7 100%)' }}
+      style={{ background: 'radial-gradient(circle at 10% 15%, rgba(168,183,106,0.08), transparent 24%), linear-gradient(180deg, #F5F5F0 0%, #ECEDE7 100%)' }}
     >
       <div className="px-6 md:px-12 lg:px-20 max-w-7xl mx-auto">
 
@@ -54,7 +54,7 @@ export default function CollaborationSection() {
               }}
             >
               PARTNERS<br />
-              <span style={{ color: '#C7FF64' }}>& COLLAB</span>
+              <span style={{ color: '#A8B76A' }}>& COLLAB</span>
             </h2>
             <p
               className="font-serif text-[16px] italic max-w-[260px] leading-relaxed"
@@ -82,7 +82,7 @@ export default function CollaborationSection() {
                 opacity: inView ? 1 : 0,
                 transform: inView ? 'none' : 'translateX(-20px)',
                 transition: `opacity 0.7s ease ${0.1 + i * 0.08}s, transform 0.7s ease ${0.1 + i * 0.08}s, background-color 0.3s ease`,
-                backgroundColor: hovered === i ? 'rgba(199,255,100,0.08)' : 'transparent',
+                backgroundColor: hovered === i ? 'rgba(168,183,106,0.08)' : 'transparent',
               }}
               onMouseEnter={() => setHovered(i)}
               onMouseLeave={() => setHovered(null)}
@@ -108,7 +108,7 @@ export default function CollaborationSection() {
                 <span
                   className="hidden md:block font-mono text-[9px] tracking-[0.3em] border px-2 py-1 transition-all duration-300"
                   style={{
-                    borderColor: hovered === i ? 'rgba(199,255,100,0.5)' : 'rgba(17,17,17,0.12)',
+                    borderColor: hovered === i ? 'rgba(168,183,106,0.5)' : 'rgba(17,17,17,0.12)',
                     color: hovered === i ? '#111111' : 'rgba(74,74,74,0.55)',
                   }}
                 >

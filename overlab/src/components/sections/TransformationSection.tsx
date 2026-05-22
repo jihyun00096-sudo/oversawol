@@ -68,7 +68,7 @@ export default function TransformationSection() {
       ref={ref as React.RefObject<HTMLElement>}
       id="process"
       className="relative py-28 md:py-40 overflow-hidden"
-      style={{ background: 'radial-gradient(circle at 75% 10%, rgba(199,255,100,0.08), transparent 22%), linear-gradient(180deg, #F5F5F0 0%, #ECEDE7 100%)' }}
+      style={{ background: 'radial-gradient(circle at 75% 10%, rgba(168,183,106,0.08), transparent 22%), linear-gradient(180deg, #F5F5F0 0%, #ECEDE7 100%)' }}
     >
       {/* Background number */}
       <div
@@ -107,7 +107,7 @@ export default function TransformationSection() {
             }}
           >
             HOW WE<br />
-            <span style={{ color: '#C7FF64' }}>TRANSFORM</span>
+            <span style={{ color: '#A8B76A' }}>TRANSFORM</span>
           </h2>
         </div>
 
@@ -133,7 +133,7 @@ export default function TransformationSection() {
                     left: '100%',
                     width: '100%',
                     height: '1px',
-                    background: `linear-gradient(90deg, rgba(199,255,100,${activeStep >= i ? 0.36 : 0.12}), rgba(17,17,17,0.08))`,
+                    background: `linear-gradient(90deg, rgba(168,183,106,${activeStep >= i ? 0.36 : 0.12}), rgba(17,17,17,0.08))`,
                     transition: 'background 0.5s ease',
                   }}
                 />
@@ -144,7 +144,7 @@ export default function TransformationSection() {
                 style={{
                   borderTop: '1px solid rgba(17,17,17,0.08)',
                   borderLeft: i > 0 ? '0' : 'none',
-                  backgroundColor: activeStep === i ? 'rgba(199,255,100,0.08)' : 'rgba(255,255,255,0.72)',
+                  backgroundColor: activeStep === i ? 'rgba(168,183,106,0.08)' : 'rgba(255,255,255,0.72)',
                 }}
               >
                 {/* Step badge */}
@@ -152,7 +152,7 @@ export default function TransformationSection() {
                   <div
                     className="w-10 h-10 flex items-center justify-center transition-all duration-400"
                     style={{
-                      border: `1px solid ${activeStep === i ? 'rgba(199,255,100,0.45)' : 'rgba(17,17,17,0.15)'}`,
+                      border: `1px solid ${activeStep === i ? 'rgba(168,183,106,0.45)' : 'rgba(17,17,17,0.15)'}`,
                       color: activeStep === i ? '#111111' : 'rgba(74,74,74,0.65)',
                       fontSize: '16px',
                     }}

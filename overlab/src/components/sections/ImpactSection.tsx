@@ -51,7 +51,7 @@ export default function ImpactSection() {
       id="impact"
       className="relative py-28 md:py-40 overflow-hidden"
       style={{
-        background: 'radial-gradient(circle at 18% 18%, rgba(199,255,100,0.08), transparent 22%), linear-gradient(170deg, #F5F5F0 0%, #ECEDE7 60%, #F5F5F0 100%)',
+        background: 'radial-gradient(circle at 18% 18%, rgba(168,183,106,0.08), transparent 22%), linear-gradient(170deg, #F5F5F0 0%, #ECEDE7 60%, #F5F5F0 100%)',
       }}
     >
       {/* Background texture — horizontal lines */}
@@ -90,7 +90,7 @@ export default function ImpactSection() {
             }}
           >
             INDUSTRY<br />
-            <span style={{ color: 'transparent', WebkitTextStroke: '1px rgba(199,255,100,0.3)' }}>CYCLE</span>
+            <span style={{ color: 'transparent', WebkitTextStroke: '1px rgba(168,183,106,0.25)' }}>CYCLE</span>
           </h2>
           <p
             className="font-serif text-[18px] md:text-[22px] italic max-w-lg leading-relaxed"
@@ -130,7 +130,7 @@ export default function ImpactSection() {
                   {counts[i].toLocaleString()}
                 </span>
                 <span
-                  className="font-display text-[clamp(24px,3vw,44px)] leading-none text-[#D8FF8A] ml-1"
+                  className="font-display text-[clamp(24px,3vw,44px)] leading-none text-[#C5CC99] ml-1"
                   style={{ fontFamily: 'Bebas Neue, sans-serif' }}
                 >
                   {s.suffix}
@@ -162,10 +162,10 @@ export default function ImpactSection() {
             </div>
             <p className="font-serif text-[clamp(18px,2.5vw,30px)] italic leading-relaxed" style={{ color: 'rgba(74,74,74,0.72)' }}>
               우리는 친환경 브랜드가 아닙니다.<br />
-              우리는 <span style={{ color: '#C7FF64' }}>산업 순환 구조를 설계하는 브랜드</span>입니다.<br />
+              우리는 <span style={{ color: '#A8B76A' }}>산업 순환 구조를 설계하는 브랜드</span>입니다.<br />
               그 차이가 모든 것을 바꿉니다.
             </p>
-            <div className="mt-8 h-px bg-gradient-to-r from-[#C7FF64]/20 via-[#D8FF8A]/40 to-transparent" />
+            <div className="mt-8 h-px bg-gradient-to-r from-[#A8B76A]/24 via-[#D6D8A0]/30 to-transparent" />
           </div>
         </div>
       </div>

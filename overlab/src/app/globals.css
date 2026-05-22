@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Space+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Inter:wght@300;400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap');
 @import "tailwindcss";
 
 :root {
@@ -8,10 +8,11 @@
   --text-light: #F5F5F5;
   --text-muted: #4F4F4F;
   --border: #EAEAEA;
-  --accent: #C7FF64;
-  --accent-soft: rgba(215, 255, 138, 0.18);
-  --accent-muted: #D8FF8A;
+  --accent: #A8B76A;
+  --accent-soft: rgba(168, 183, 106, 0.18);
+  --accent-muted: #C5CC99;
   --shadow: rgba(17, 17, 17, 0.08);
+  --off-white: #F8F8F4;
 }
 
 * {
@@ -27,9 +28,19 @@ html {
 body {
   background-color: var(--bg-main);
   color: var(--text-dark);
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Inter', 'Cormorant Garamond', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  line-height: 1.6;
   overflow-x: hidden;
   cursor: none;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body::selection {
+  background: var(--accent-soft);
+  color: var(--text-dark);
 }
 
 /* Custom cursor */
@@ -48,7 +59,7 @@ body {
 .cursor-ring {
   width: 36px;
   height: 36px;
-  border: 1px solid rgba(216, 212, 206, 0.4);
+  border: 1px solid rgba(168, 183, 106, 0.24);
   border-radius: 50%;
   position: fixed;
   pointer-events: none;
@@ -69,9 +80,19 @@ body::before {
 }
 
 /* Typography */
-.font-display { font-family: 'Bebas Neue', sans-serif; }
-.font-serif { font-family: 'Cormorant Garamond', serif; }
-.font-mono { font-family: 'Space Mono', monospace; }
+.font-display { font-family: 'Bebas Neue', sans-serif; letter-spacing: -0.04em; line-height: 0.95; }
+.font-serif { font-family: 'Cormorant Garamond', serif; font-style: italic; letter-spacing: 0.01em; }
+.font-mono { font-family: 'Space Mono', monospace; letter-spacing: 0.28em; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: -0.05em;
+  line-height: 0.98;
+}
+
+p, a, span, li, button {
+  font-family: 'Inter', sans-serif;
+}
 
 /* Section base */
 .section-label {
@@ -86,11 +107,6 @@ body::before {
 ::-webkit-scrollbar { width: 2px; }
 ::-webkit-scrollbar-track { background: var(--bg-main); }
 ::-webkit-scrollbar-thumb { background: rgba(17, 17, 17, 0.18); }
-
-/* Scrollbar */
-::-webkit-scrollbar { width: 2px; }
-::-webkit-scrollbar-track { background: var(--black); }
-::-webkit-scrollbar-thumb { background: var(--sage); }
 
 /* Line reveal animation */
 @keyframes lineReveal {

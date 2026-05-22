@@ -69,7 +69,7 @@ export default function MaterialArchiveSection() {
       ref={ref as React.RefObject<HTMLElement>}
       id="material"
       className="relative py-28 md:py-40 overflow-hidden"
-      style={{ background: 'radial-gradient(circle at 10% 15%, rgba(199,255,100,0.08), transparent 24%), linear-gradient(180deg, #F5F5F0 0%, #ECEDE7 100%)' }}
+      style={{ background: 'radial-gradient(circle at 10% 15%, rgba(168,183,106,0.08), transparent 24%), linear-gradient(180deg, #F5F5F0 0%, #ECEDE7 100%)' }}
     >
       <div className="px-6 md:px-12 lg:px-20 max-w-7xl mx-auto">
 
@@ -96,7 +96,7 @@ export default function MaterialArchiveSection() {
               }}
             >
               소재가<br />
-              <span style={{ color: '#C7FF64' }}>브랜드다</span>
+              <span style={{ color: '#A8B76A' }}>브랜드다</span>
             </h2>
             <p
               className="font-serif text-[16px] italic max-w-[280px] leading-relaxed"
@@ -122,7 +122,7 @@ export default function MaterialArchiveSection() {
                 borderLeft: i > 0 ? '1px solid rgba(17,17,17,0.08)' : 'none',
                 paddingLeft: i > 0 ? '2rem' : 0,
                 paddingRight: '2rem',
-                backgroundColor: active === i ? 'rgba(199,255,100,0.08)' : 'transparent',
+                backgroundColor: active === i ? 'rgba(168,183,106,0.08)' : 'transparent',
                 opacity: inView ? 1 : 0,
                 transform: inView ? 'none' : 'translateY(40px)',
                 transition: `background-color 0.4s ease, opacity 0.8s ease ${0.2 + i * 0.1}s, transform 0.8s ease ${0.2 + i * 0.1}s`,
@@ -200,7 +200,7 @@ export default function MaterialArchiveSection() {
               <div
                 className="absolute bottom-0 left-0 right-0 h-px transition-all duration-500"
                 style={{
-                  background: '#C7FF64',
+                  background: '#A8B76A',
                   opacity: active === i ? 0.35 : 0,
                 }}
               />

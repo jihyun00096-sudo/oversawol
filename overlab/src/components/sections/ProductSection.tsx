@@ -64,7 +64,7 @@ export default function ProductSection() {
       ref={ref as React.RefObject<HTMLElement>}
       id="shop"
       className="relative py-28 md:py-40 overflow-hidden"
-      style={{ background: 'radial-gradient(circle at 10% 10%, rgba(199,255,100,0.08), transparent 22%), linear-gradient(180deg, #F5F5F0 0%, #ECEDE7 100%)' }}
+      style={{ background: 'radial-gradient(circle at 10% 10%, rgba(168,183,106,0.08), transparent 22%), linear-gradient(180deg, #F5F5F0 0%, #ECEDE7 100%)' }}
     >
       <div className="px-6 md:px-12 lg:px-20 max-w-7xl mx-auto">
 
@@ -87,7 +87,7 @@ export default function ProductSection() {
               }}
             >
               THE<br />
-              <span style={{ color: '#C7FF64' }}>ARCHIVE</span><br />
+              <span style={{ color: '#A8B76A' }}>ARCHIVE</span><br />
               ITEMS
             </h2>
             <div
@@ -102,7 +102,7 @@ export default function ProductSection() {
               </p>
               <a
                 href="#"
-                className="inline-flex items-center gap-3 font-mono text-[10px] tracking-[0.3em] uppercase border border-[rgba(17,17,17,0.12)] text-[#111111] hover:border-[#C7FF64] hover:text-[#C7FF64] px-5 py-3 transition-all duration-300"
+                className="inline-flex items-center gap-3 font-mono text-[10px] tracking-[0.3em] uppercase border border-[rgba(17,17,17,0.12)] text-[#111111] hover:border-[#A8B76A] hover:text-[#A8B76A] px-5 py-3 transition-all duration-300"
               >
                 View All Archive
               </a>
@@ -221,7 +221,7 @@ export default function ProductSection() {
                   <span className="font-mono text-[9px] tracking-[0.2em] text-[rgba(74,74,74,0.5)]">{p.id}</span>
                   <a
                     href="#"
-                    className="font-mono text-[9px] tracking-[0.25em] uppercase border-b border-[rgba(17,17,17,0.08)] text-[#111111] hover:text-[#C7FF64] hover:border-[#C7FF64]/50 pb-0.5 transition-all duration-200"
+                    className="font-mono text-[9px] tracking-[0.25em] uppercase border-b border-[rgba(17,17,17,0.08)] text-[#111111] hover:text-[#A8B76A] hover:border-[#A8B76A]/50 pb-0.5 transition-all duration-200"
                   >
                     View Detail →
                   </a>
