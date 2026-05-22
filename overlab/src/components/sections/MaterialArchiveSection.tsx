@@ -69,7 +69,7 @@ export default function MaterialArchiveSection() {
       ref={ref as React.RefObject<HTMLElement>}
       id="material"
       className="relative py-28 md:py-40 overflow-hidden"
-      style={{ background: '#0d0e0c' }}
+      style={{ background: 'radial-gradient(circle at 10% 15%, rgba(199,255,100,0.08), transparent 24%), linear-gradient(180deg, #F5F5F0 0%, #ECEDE7 100%)' }}
     >
       <div className="px-6 md:px-12 lg:px-20 max-w-7xl mx-auto">
 
@@ -87,7 +87,7 @@ export default function MaterialArchiveSection() {
           </div>
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
             <h2
-              className="font-display text-[clamp(44px,7vw,110px)] leading-none text-[#D8D4CE]"
+              className="font-display text-[clamp(44px,7vw,110px)] leading-none text-[#111111]"
               style={{
                 fontFamily: 'Bebas Neue, sans-serif',
                 opacity: inView ? 1 : 0,
@@ -96,12 +96,12 @@ export default function MaterialArchiveSection() {
               }}
             >
               소재가<br />
-              <span style={{ color: '#7D8C7A' }}>브랜드다</span>
+              <span style={{ color: '#C7FF64' }}>브랜드다</span>
             </h2>
             <p
               className="font-serif text-[16px] italic max-w-[280px] leading-relaxed"
               style={{
-                color: 'rgba(216,212,206,0.4)',
+                color: 'rgba(74,74,74,0.72)',
                 opacity: inView ? 1 : 0,
                 transition: 'opacity 0.9s ease 0.5s',
               }}
@@ -117,12 +117,12 @@ export default function MaterialArchiveSection() {
           {materials.map((mat, i) => (
             <div
               key={mat.id}
-              className="relative group cursor-pointer border-t border-[#7D8C7A]/15 py-8 md:py-10 transition-all duration-500"
+              className="relative group cursor-pointer border-t border-[rgba(17,17,17,0.08)] py-8 md:py-10 transition-all duration-500"
               style={{
-                borderLeft: i > 0 ? '1px solid rgba(125,140,122,0.12)' : 'none',
+                borderLeft: i > 0 ? '1px solid rgba(17,17,17,0.08)' : 'none',
                 paddingLeft: i > 0 ? '2rem' : 0,
                 paddingRight: '2rem',
-                backgroundColor: active === i ? mat.accent : 'transparent',
+                backgroundColor: active === i ? 'rgba(199,255,100,0.08)' : 'transparent',
                 opacity: inView ? 1 : 0,
                 transform: inView ? 'none' : 'translateY(40px)',
                 transition: `background-color 0.4s ease, opacity 0.8s ease ${0.2 + i * 0.1}s, transform 0.8s ease ${0.2 + i * 0.1}s`,
@@ -132,8 +132,8 @@ export default function MaterialArchiveSection() {
             >
               {/* Archive badge */}
               <div className="flex items-center justify-between mb-6">
-                <span className="font-mono text-[9px] tracking-[0.3em]" style={{ color: mat.color }}>{mat.tag}</span>
-                <span className="font-mono text-[9px] tracking-[0.2em] text-[#7D8C7A]/40">{mat.id}</span>
+                <span className="font-mono text-[9px] tracking-[0.3em]" style={{ color: 'rgba(74,74,74,0.78)' }}>{mat.tag}</span>
+                <span className="font-mono text-[9px] tracking-[0.2em] text-[rgba(74,74,74,0.45)]">{mat.id}</span>
               </div>
 
               {/* Visual placeholder — abstract shape */}
@@ -144,8 +144,8 @@ export default function MaterialArchiveSection() {
                 <div
                   className="absolute inset-0 rounded-sm transition-all duration-500"
                   style={{
-                    background: `linear-gradient(135deg, ${mat.color}22 0%, ${mat.color}08 100%)`,
-                    border: `1px solid ${mat.color}30`,
+                    background: `linear-gradient(135deg, rgba(17,17,17,0.08) 0%, rgba(17,17,17,0.02) 100%)`,
+                    border: '1px solid rgba(17,17,17,0.08)',
                     transform: active === i ? 'scale(1.02)' : 'scale(1)',
                   }}
                 />
@@ -173,26 +173,26 @@ export default function MaterialArchiveSection() {
               </div>
 
               {/* Material name */}
-              <div className="font-display text-3xl md:text-4xl text-[#D8D4CE] mb-1 tracking-wide"
+<div className="font-display text-3xl md:text-4xl text-[#111111] mb-1 tracking-wide"
                 style={{ fontFamily: 'Bebas Neue, sans-serif' }}>
                 {mat.name}
               </div>
-              <div className="font-mono text-[9px] tracking-[0.3em] text-[#7D8C7A] mb-4">
+              <div className="font-mono text-[9px] tracking-[0.3em] text-[rgba(74,74,74,0.6)] mb-4">
                 {mat.nameEn}
               </div>
 
               {/* Specs */}
               <div className="mb-5 space-y-1">
-                <div className="font-mono text-[9px] tracking-[0.2em]" style={{ color: 'rgba(216,212,206,0.35)' }}>
+                <div className="font-mono text-[9px] tracking-[0.2em]" style={{ color: 'rgba(74,74,74,0.6)' }}>
                   {mat.origin}
                 </div>
-                <div className="font-mono text-[9px] tracking-[0.2em]" style={{ color: 'rgba(216,212,206,0.25)' }}>
+                <div className="font-mono text-[9px] tracking-[0.2em]" style={{ color: 'rgba(74,74,74,0.5)' }}>
                   {mat.weight}
                 </div>
               </div>
 
               {/* Description */}
-              <p className="font-serif text-[14px] italic leading-relaxed" style={{ color: 'rgba(216,212,206,0.4)' }}>
+              <p className="font-serif text-[14px] italic leading-relaxed" style={{ color: 'rgba(74,74,74,0.72)' }}>
                 {mat.desc}
               </p>
 
@@ -200,8 +200,8 @@ export default function MaterialArchiveSection() {
               <div
                 className="absolute bottom-0 left-0 right-0 h-px transition-all duration-500"
                 style={{
-                  background: mat.color,
-                  opacity: active === i ? 0.6 : 0,
+                  background: '#C7FF64',
+                  opacity: active === i ? 0.35 : 0,
                 }}
               />
             </div>

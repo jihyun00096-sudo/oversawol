@@ -18,9 +18,9 @@ export default function Navigation() {
       <nav
         className="fixed top-0 left-0 right-0 z-[100] transition-all duration-700"
         style={{
-          backgroundColor: scrolled ? 'rgba(247,248,245,0.96)' : 'transparent',
+          backgroundColor: scrolled ? 'rgba(245,245,240,0.96)' : 'transparent',
           backdropFilter: scrolled ? 'blur(12px)' : 'none',
-          borderBottom: scrolled ? '1px solid rgba(234,234,234,0.95)' : 'none',
+          borderBottom: scrolled ? '1px solid rgba(17,17,17,0.08)' : 'none',
         }}
       >
         <div className="flex items-center justify-between px-6 md:px-12 py-5 md:py-6">
@@ -64,7 +64,7 @@ export default function Navigation() {
 
       {/* Mobile menu */}
       <div
-        className={`fixed inset-0 z-[90] bg-[#FFFFFF] flex flex-col justify-center px-10 transition-all duration-500 ${
+        className={`fixed inset-0 z-[90] bg-[#ECEDE7] flex flex-col justify-center px-10 transition-all duration-500 ${
           menuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
         }`}
       >

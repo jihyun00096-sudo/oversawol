@@ -51,7 +51,7 @@ export default function ImpactSection() {
       id="impact"
       className="relative py-28 md:py-40 overflow-hidden"
       style={{
-        background: 'linear-gradient(170deg, #111111 0%, #0a0d0a 60%, #111111 100%)',
+        background: 'radial-gradient(circle at 18% 18%, rgba(199,255,100,0.08), transparent 22%), linear-gradient(170deg, #F5F5F0 0%, #ECEDE7 60%, #F5F5F0 100%)',
       }}
     >
       {/* Background texture — horizontal lines */}
@@ -62,7 +62,7 @@ export default function ImpactSection() {
             className="absolute left-0 right-0 h-px"
             style={{
               top: `${8 + i * 8}%`,
-              background: 'rgba(125,140,122,0.04)',
+              background: 'rgba(17,17,17,0.05)',
             }}
           />
         ))}
@@ -81,7 +81,7 @@ export default function ImpactSection() {
         {/* Main headline */}
         <div className="mb-20 md:mb-28">
           <h2
-            className="font-display text-[clamp(44px,7vw,110px)] leading-none text-[#D8D4CE] mb-6"
+            className="font-display text-[clamp(44px,7vw,110px)] leading-none text-[#111111] mb-6"
             style={{
               fontFamily: 'Bebas Neue, sans-serif',
               opacity: inView ? 1 : 0,
@@ -90,12 +90,12 @@ export default function ImpactSection() {
             }}
           >
             INDUSTRY<br />
-            <span style={{ color: 'transparent', WebkitTextStroke: '1px rgba(125,140,122,0.5)' }}>CYCLE</span>
+            <span style={{ color: 'transparent', WebkitTextStroke: '1px rgba(199,255,100,0.3)' }}>CYCLE</span>
           </h2>
           <p
             className="font-serif text-[18px] md:text-[22px] italic max-w-lg leading-relaxed"
             style={{
-              color: 'rgba(216,212,206,0.4)',
+              color: 'rgba(74,74,74,0.72)',
               opacity: inView ? 1 : 0,
               transition: 'opacity 0.9s ease 0.5s',
             }}
@@ -112,8 +112,8 @@ export default function ImpactSection() {
               key={i}
               className="relative py-10 md:py-14"
               style={{
-                borderTop: '1px solid rgba(125,140,122,0.15)',
-                borderLeft: i % 2 === 1 || i > 1 ? (i % 2 === 1 ? '1px solid rgba(125,140,122,0.15)' : (i === 2 ? 'none' : '1px solid rgba(125,140,122,0.15)')) : 'none',
+                borderTop: '1px solid rgba(17,17,17,0.08)',
+                borderLeft: i % 2 === 1 || i > 1 ? (i % 2 === 1 ? '1px solid rgba(17,17,17,0.08)' : (i === 2 ? 'none' : '1px solid rgba(17,17,17,0.08)')) : 'none',
                 paddingLeft: i % 2 === 1 || (i > 1 && i % 2 === 1) ? '2rem' : 0,
                 paddingRight: '2rem',
                 opacity: inView ? 1 : 0,
@@ -124,13 +124,13 @@ export default function ImpactSection() {
               {/* Number */}
               <div className="mb-3">
                 <span
-                  className="font-display text-[clamp(48px,6vw,88px)] leading-none text-[#D8D4CE]"
+                  className="font-display text-[clamp(48px,6vw,88px)] leading-none text-[#111111]"
                   style={{ fontFamily: 'Bebas Neue, sans-serif' }}
                 >
                   {counts[i].toLocaleString()}
                 </span>
                 <span
-                  className="font-display text-[clamp(24px,3vw,44px)] leading-none text-[#7D8C7A] ml-1"
+                  className="font-display text-[clamp(24px,3vw,44px)] leading-none text-[#D8FF8A] ml-1"
                   style={{ fontFamily: 'Bebas Neue, sans-serif' }}
                 >
                   {s.suffix}
@@ -138,10 +138,10 @@ export default function ImpactSection() {
               </div>
 
               {/* Label */}
-              <div className="font-mono text-[10px] tracking-[0.25em] text-[#D8D4CE]/70 mb-1">
+              <div className="font-mono text-[10px] tracking-[0.25em] text-[rgba(74,74,74,0.75)] mb-1">
                 {s.label}
               </div>
-              <div className="font-mono text-[9px] tracking-[0.2em] text-[#7D8C7A]/50">
+              <div className="font-mono text-[9px] tracking-[0.2em] text-[rgba(74,74,74,0.45)]">
                 {s.sub}
               </div>
             </div>
@@ -156,16 +156,16 @@ export default function ImpactSection() {
             transition: 'opacity 1s ease 1s',
           }}
         >
-          <div className="border border-[#7D8C7A]/15 p-8 md:p-14">
-            <div className="font-mono text-[9px] tracking-[0.35em] text-[#7D8C7A] mb-6">
+          <div className="border border-[rgba(17,17,17,0.08)] p-8 md:p-14">
+            <div className="font-mono text-[9px] tracking-[0.35em] text-[#4A4A4A] mb-6">
               BRAND STATEMENT
             </div>
-            <p className="font-serif text-[clamp(18px,2.5vw,30px)] italic leading-relaxed" style={{ color: 'rgba(216,212,206,0.55)' }}>
+            <p className="font-serif text-[clamp(18px,2.5vw,30px)] italic leading-relaxed" style={{ color: 'rgba(74,74,74,0.72)' }}>
               우리는 친환경 브랜드가 아닙니다.<br />
-              우리는 <span style={{ color: '#7D8C7A' }}>산업 순환 구조를 설계하는 브랜드</span>입니다.<br />
+              우리는 <span style={{ color: '#C7FF64' }}>산업 순환 구조를 설계하는 브랜드</span>입니다.<br />
               그 차이가 모든 것을 바꿉니다.
             </p>
-            <div className="mt-8 h-px bg-gradient-to-r from-[#7D8C7A]/30 via-[#7D8C7A]/60 to-transparent" />
+            <div className="mt-8 h-px bg-gradient-to-r from-[#C7FF64]/20 via-[#D8FF8A]/40 to-transparent" />
           </div>
         </div>
       </div>

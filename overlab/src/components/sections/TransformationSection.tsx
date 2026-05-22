@@ -68,7 +68,7 @@ export default function TransformationSection() {
       ref={ref as React.RefObject<HTMLElement>}
       id="process"
       className="relative py-28 md:py-40 overflow-hidden"
-      style={{ background: 'linear-gradient(180deg, #0d0e0c 0%, #111111 100%)' }}
+      style={{ background: 'radial-gradient(circle at 75% 10%, rgba(199,255,100,0.08), transparent 22%), linear-gradient(180deg, #F5F5F0 0%, #ECEDE7 100%)' }}
     >
       {/* Background number */}
       <div
@@ -76,7 +76,7 @@ export default function TransformationSection() {
         style={{
           fontFamily: 'Bebas Neue, sans-serif',
           fontSize: 'clamp(180px, 30vw, 400px)',
-          color: 'rgba(125,140,122,0.03)',
+          color: 'rgba(17,17,17,0.06)',
           lineHeight: 1,
           right: '-2vw',
         }}
@@ -98,7 +98,7 @@ export default function TransformationSection() {
             04 / TRANSFORMATION
           </div>
           <h2
-            className="font-display text-[clamp(44px,7vw,110px)] leading-none text-[#D8D4CE]"
+            className="font-display text-[clamp(44px,7vw,110px)] leading-none text-[#111111]"
             style={{
               fontFamily: 'Bebas Neue, sans-serif',
               opacity: inView ? 1 : 0,
@@ -107,7 +107,7 @@ export default function TransformationSection() {
             }}
           >
             HOW WE<br />
-            <span style={{ color: '#7D8C7A' }}>TRANSFORM</span>
+            <span style={{ color: '#C7FF64' }}>TRANSFORM</span>
           </h2>
         </div>
 
@@ -133,7 +133,7 @@ export default function TransformationSection() {
                     left: '100%',
                     width: '100%',
                     height: '1px',
-                    background: `linear-gradient(90deg, rgba(125,140,122,${activeStep >= i ? 0.5 : 0.15}), rgba(125,140,122,0.15))`,
+                    background: `linear-gradient(90deg, rgba(199,255,100,${activeStep >= i ? 0.36 : 0.12}), rgba(17,17,17,0.08))`,
                     transition: 'background 0.5s ease',
                   }}
                 />
@@ -142,9 +142,9 @@ export default function TransformationSection() {
               <div
                 className="p-6 md:p-8 border-t md:border-t md:border-l-0 border-l-0 transition-all duration-500"
                 style={{
-                  borderTop: '1px solid rgba(125,140,122,0.15)',
+                  borderTop: '1px solid rgba(17,17,17,0.08)',
                   borderLeft: i > 0 ? '0' : 'none',
-                  backgroundColor: activeStep === i ? 'rgba(125,140,122,0.06)' : 'transparent',
+                  backgroundColor: activeStep === i ? 'rgba(199,255,100,0.08)' : 'rgba(255,255,255,0.72)',
                 }}
               >
                 {/* Step badge */}
@@ -152,14 +152,14 @@ export default function TransformationSection() {
                   <div
                     className="w-10 h-10 flex items-center justify-center transition-all duration-400"
                     style={{
-                      border: `1px solid ${activeStep === i ? 'rgba(125,140,122,0.6)' : 'rgba(125,140,122,0.2)'}`,
-                      color: activeStep === i ? '#D8D4CE' : '#7D8C7A',
+                      border: `1px solid ${activeStep === i ? 'rgba(199,255,100,0.45)' : 'rgba(17,17,17,0.15)'}`,
+                      color: activeStep === i ? '#111111' : 'rgba(74,74,74,0.65)',
                       fontSize: '16px',
                     }}
                   >
                     {s.icon}
                   </div>
-                  <span className="font-mono text-[9px] tracking-[0.3em] text-[#7D8C7A]">{s.step}</span>
+                  <span className="font-mono text-[9px] tracking-[0.3em] text-[rgba(74,74,74,0.75)]">{s.step}</span>
                 </div>
 
                 {/* Names */}
@@ -167,12 +167,12 @@ export default function TransformationSection() {
                   className="font-display text-4xl md:text-5xl mb-1 transition-all duration-400"
                   style={{
                     fontFamily: 'Bebas Neue, sans-serif',
-                    color: activeStep === i ? '#D8D4CE' : 'rgba(216,212,206,0.4)',
+                    color: activeStep === i ? '#111111' : 'rgba(74,74,74,0.55)',
                   }}
                 >
                   {s.ko}
                 </div>
-                <div className="font-mono text-[9px] tracking-[0.3em] text-[#7D8C7A]/50 mb-5">{s.en}</div>
+                <div className="font-mono text-[9px] tracking-[0.3em] text-[rgba(74,74,74,0.45)] mb-5">{s.en}</div>
 
                 {/* Detail */}
                 <div
@@ -182,7 +182,7 @@ export default function TransformationSection() {
                     opacity: activeStep === i ? 1 : 0,
                   }}
                 >
-                  <p className="font-serif text-[14px] italic leading-relaxed" style={{ color: 'rgba(216,212,206,0.55)' }}>
+                  <p className="font-serif text-[14px] italic leading-relaxed" style={{ color: 'rgba(74,74,74,0.72)' }}>
                     {s.detail}
                   </p>
                 </div>
@@ -199,11 +199,11 @@ export default function TransformationSection() {
             transition: 'opacity 1s ease 0.8s',
           }}
         >
-          <div className="h-px flex-1 bg-[#7D8C7A]/15" />
-          <p className="font-serif text-[18px] italic text-center" style={{ color: 'rgba(216,212,206,0.35)' }}>
+          <div className="h-px flex-1 bg-[rgba(17,17,17,0.08)]" />
+          <p className="font-serif text-[18px] italic text-center" style={{ color: 'rgba(74,74,74,0.7)' }}>
             모든 제품에는 소재의 출처와 제작 번호가 기록됩니다.
           </p>
-          <div className="h-px flex-1 bg-[#7D8C7A]/15" />
+          <div className="h-px flex-1 bg-[rgba(17,17,17,0.08)]" />
         </div>
       </div>
     </section>

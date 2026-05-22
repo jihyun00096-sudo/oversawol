@@ -55,7 +55,7 @@ export default function PopupExhibitionSection() {
       ref={ref as React.RefObject<HTMLElement>}
       id="exhibition"
       className="relative py-28 md:py-40 overflow-hidden"
-      style={{ background: 'linear-gradient(180deg, #0e0f0d 0%, #111111 100%)' }}
+      style={{ background: 'radial-gradient(circle at 20% 15%, rgba(199,255,100,0.08), transparent 24%), linear-gradient(180deg, #F5F5F0 0%, #ECEDE7 100%)' }}
     >
       <div className="px-6 md:px-12 lg:px-20 max-w-7xl mx-auto">
 
@@ -68,7 +68,7 @@ export default function PopupExhibitionSection() {
             07 / POP-UP & EXHIBITION
           </div>
           <h2
-            className="font-display text-[clamp(44px,7vw,110px)] leading-none text-[#D8D4CE]"
+            className="font-display text-[clamp(44px,7vw,110px)] leading-none text-[#111111]"
             style={{
               fontFamily: 'Bebas Neue, sans-serif',
               opacity: inView ? 1 : 0,
@@ -77,7 +77,7 @@ export default function PopupExhibitionSection() {
             }}
           >
             SPACE &<br />
-            <span style={{ color: '#7D8C7A' }}>RECORD</span>
+            <span style={{ color: '#C7FF64' }}>RECORD</span>
           </h2>
         </div>
 
@@ -88,8 +88,8 @@ export default function PopupExhibitionSection() {
               key={ex.id}
               className="relative cursor-pointer transition-all duration-400"
               style={{
-                borderTop: '1px solid rgba(125,140,122,0.15)',
-                borderLeft: i > 0 ? '1px solid rgba(125,140,122,0.12)' : 'none',
+                borderTop: '1px solid rgba(17,17,17,0.08)',
+                borderLeft: i > 0 ? '1px solid rgba(17,17,17,0.08)' : 'none',
                 opacity: inView ? 1 : 0,
                 transform: inView ? 'none' : 'translateY(30px)',
                 transition: `opacity 0.8s ease ${0.2 + i * 0.12}s, transform 0.8s ease ${0.2 + i * 0.12}s`,
@@ -100,33 +100,34 @@ export default function PopupExhibitionSection() {
               <div
                 className="p-6 md:p-10 h-full transition-all duration-500"
                 style={{
-                  backgroundColor: activeEx === i ? 'rgba(125,140,122,0.06)' : 'transparent',
+                  backgroundColor: activeEx === i ? 'rgba(199,255,100,0.08)' : 'rgba(255,255,255,0.74)',
+                  border: '1px solid rgba(17,17,17,0.08)',
+                  backdropFilter: 'blur(12px)',
                 }}
               >
                 {/* Status */}
                 <div className="flex items-center justify-between mb-8">
                   <span
                     className="font-mono text-[9px] tracking-[0.3em]"
-                    style={{ color: ex.status === 'UPCOMING' ? '#c8d4a0' : '#7D8C7A' }}
+                    style={{ color: ex.status === 'UPCOMING' ? '#C7FF64' : '#4A4A4A' }}
                   >
                     {ex.status === 'UPCOMING' ? '▶ UPCOMING' : `✓ ${ex.status}`}
                   </span>
-                  <span className="font-mono text-[9px] tracking-[0.2em] text-[#7D8C7A]/30">{ex.id}</span>
+                  <span className="font-mono text-[9px] tracking-[0.2em] text-[rgba(74,74,74,0.4)]">{ex.id}</span>
                 </div>
 
                 {/* Date */}
                 <div className="mb-6">
-                  <div
-                    className="font-display text-6xl md:text-7xl text-[#D8D4CE] leading-none"
+                  <div className="font-display text-6xl md:text-7xl text-[#111111] leading-none"
                     style={{
                       fontFamily: 'Bebas Neue, sans-serif',
-                      opacity: activeEx === i ? 1 : 0.4,
+                      opacity: activeEx === i ? 1 : 0.6,
                       transition: 'opacity 0.4s ease',
                     }}
                   >
                     {ex.month}
                   </div>
-                  <div className="font-mono text-[10px] tracking-[0.35em] text-[#7D8C7A]/60">
+                  <div className="font-mono text-[10px] tracking-[0.35em] text-[rgba(74,74,74,0.7)]">
                     {ex.year}
                   </div>
                 </div>
@@ -140,30 +141,30 @@ export default function PopupExhibitionSection() {
                     className="absolute inset-0 transition-all duration-500"
                     style={{
                       background: activeEx === i
-                        ? 'linear-gradient(135deg, rgba(125,140,122,0.15) 0%, rgba(125,140,122,0.05) 100%)'
-                        : 'linear-gradient(135deg, rgba(125,140,122,0.06) 0%, transparent 100%)',
-                      border: '1px solid rgba(125,140,122,0.15)',
+                        ? 'linear-gradient(135deg, rgba(199,255,100,0.14) 0%, rgba(199,255,100,0.04) 100%)'
+                        : 'linear-gradient(135deg, rgba(17,17,17,0.06) 0%, transparent 100%)',
+                      border: '1px solid rgba(17,17,17,0.08)',
                     }}
                   />
                   {/* Abstract grid / space lines */}
                   <svg className="absolute inset-0 w-full h-full opacity-20" viewBox="0 0 300 160" preserveAspectRatio="xMidYMid slice">
                     {Array.from({ length: 8 }).map((_, j) => (
-                      <line key={`h${j}`} x1="0" y1={20 * j} x2="300" y2={20 * j} stroke="#7D8C7A" strokeWidth="0.5" />
+                      <line key={`h${j}`} x1="0" y1={20 * j} x2="300" y2={20 * j} stroke="rgba(17,17,17,0.12)" strokeWidth="0.5" />
                     ))}
                     {Array.from({ length: 10 }).map((_, j) => (
-                      <line key={`v${j}`} x1={30 * j} y1="0" x2={30 * j} y2="160" stroke="#7D8C7A" strokeWidth="0.5" />
+                      <line key={`v${j}`} x1={30 * j} y1="0" x2={30 * j} y2="160" stroke="rgba(17,17,17,0.12)" strokeWidth="0.5" />
                     ))}
-                    <rect x="50" y="30" width="90" height="70" fill="none" stroke="#7D8C7A" strokeWidth="0.5" opacity="0.5" />
-                    <rect x="160" y="60" width="110" height="60" fill="none" stroke="#7D8C7A" strokeWidth="0.5" opacity="0.3" />
+                    <rect x="50" y="30" width="90" height="70" fill="none" stroke="rgba(17,17,17,0.12)" strokeWidth="0.5" opacity="0.5" />
+                    <rect x="160" y="60" width="110" height="60" fill="none" stroke="rgba(17,17,17,0.12)" strokeWidth="0.5" opacity="0.3" />
                   </svg>
                   {ex.visitors && (
-                    <div className="absolute bottom-3 right-3 font-mono text-[9px] tracking-[0.2em] text-[#7D8C7A]/50">
+                    <div className="absolute bottom-3 right-3 font-mono text-[9px] tracking-[0.2em] text-[rgba(74,74,74,0.55)]">
                       {ex.visitors} visitors
                     </div>
                   )}
                   {ex.status === 'UPCOMING' && (
                     <div className="absolute inset-0 flex items-center justify-center">
-                      <span className="font-mono text-[9px] tracking-[0.4em] text-[#c8d4a0]/60 border border-[#c8d4a0]/20 px-3 py-1">
+                      <span className="font-mono text-[9px] tracking-[0.4em] text-[#C7FF64]/75 border border-[#C7FF64]/20 px-3 py-1">
                         COMING SOON
                       </span>
                     </div>
@@ -172,19 +173,19 @@ export default function PopupExhibitionSection() {
 
                 {/* Title */}
                 <div
-                  className="font-display text-2xl md:text-3xl text-[#D8D4CE] mb-2 tracking-wide"
+                  className="font-display text-2xl md:text-3xl text-[#111111] mb-2 tracking-wide"
                   style={{ fontFamily: 'Bebas Neue, sans-serif' }}
                 >
                   {ex.title}
                 </div>
 
                 {/* Location */}
-                <div className="font-mono text-[9px] tracking-[0.25em] text-[#7D8C7A] mb-5">
+                <div className="font-mono text-[9px] tracking-[0.25em] text-[rgba(74,74,74,0.75)] mb-5">
                   📍 {ex.location}
                 </div>
 
                 {/* Desc */}
-                <p className="font-serif text-[14px] italic leading-relaxed" style={{ color: 'rgba(216,212,206,0.4)' }}>
+                <p className="font-serif text-[14px] italic leading-relaxed" style={{ color: 'rgba(74,74,74,0.75)' }}>
                   {ex.desc}
                 </p>
               </div>

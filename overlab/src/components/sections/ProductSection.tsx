@@ -64,7 +64,7 @@ export default function ProductSection() {
       ref={ref as React.RefObject<HTMLElement>}
       id="shop"
       className="relative py-28 md:py-40 overflow-hidden"
-      style={{ background: '#111111' }}
+      style={{ background: 'radial-gradient(circle at 10% 10%, rgba(199,255,100,0.08), transparent 22%), linear-gradient(180deg, #F5F5F0 0%, #ECEDE7 100%)' }}
     >
       <div className="px-6 md:px-12 lg:px-20 max-w-7xl mx-auto">
 
@@ -78,7 +78,7 @@ export default function ProductSection() {
           </div>
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
             <h2
-              className="font-display text-[clamp(44px,7vw,110px)] leading-none text-[#D8D4CE]"
+              className="font-display text-[clamp(44px,7vw,110px)] leading-none text-[#111111]"
               style={{
                 fontFamily: 'Bebas Neue, sans-serif',
                 opacity: inView ? 1 : 0,
@@ -87,7 +87,7 @@ export default function ProductSection() {
               }}
             >
               THE<br />
-              <span style={{ color: '#7D8C7A' }}>ARCHIVE</span><br />
+              <span style={{ color: '#C7FF64' }}>ARCHIVE</span><br />
               ITEMS
             </h2>
             <div
@@ -96,13 +96,13 @@ export default function ProductSection() {
                 transition: 'opacity 0.9s ease 0.5s',
               }}
             >
-              <p className="font-serif text-[16px] italic max-w-[260px] leading-relaxed mb-6" style={{ color: 'rgba(216,212,206,0.4)' }}>
+              <p className="font-serif text-[16px] italic max-w-[260px] leading-relaxed mb-6" style={{ color: 'rgba(74,74,74,0.75)' }}>
                 각 제품은 소재의 이력이 담긴<br />
                 단 하나의 아카이브입니다.
               </p>
               <a
                 href="#"
-                className="inline-flex items-center gap-3 font-mono text-[10px] tracking-[0.3em] uppercase border border-[#7D8C7A]/40 text-[#7D8C7A] hover:border-[#7D8C7A] hover:text-[#D8D4CE] px-5 py-3 transition-all duration-300"
+                className="inline-flex items-center gap-3 font-mono text-[10px] tracking-[0.3em] uppercase border border-[rgba(17,17,17,0.12)] text-[#111111] hover:border-[#C7FF64] hover:text-[#C7FF64] px-5 py-3 transition-all duration-300"
               >
                 View All Archive
               </a>
@@ -111,11 +111,11 @@ export default function ProductSection() {
         </div>
 
         {/* Product grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-[1px] bg-[rgba(125,140,122,0.1)]">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-[1px] bg-[rgba(17,17,17,0.04)]">
           {products.map((p, i) => (
             <div
               key={p.id}
-              className={`relative bg-[#111111] cursor-pointer ${i === 0 ? 'md:col-span-2' : 'md:col-span-1'}`}
+              className={`relative bg-[rgba(255,255,255,0.78)] cursor-pointer ${i === 0 ? 'md:col-span-2' : 'md:col-span-1'}`}
               style={{
                 opacity: inView ? 1 : 0,
                 transform: inView ? 'none' : 'translateY(40px)',
@@ -127,7 +127,7 @@ export default function ProductSection() {
               {/* Visual area */}
               <div
                 className="relative overflow-hidden"
-                style={{ height: i === 0 ? '360px' : '240px', background: '#0a0a0a' }}
+                style={{ height: i === 0 ? '360px' : '240px', background: 'rgba(236,237,231,0.95)' }}
               >
                 {/* Atmospheric background */}
                 <div
@@ -176,12 +176,12 @@ export default function ProductSection() {
 
                 {/* Tag */}
                 <div className="absolute top-4 left-4 font-mono text-[8px] tracking-[0.3em] px-2 py-1"
-                  style={{ color: p.color, border: `1px solid ${p.color}40` }}>
+                  style={{ color: 'rgba(17,17,17,0.85)', border: '1px solid rgba(17,17,17,0.12)' }}>
                   {p.tag}
                 </div>
 
                 {/* Edition badge */}
-                <div className="absolute top-4 right-4 font-mono text-[8px] tracking-[0.2em] text-[#7D8C7A]/50">
+                <div className="absolute top-4 right-4 font-mono text-[8px] tracking-[0.2em] text-[rgba(74,74,74,0.65)]">
                   {p.edition}
                 </div>
               </div>
@@ -191,37 +191,37 @@ export default function ProductSection() {
                 <div className="flex items-start justify-between gap-4 mb-3">
                   <div>
                     <div
-                      className="font-display text-2xl md:text-3xl text-[#D8D4CE] tracking-wide mb-1"
+                      className="font-display text-2xl md:text-3xl text-[#111111] tracking-wide mb-1"
                       style={{ fontFamily: 'Bebas Neue, sans-serif' }}
                     >
                       {p.name}
                     </div>
-                    <div className="font-mono text-[9px] tracking-[0.25em] text-[#7D8C7A]">
+                    <div className="font-mono text-[9px] tracking-[0.25em] text-[rgba(74,74,74,0.75)]">
                       {p.nameEn}
                     </div>
                   </div>
-                  <div className="font-mono text-[13px] tracking-[0.05em] text-[#D8D4CE] whitespace-nowrap">
+                  <div className="font-mono text-[13px] tracking-[0.05em] text-[#111111] whitespace-nowrap">
                     {p.price}
                   </div>
                 </div>
 
                 {/* Material origin */}
                 <div className="flex flex-wrap gap-3 mb-5">
-                  <span className="font-mono text-[9px] tracking-[0.2em] text-[#7D8C7A]/60">
+                  <span className="font-mono text-[9px] tracking-[0.2em] text-[rgba(74,74,74,0.65)]">
                     소재: {p.material}
                   </span>
-                  <span className="text-[#7D8C7A]/20">·</span>
-                  <span className="font-mono text-[9px] tracking-[0.2em] text-[#7D8C7A]/40">
+                  <span className="text-[rgba(17,17,17,0.18)]">·</span>
+                  <span className="font-mono text-[9px] tracking-[0.2em] text-[rgba(74,74,74,0.55)]">
                     {p.origin}
                   </span>
                 </div>
 
                 {/* ID */}
                 <div className="flex items-center justify-between">
-                  <span className="font-mono text-[9px] tracking-[0.2em] text-[#7D8C7A]/30">{p.id}</span>
+                  <span className="font-mono text-[9px] tracking-[0.2em] text-[rgba(74,74,74,0.5)]">{p.id}</span>
                   <a
                     href="#"
-                    className="font-mono text-[9px] tracking-[0.25em] uppercase border-b border-[#7D8C7A]/30 text-[#7D8C7A] hover:text-[#D8D4CE] hover:border-[#D8D4CE]/50 pb-0.5 transition-all duration-200"
+                    className="font-mono text-[9px] tracking-[0.25em] uppercase border-b border-[rgba(17,17,17,0.08)] text-[#111111] hover:text-[#C7FF64] hover:border-[#C7FF64]/50 pb-0.5 transition-all duration-200"
                   >
                     View Detail →
                   </a>
@@ -234,20 +234,20 @@ export default function ProductSection() {
       </div>
 
       {/* Footer */}
-      <footer className="mt-28 md:mt-40 border-t border-[#7D8C7A]/15 px-6 md:px-12 lg:px-20 pt-12 pb-10">
+      <footer className="mt-28 md:mt-40 border-t border-[rgba(17,17,17,0.08)] px-6 md:px-12 lg:px-20 pt-12 pb-10">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row md:items-end justify-between gap-8">
           <div>
-            <div className="font-display text-4xl md:text-5xl text-[#D8D4CE] tracking-widest mb-3"
+            <div className="font-display text-4xl md:text-5xl text-[#111111] tracking-widest mb-3"
               style={{ fontFamily: 'Bebas Neue, sans-serif' }}>
               OVERLAB
             </div>
-            <p className="font-serif text-[14px] italic" style={{ color: 'rgba(216,212,206,0.35)' }}>
+            <p className="font-serif text-[14px] italic" style={{ color: 'rgba(74,74,74,0.55)' }}>
               산업 순환 구조를 설계하는 브랜드
             </p>
           </div>
           <div className="flex flex-col items-start md:items-end gap-2">
-            <span className="font-mono text-[9px] tracking-[0.3em] text-[#7D8C7A]/50">hello@overlab.kr</span>
-            <span className="font-mono text-[9px] tracking-[0.3em] text-[#7D8C7A]/30">© OVERLAB 2024 — All Rights Reserved</span>
+            <span className="font-mono text-[9px] tracking-[0.3em] text-[rgba(74,74,74,0.7)]">hello@overlab.kr</span>
+            <span className="font-mono text-[9px] tracking-[0.3em] text-[rgba(74,74,74,0.55)]">© OVERLAB 2024 — All Rights Reserved</span>
           </div>
         </div>
       </footer>

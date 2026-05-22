@@ -27,9 +27,10 @@ export default function HeroSection() {
         {/* Deep atmospheric gradient */}
         <div className="absolute inset-0" style={{
           background: `
-            radial-gradient(circle at 25% 20%, rgba(215,255,100,0.16) 0%, transparent 30%),
-            radial-gradient(circle at 80% 12%, rgba(17,17,17,0.06) 0%, transparent 25%),
-            linear-gradient(180deg, #ffffff 0%, #F7F8F5 60%, #F7F8F5 100%)
+            radial-gradient(circle at 22% 18%, rgba(199,255,100,0.14) 0%, transparent 24%),
+            radial-gradient(circle at 80% 10%, rgba(17,17,17,0.09) 0%, transparent 22%),
+            radial-gradient(circle at 55% 34%, rgba(215,255,138,0.08) 0%, transparent 16%),
+            linear-gradient(180deg, #F5F5F0 0%, #ECEDE7 42%, #F5F5F0 100%)
           `,
         }} />
 
@@ -63,9 +64,9 @@ export default function HeroSection() {
           top: '-20vmax',
           left: '50%',
           transform: 'translateX(-50%)',
-          border: '1px solid rgba(125,140,122,0.08)',
+          border: '1px solid rgba(199,255,100,0.1)',
           borderRadius: '50%',
-          boxShadow: 'inset 0 0 80px rgba(125,140,122,0.04)',
+          boxShadow: 'inset 0 0 80px rgba(199,255,100,0.07)',
         }} />
         <div className="absolute" style={{
           width: '50vmax',
@@ -73,12 +74,12 @@ export default function HeroSection() {
           top: '-10vmax',
           left: '50%',
           transform: 'translateX(-50%)',
-          border: '1px solid rgba(125,140,122,0.05)',
+          border: '1px solid rgba(17,17,17,0.06)',
           borderRadius: '50%',
         }} />
 
         {/* Horizontal rule detail */}
-        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#D7FF64]/20 to-transparent" />
+        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#C7FF64]/18 to-transparent" />
       </div>
 
       {/* Content */}
@@ -152,7 +153,7 @@ export default function HeroSection() {
         >
           <p
             className="font-serif text-[18px] md:text-[22px] italic leading-relaxed max-w-md"
-            style={{ color: 'rgba(17,17,17,0.72)' }}
+            style={{ color: 'rgba(17,17,17,0.78)' }}
           >
             레저 스포츠의 폐기 구조를 새로운 움직임으로.<br />
             소재의 두 번째 생을 설계합니다.
@@ -161,7 +162,7 @@ export default function HeroSection() {
           <div className="flex items-center gap-6">
             <a
               href="#archive"
-              className="group flex items-center gap-3 font-mono text-[11px] tracking-[0.25em] uppercase text-[#111111] hover:text-[#D7FF64] transition-colors duration-400"
+              className="group flex items-center gap-3 font-mono text-[11px] tracking-[0.25em] uppercase text-[#111111] hover:text-[#C7FF64] transition-colors duration-400"
             >
               <span>Explore Archive</span>
               <svg width="28" height="12" viewBox="0 0 28 12" fill="none">
@@ -182,7 +183,7 @@ export default function HeroSection() {
         }}
       >
         <span className="font-mono text-[8px] tracking-[0.3em] text-[#111111] rotate-90 origin-center mb-6">SCROLL</span>
-        <div className="w-px h-16 bg-gradient-to-b from-[#D7FF64]/60 to-transparent animate-pulse" />
+        <div className="w-px h-16 bg-gradient-to-b from-[#C7FF64]/50 to-transparent animate-pulse" />
       </div>
     </section>
   );

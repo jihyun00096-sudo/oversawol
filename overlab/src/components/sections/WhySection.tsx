@@ -42,13 +42,13 @@ export default function WhySection() {
       ref={ref as React.RefObject<HTMLElement>}
       id="archive"
       className="relative py-28 md:py-40 px-6 md:px-12 lg:px-20 overflow-hidden"
-      style={{ background: 'linear-gradient(180deg, #111111 0%, #0e0f0d 100%)' }}
+      style={{ background: 'radial-gradient(circle at 90% 10%, rgba(199,255,100,0.08), transparent 22%), linear-gradient(180deg, #F5F5F0 0%, #ECEDE7 100%)' }}
     >
       {/* Decorative line */}
       <div
         className="absolute top-0 left-0 right-0 h-px origin-left"
         style={{
-          background: 'linear-gradient(90deg, transparent, rgba(125,140,122,0.3), transparent)',
+          background: 'linear-gradient(90deg, transparent, rgba(199,255,100,0.28), transparent)',
           transform: inView ? 'scaleX(1)' : 'scaleX(0)',
           transition: 'transform 1.4s cubic-bezier(0.16, 1, 0.3, 1)',
         }}
@@ -70,7 +70,7 @@ export default function WhySection() {
               02 / WHY OVERLAB
             </div>
             <h2
-              className="font-display text-[clamp(48px,8vw,120px)] leading-none text-[#D8D4CE]"
+              className="font-display text-[clamp(48px,8vw,120px)] leading-none text-[#111111]"
               style={{
                 fontFamily: 'Bebas Neue, sans-serif',
                 opacity: inView ? 1 : 0,
@@ -79,7 +79,7 @@ export default function WhySection() {
               }}
             >
               SECOND<br />
-              <span style={{ color: 'transparent', WebkitTextStroke: '1px rgba(125,140,122,0.5)' }}>
+              <span style={{ color: 'transparent', WebkitTextStroke: '1px rgba(199,255,100,0.3)' }}>
                 MOVEMENT
               </span>
             </h2>
@@ -93,7 +93,7 @@ export default function WhySection() {
               transition: 'opacity 0.9s ease 0.5s, transform 0.9s ease 0.5s',
             }}
           >
-            <p className="font-serif text-[17px] italic leading-relaxed" style={{ color: 'rgba(216,212,206,0.5)' }}>
+            <p className="font-serif text-[17px] italic leading-relaxed" style={{ color: 'rgba(74,74,74,0.72)' }}>
               산업 순환 구조를 설계하는 브랜드.<br />
               환경을 위한 브랜드가 아닌,<br />
               움직임을 이어가는 브랜드입니다.
@@ -106,9 +106,9 @@ export default function WhySection() {
           {pillars.map((p, i) => (
             <div
               key={p.num}
-              className="relative border-t border-[#7D8C7A]/15 py-10 md:py-14 md:pr-12"
+              className="relative border-t border-[rgba(17,17,17,0.08)] py-10 md:py-14 md:pr-12"
               style={{
-                borderLeft: i === 0 ? 'none' : '1px solid rgba(125,140,122,0.15)',
+                borderLeft: i === 0 ? 'none' : '1px solid rgba(17,17,17,0.08)',
                 paddingLeft: i === 0 ? 0 : '3rem',
                 opacity: inView ? 1 : 0,
                 transform: inView ? 'none' : 'translateY(30px)',
@@ -117,18 +117,18 @@ export default function WhySection() {
             >
               {/* Number */}
               <div className="flex items-center gap-3 mb-6">
-                <span className="font-mono text-[10px] tracking-[0.3em] text-[#7D8C7A]">{p.num}</span>
-                <div className="h-px flex-1 bg-[#7D8C7A]/20" />
+                <span className="font-mono text-[10px] tracking-[0.3em] text-[rgba(74,74,74,0.7)]">{p.num}</span>
+                <div className="h-px flex-1 bg-[rgba(17,17,17,0.08)]" />
               </div>
 
               {/* Korean */}
-              <div className="font-display text-5xl md:text-6xl text-[#D8D4CE] mb-2 tracking-wide"
+              <div className="font-display text-5xl md:text-6xl text-[#111111] mb-2 tracking-wide"
                 style={{ fontFamily: 'Bebas Neue, sans-serif' }}>
                 {p.ko}
               </div>
 
               {/* English */}
-              <div className="font-mono text-[9px] tracking-[0.35em] text-[#7D8C7A] mb-6">
+              <div className="font-mono text-[9px] tracking-[0.35em] text-[rgba(74,74,74,0.65)] mb-6">
                 {p.en}
               </div>
 
@@ -142,7 +142,7 @@ export default function WhySection() {
 
         {/* Bottom quote */}
         <div
-          className="mt-20 md:mt-28 pt-10 border-t border-[#7D8C7A]/10 text-center"
+          className="mt-20 md:mt-28 pt-10 border-t border-[rgba(17,17,17,0.08)] text-center"
           style={{
             opacity: inView ? 1 : 0,
             transition: 'opacity 1s ease 0.9s',
