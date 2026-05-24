@@ -1,0 +1,287 @@
+'use client';
+import { useEffect, useState } from 'react';
+import { motion } from 'framer-motion';
+import Link from 'next/link';
+
+const TICKER = [
+  'PARAGLIDER', 'TENT', 'SAIL', 'DIVING SUIT',
+  'UPCYCLED MATERIALS', 'FUTURE ARCHIVE', 'OVERLAB', 'SINCE 2020',
+  'PARAGLIDER', 'TENT', 'SAIL', 'DIVING SUIT',
+  'UPCYCLED MATERIALS', 'FUTURE ARCHIVE', 'OVERLAB', 'SINCE 2020',
+];
+
+const HEADLINE = ['SOME', 'MOVEMENTS', 'NEVER END.'];
+
+export default function NewHeroSection() {
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const onScroll = () => setScrollY(window.scrollY);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+
+  return (
+    <section
+      className="relative w-full min-h-screen flex flex-col overflow-hidden"
+      style={{ backgroundColor: '#181A16' }}
+    >
+      {/* Noise layer */}
+      <div
+        className="absolute inset-0 pointer-events-none z-0"
+        style={{
+          backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E")`,
+          opacity: 0.8,
+        }}
+      />
+
+      {/* Lime glow — upper right */}
+      <div
+        className="absolute pointer-events-none z-0"
+        style={{
+          top: '0%',
+          right: '10%',
+          width: '700px',
+          height: '700px',
+          background: 'radial-gradient(circle, rgba(216, 255, 62, 0.09) 0%, transparent 65%)',
+          transform: `translateY(${scrollY * 0.08}px)`,
+        }}
+      />
+      {/* Lime glow — lower left */}
+      <div
+        className="absolute pointer-events-none z-0"
+        style={{
+          bottom: '10%',
+          left: '0%',
+          width: '500px',
+          height: '500px',
+          background: 'radial-gradient(circle, rgba(216, 255, 62, 0.05) 0%, transparent 65%)',
+          transform: `translateY(${-scrollY * 0.05}px)`,
+        }}
+      />
+
+      {/* ── Main content ── */}
+      <div className="relative z-10 flex-1 flex items-center w-full pt-28 md:pt-32 pb-20 px-6 md:px-12 lg:px-16 xl:px-20">
+        <div className="w-full max-w-screen-2xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-0 items-center">
+
+            {/* ── Left: Typography ── */}
+            <div className="lg:col-span-8">
+
+              {/* Label row */}
+              <motion.div
+                className="flex items-center gap-4 mb-10 md:mb-14"
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: 0.1, duration: 0.8 }}
+              >
+                <div className="w-8 h-px" style={{ backgroundColor: '#D8FF3E' }} />
+                <span
+                  className="font-mono text-xs tracking-[0.3em] uppercase"
+                  style={{ color: 'rgba(245,245,239,0.4)' }}
+                >
+                  Future Archive
+                </span>
+                <div className="w-8 h-px" style={{ backgroundColor: 'rgba(245,245,239,0.15)' }} />
+                <span
+                  className="font-mono text-xs tracking-[0.3em] uppercase"
+                  style={{ color: 'rgba(245,245,239,0.25)' }}
+                >
+                  SS 2024
+                </span>
+              </motion.div>
+
+              {/* Headline */}
+              <div className="mb-12 md:mb-16">
+                {HEADLINE.map((word, i) => (
+                  <div key={word} className="overflow-hidden">
+                    <motion.div
+                      initial={{ y: '110%' }}
+                      animate={{ y: 0 }}
+                      transition={{
+                        delay: 0.18 + i * 0.13,
+                        duration: 1,
+                        ease: [0.16, 1, 0.3, 1],
+                      }}
+                    >
+                      <h1
+                        className="font-display leading-none text-white"
+                        style={{
+                          fontSize: 'clamp(3.2rem, 11.5vw, 11.5rem)',
+                          letterSpacing: '-0.03em',
+                          lineHeight: 0.88,
+                        }}
+                      >
+                        {word}
+                      </h1>
+                    </motion.div>
+                  </div>
+                ))}
+              </div>
+
+              {/* Divider + sub content */}
+              <motion.div
+                className="grid grid-cols-1 sm:grid-cols-2 gap-8 pt-8"
+                style={{ borderTop: '1px solid rgba(255,255,255,0.1)' }}
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.7, duration: 0.9 }}
+              >
+                {/* Description */}
+                <div>
+                  <p
+                    className="font-serif text-base md:text-lg italic leading-relaxed mb-6"
+                    style={{ color: 'rgba(245,245,239,0.6)' }}
+                  >
+                    Where discarded sports equipment becomes daily poetry.
+                    OVERLAB reimagines what was once moving.
+                  </p>
+                  <div className="flex items-center gap-3">
+                    <span
+                      className="font-mono text-xs tracking-[0.25em] uppercase"
+                      style={{ color: 'rgba(245,245,239,0.3)' }}
+                    >
+                      Scroll to explore
+                    </span>
+                    <motion.div
+                      className="w-px h-6 origin-top"
+                      style={{ backgroundColor: 'rgba(245,245,239,0.25)' }}
+                      animate={{ scaleY: [0, 1, 0] }}
+                      transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
+                    />
+                  </div>
+                </div>
+
+                {/* CTAs */}
+                <div className="flex flex-col gap-3 sm:items-start">
+                  <Link
+                    href="/archive"
+                    className="btn-outline-dark group inline-flex items-center gap-3 w-fit"
+                  >
+                    Explore Archive
+                    <span className="group-hover:translate-x-1 transition-transform duration-300">→</span>
+                  </Link>
+                  <Link
+                    href="/products"
+                    className="btn-lime group inline-flex items-center gap-3 w-fit"
+                  >
+                    Shop Now
+                    <span className="group-hover:translate-x-1 transition-transform duration-300">→</span>
+                  </Link>
+                </div>
+              </motion.div>
+            </div>
+
+            {/* ── Right: Abstract visual ── */}
+            <div className="hidden lg:flex lg:col-span-4 items-center justify-center">
+              <motion.div
+                className="relative w-full max-w-sm aspect-square"
+                initial={{ opacity: 0, scale: 0.85 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ delay: 0.45, duration: 1.4, ease: [0.16, 1, 0.3, 1] }}
+              >
+                {/* Lime glow behind */}
+                <div
+                  className="absolute inset-0 pointer-events-none"
+                  style={{
+                    background: 'radial-gradient(circle at 50% 50%, rgba(216,255,62,0.18) 0%, transparent 60%)',
+                  }}
+                />
+                {/* SVG: technical archive blueprint */}
+                <svg viewBox="0 0 400 400" fill="none" className="w-full h-full">
+                  {/* Outer rings */}
+                  <circle cx="200" cy="200" r="170" stroke="rgba(255,255,255,0.06)" strokeWidth="0.8" />
+                  <circle cx="200" cy="200" r="140" stroke="rgba(255,255,255,0.08)" strokeWidth="0.6" />
+                  <circle cx="200" cy="200" r="100" stroke="rgba(255,255,255,0.07)" strokeWidth="0.6" />
+                  <circle cx="200" cy="200" r="60" stroke="rgba(216,255,62,0.2)" strokeWidth="0.8" />
+                  <circle cx="200" cy="200" r="20" stroke="rgba(216,255,62,0.5)" strokeWidth="1" />
+
+                  {/* Radial lines */}
+                  {Array.from({ length: 24 }).map((_, i) => (
+                    <line
+                      key={`rl-${i}`}
+                      x1={200 + Math.cos((i * 15 * Math.PI) / 180) * 22}
+                      y1={200 + Math.sin((i * 15 * Math.PI) / 180) * 22}
+                      x2={200 + Math.cos((i * 15 * Math.PI) / 180) * 170}
+                      y2={200 + Math.sin((i * 15 * Math.PI) / 180) * 170}
+                      stroke="rgba(255,255,255,0.04)"
+                      strokeWidth="0.5"
+                    />
+                  ))}
+
+                  {/* Cross hairs */}
+                  <line x1="30" y1="200" x2="370" y2="200" stroke="rgba(255,255,255,0.06)" strokeWidth="0.5" />
+                  <line x1="200" y1="30" x2="200" y2="370" stroke="rgba(255,255,255,0.06)" strokeWidth="0.5" />
+
+                  {/* Canopy arc — suggests paraglider */}
+                  <path d="M 60 230 Q 200 70 340 230" stroke="rgba(216,255,62,0.25)" strokeWidth="1.2" fill="none" />
+                  <path d="M 90 230 Q 200 95 310 230" stroke="rgba(216,255,62,0.15)" strokeWidth="0.8" fill="none" />
+                  <path d="M 120 230 Q 200 120 280 230" stroke="rgba(216,255,62,0.1)" strokeWidth="0.6" fill="none" />
+
+                  {/* Structural lines from arc to center */}
+                  {[100, 130, 160, 200, 240, 270, 300].map((x, i) => (
+                    <line
+                      key={`sl-${i}`}
+                      x1={x}
+                      y1={230 - (i < 3 ? (3-i)*12 : i > 3 ? (i-3)*12 : 0)}
+                      x2="200"
+                      y2="200"
+                      stroke="rgba(216,255,62,0.08)"
+                      strokeWidth="0.5"
+                    />
+                  ))}
+
+                  {/* Corner markers */}
+                  <rect x="28" y="28" width="12" height="12" stroke="rgba(216,255,62,0.3)" strokeWidth="0.8" fill="none" />
+                  <rect x="360" y="28" width="12" height="12" stroke="rgba(216,255,62,0.3)" strokeWidth="0.8" fill="none" />
+                  <rect x="28" y="360" width="12" height="12" stroke="rgba(216,255,62,0.3)" strokeWidth="0.8" fill="none" />
+                  <rect x="360" y="360" width="12" height="12" stroke="rgba(216,255,62,0.3)" strokeWidth="0.8" fill="none" />
+
+                  {/* Center dot with glow */}
+                  <circle cx="200" cy="200" r="5" fill="#D8FF3E" opacity="0.9" />
+                  <circle cx="200" cy="200" r="10" fill="#D8FF3E" opacity="0.15" />
+
+                  {/* Labels */}
+                  <text x="216" y="197" fontSize="7" fill="rgba(216,255,62,0.5)" fontFamily="Space Mono" letterSpacing="2">ORIGIN</text>
+                  <text x="32" y="22" fontSize="6" fill="rgba(255,255,255,0.2)" fontFamily="Space Mono" letterSpacing="1">OVL-001</text>
+                  <text x="30" y="390" fontSize="6" fill="rgba(255,255,255,0.15)" fontFamily="Space Mono" letterSpacing="1">ARCHIVE · 2024</text>
+                </svg>
+
+                {/* Floating label */}
+                <motion.div
+                  className="absolute top-4 right-4 font-mono text-xs tracking-widest uppercase"
+                  style={{ color: 'rgba(216,255,62,0.4)', fontSize: '9px' }}
+                  animate={{ opacity: [0.4, 0.8, 0.4] }}
+                  transition={{ duration: 3, repeat: Infinity }}
+                >
+                  Ref. Archive
+                </motion.div>
+              </motion.div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* ── Bottom ticker ── */}
+      <div
+        className="relative z-10 overflow-hidden"
+        style={{ borderTop: '1px solid rgba(255,255,255,0.07)' }}
+      >
+        <div className="py-4">
+          <div className="animate-marquee">
+            {TICKER.map((item, i) => (
+              <span
+                key={i}
+                className="font-mono text-xs tracking-[0.3em] uppercase px-8"
+                style={{ color: 'rgba(245,245,239,0.25)', whiteSpace: 'nowrap' }}
+              >
+                {item}
+                <span style={{ color: '#D8FF3E', marginLeft: '28px' }}>·</span>
+              </span>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}

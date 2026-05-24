@@ -1,96 +1,174 @@
 'use client';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 export default function Navigation() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 60);
-    window.addEventListener('scroll', onScroll);
+    const onScroll = () => setScrolled(window.scrollY > 50);
+    window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
-  const navItems = ['Archive', 'Material', 'Process', 'Shop'];
+  useEffect(() => {
+    setMenuOpen(false);
+  }, [pathname]);
+
+  const navItems = [
+    { label: 'HOME', href: '/' },
+    { label: 'ARCHIVE', href: '/archive' },
+    { label: 'PRODUCTS', href: '/products' },
+    { label: 'PROJECTS', href: '/projects' },
+    { label: 'ABOUT', href: '/about' },
+    { label: 'STOCKIST', href: '/stockist' },
+    { label: 'POP-UP', href: '/pop-up' },
+  ];
+
+  const isActive = (href: string) => pathname === href;
 
   return (
     <>
       <nav
-        className="fixed top-0 left-0 right-0 z-[100] transition-all duration-700"
+        className="fixed top-0 left-0 right-0 z-40 transition-all duration-500"
         style={{
-          backgroundColor: scrolled ? 'rgba(245,245,240,0.92)' : 'transparent',
-          backdropFilter: scrolled ? 'blur(14px)' : 'none',
-          borderBottom: scrolled ? '1px solid rgba(17,17,17,0.08)' : 'none',
-          boxShadow: scrolled ? '0 36px 90px rgba(17,17,17,0.08)' : 'none',
+          backgroundColor: scrolled ? 'rgba(245, 245, 239, 0.92)' : 'transparent',
+          backdropFilter: scrolled ? 'blur(20px)' : 'none',
+          borderBottom: scrolled ? '1px solid rgba(17, 17, 17, 0.08)' : 'none',
         }}
       >
-        <div className="flex items-center justify-between px-6 md:px-12 py-5 md:py-6">
+        <div className="flex items-center justify-between px-6 md:px-8 lg:px-12 py-4 md:py-5 max-w-full">
           {/* Logo */}
-          <a href="#" className="font-display text-2xl md:text-3xl tracking-widest text-[#111111]"
-            style={{ fontFamily: 'Bebas Neue, sans-serif' }}>
+          <Link
+            href="/"
+            className="font-display text-2xl md:text-3xl tracking-tighter text-text-primary hover:text-lime-primary transition-colors duration-300"
+            style={{ letterSpacing: '-0.04em' }}
+          >
             OVERLAB
-          </a>
+          </Link>
 
-          {/* Desktop nav */}
-          <div className="hidden md:flex items-center gap-10">
+          {/* Desktop Navigation */}
+          <div className="hidden lg:flex items-center gap-1">
             {navItems.map((item) => (
-              <a
-                key={item}
-                href={`#${item.toLowerCase()}`}
-                className="font-mono text-[10px] tracking-[0.25em] uppercase text-[#4F4F4F] hover:text-[#111111] transition-colors duration-300"
-                style={{ textShadow: '0 0 8px rgba(168,183,106,0.08)' }}
+              <Link
+                key={item.label}
+                href={item.href}
+                className={`relative px-4 py-2 font-mono text-xs tracking-widest uppercase transition-all duration-300 ${
+                  isActive(item.href)
+                    ? 'text-lime-primary'
+                    : 'text-text-primary hover:text-lime-primary'
+                }`}
               >
-                {item}
-              </a>
+                {item.label}
+                {isActive(item.href) && (
+                  <motion.div
+                    layoutId="activeNav"
+                    className="absolute bottom-0 left-4 right-4 h-px bg-lime-primary"
+                    transition={{ type: 'spring', stiffness: 500, damping: 30 }}
+                  />
+                )}
+              </Link>
             ))}
           </div>
 
-          {/* Right actions */}
-          <div className="flex items-center gap-6">
-            <a href="#shop" className="hidden md:block font-mono text-[10px] tracking-[0.25em] uppercase border border-[#A8B76A]/30 text-[#111111] hover:border-[#A8B76A] hover:text-[#A8B76A] px-4 py-2 transition-all duration-300"
-              style={{ boxShadow: '0 12px 40px rgba(168,183,106,0.08)' }}>
-              Shop
-            </a>
-            {/* Mobile menu button */}
+          {/* Right Actions */}
+          <div className="flex items-center gap-4 md:gap-6">
+            <Link
+              href="/shop"
+              className="hidden sm:inline-flex font-mono text-xs tracking-widest uppercase px-4 py-2 border border-text-primary text-text-primary hover:border-lime-primary hover:text-lime-primary hover:bg-lime-primary/5 transition-all duration-300"
+            >
+              SHOP
+            </Link>
+
+            {/* Mobile menu toggle */}
             <button
-              className="md:hidden flex flex-col gap-[5px] p-1"
+              className="lg:hidden flex flex-col gap-1.5 p-2 relative"
               onClick={() => setMenuOpen(!menuOpen)}
               aria-label="Menu"
+              aria-expanded={menuOpen}
             >
-              <span className={`block w-6 h-[1px] bg-[#111111] transition-all duration-300 ${menuOpen ? 'rotate-45 translate-y-[6px]' : ''}`} />
-              <span className={`block w-4 h-[1px] bg-[#4F4F4F] transition-all duration-300 ${menuOpen ? 'opacity-0' : ''}`} />
-              <span className={`block w-6 h-[1px] bg-[#111111] transition-all duration-300 ${menuOpen ? '-rotate-45 -translate-y-[6px]' : ''}`} />
+              <motion.span
+                className="block w-5 h-px bg-text-primary transition-colors duration-300"
+                animate={{
+                  rotate: menuOpen ? 45 : 0,
+                  y: menuOpen ? 8 : 0,
+                }}
+                transition={{ duration: 0.3 }}
+              />
+              <motion.span
+                className="block w-5 h-px bg-text-primary transition-colors duration-300"
+                animate={{
+                  opacity: menuOpen ? 0 : 1,
+                }}
+                transition={{ duration: 0.2 }}
+              />
+              <motion.span
+                className="block w-5 h-px bg-text-primary transition-colors duration-300"
+                animate={{
+                  rotate: menuOpen ? -45 : 0,
+                  y: menuOpen ? -8 : 0,
+                }}
+                transition={{ duration: 0.3 }}
+              />
             </button>
           </div>
         </div>
       </nav>
 
-      {/* Mobile menu */}
-      <div
-        className={`fixed inset-0 z-[90] bg-[rgba(245,245,240,0.98)] flex flex-col justify-center px-10 transition-all duration-500 ${
-          menuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
-        }`}
-      >
-        <div className="flex flex-col gap-8">
-          {navItems.map((item, i) => (
-            <a
-              key={item}
-              href={`#${item.toLowerCase()}`}
-              onClick={() => setMenuOpen(false)}
-              className="font-display text-6xl text-[#111111] tracking-widest transition-colors duration-200 hover:text-[#A8B76A]"
-              style={{
-                fontFamily: 'Bebas Neue, sans-serif',
-                transitionDelay: `${i * 40}ms`,
-              }}
-            >
-              {item}
-            </a>
-          ))}
-        </div>
-        <div className="absolute bottom-12 left-10 font-mono text-[10px] text-[#4F4F4F] tracking-[0.3em]">
-          OVERLAB © 2024
-        </div>
-      </div>
+      {/* Mobile Menu */}
+      <AnimatePresence>
+        {menuOpen && (
+          <motion.div
+            key="mobile-menu"
+            className="fixed top-0 left-0 right-0 bottom-0 z-30 bg-bg-primary/98 backdrop-blur-2xl lg:hidden"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
+          >
+            <div className="flex flex-col items-center justify-center h-screen gap-6 pt-20">
+              {navItems.map((item, i) => (
+                <motion.div
+                  key={item.label}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: 20 }}
+                  transition={{ delay: i * 0.05 }}
+                >
+                  <Link
+                    href={item.href}
+                    className={`font-display text-3xl tracking-tighter transition-colors duration-300 ${
+                      isActive(item.href)
+                        ? 'text-lime-primary'
+                        : 'text-text-primary hover:text-lime-primary'
+                    }`}
+                  >
+                    {item.label}
+                  </Link>
+                </motion.div>
+              ))}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: 20 }}
+                transition={{ delay: navItems.length * 0.05 }}
+                className="mt-6 pt-6 border-t border-lime-primary/30 w-32"
+              >
+                <Link
+                  href="/shop"
+                  className="block font-mono text-xs tracking-widest uppercase px-4 py-3 border border-lime-primary text-lime-primary text-center hover:bg-lime-primary hover:text-text-primary transition-all duration-300"
+                >
+                  SHOP NOW
+                </Link>
+              </motion.div>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </>
   );
 }

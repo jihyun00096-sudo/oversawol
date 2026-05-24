@@ -1,27 +1,27 @@
 import Cursor from "@/components/ui/Cursor";
 import Navigation from "@/components/ui/Navigation";
-import HeroSection from "@/components/sections/HeroSection";
-import WhySection from "@/components/sections/WhySection";
-import MaterialArchiveSection from "@/components/sections/MaterialArchiveSection";
+import Footer from "@/components/ui/Footer";
+import NewHeroSection from "@/components/sections/NewHeroSection";
+import NewPhilosophySection from "@/components/sections/NewPhilosophySection";
 import TransformationSection from "@/components/sections/TransformationSection";
-import ImpactSection from "@/components/sections/ImpactSection";
-import CollaborationSection from "@/components/sections/CollaborationSection";
-import PopupExhibitionSection from "@/components/sections/PopupExhibitionSection";
-import ProductSection from "@/components/sections/ProductSection";
+import NewMaterialArchiveShowcaseSection from "@/components/sections/NewMaterialArchiveSection";
+import NewProductShowcaseSection from "@/components/sections/NewProductShowcaseSection";
+import NewProjectsSection from "@/components/sections/NewProjectsSection";
+import NewCTASection from "@/components/sections/NewCTASection";
 
 export default function Home() {
   return (
-    <main className="relative">
+    <main className="relative w-full overflow-x-hidden">
       <Cursor />
       <Navigation />
-      <HeroSection />
-      <WhySection />
-      <MaterialArchiveSection />
+      <NewHeroSection />
+      <NewPhilosophySection />
       <TransformationSection />
-      <ImpactSection />
-      <CollaborationSection />
-      <PopupExhibitionSection />
-      <ProductSection />
+      <NewMaterialArchiveShowcaseSection />
+      <NewProductShowcaseSection />
+      <NewProjectsSection />
+      <NewCTASection />
+      <Footer />
     </main>
   );
 }

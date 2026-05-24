@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git config *)",
+      "Bash(New-Item -ItemType File -Path \"c:\\\\Users\\\\user\\\\Desktop\\\\oversawol\\\\overlab\\\\src\\\\components\\\\sections\\\\TransformationSection.tsx\" -Force)",
+      "Bash(Out-Null)",
+      "Bash(npx tsc *)",
+      "Bash(npm run *)",
+      "Bash(mkdir -p \"c:/Users/user/.claude/projects/c--Users-user-Desktop-oversawol/memory\" && echo \"ok\")"
+    ],
+    "additionalDirectories": [
+      "c:\\Users\\user\\.claude\\projects\\c--Users-user-Desktop-oversawol"
+    ]
+  }
+}

@@ -2,8 +2,15 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "OVERLAB — Second Movement",
-  description: "레저 스포츠 산업의 폐기 구조를 새로운 움직임으로 재해석하는 브랜드",
+  title: "OVERLAB — Future Archive",
+  description: "Upcycled leisure sports equipment reimagined as daily design objects. Archive-driven fashion platform with editorial experiences.",
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"),
+  keywords: ["upcycling", "sustainability", "fashion", "archive", "design", "sports"],
+  openGraph: {
+    title: "OVERLAB — Future Archive",
+    description: "Upcycled leisure sports equipment reimagined as daily design objects.",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -12,16 +19,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="ko">
+    <html lang="en">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Space+Mono:wght@400;700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:wght@300;400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap"
           rel="stylesheet"
         />
       </head>
-      <body>{children}</body>
+      <body className="relative bg-bg-primary text-text-primary">
+        {children}
+      </body>
     </html>
   );
 }
