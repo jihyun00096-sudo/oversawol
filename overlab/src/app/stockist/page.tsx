@@ -6,21 +6,21 @@ import Cursor from '@/components/ui/Cursor';
 import Footer from '@/components/ui/Footer';
 
 const ONLINE = [
-  { name: 'OVERLAB Official', url: 'overlab.co.kr', region: 'Global', type: 'Direct' },
-  { name: 'Musinsa', url: 'musinsa.com', region: 'Korea', type: 'Multi-brand' },
-  { name: '29CM', url: '29cm.co.kr', region: 'Korea', type: 'Multi-brand' },
-  { name: 'Farfetch', url: 'farfetch.com', region: 'Global', type: 'Luxury Marketplace' },
-  { name: 'Dover Street Market', url: 'doverstreetmarket.com', region: 'Global', type: 'Curated Multi-brand' },
-  { name: 'Browns Fashion', url: 'brownsfashion.com', region: 'Europe', type: 'Multi-brand' },
+  { name: 'OVERLAB 공식', url: 'overlab.co.kr', region: '글로벌', type: '직영' },
+  { name: '무신사', url: 'musinsa.com', region: '한국', type: '멀티 브랜드' },
+  { name: '29CM', url: '29cm.co.kr', region: '한국', type: '멀티 브랜드' },
+  { name: 'Farfetch', url: 'farfetch.com', region: '글로벌', type: '럭셔리 마켓플레이스' },
+  { name: 'Dover Street Market', url: 'doverstreetmarket.com', region: '글로벌', type: '큐레이션 멀티 브랜드' },
+  { name: 'Browns Fashion', url: 'brownsfashion.com', region: '유럽', type: '멀티 브랜드' },
 ];
 
 const PHYSICAL = [
-  { name: 'OVERLAB Flagship', location: 'Mapo-gu, Seoul', address: '123 Design Street, Seoul', hours: '11:00–20:00 Daily', type: 'Flagship' },
-  { name: 'The Hyundai Seoul', location: 'Jung-gu, Seoul', address: 'The Hyundai, Yeouido, Seoul', hours: '10:30–20:00 Daily', type: 'Department Store' },
-  { name: 'Amorepacific Building', location: 'Gangnam-gu, Seoul', address: 'Amorepacific HQ, Seoul', hours: '11:00–21:00 Daily', type: 'Luxury Complex' },
-  { name: 'Dover Street Market London', location: 'Mayfair, London', address: 'Dover Street, London W1S', hours: '11:00–19:00 Daily', type: 'Multi-brand' },
-  { name: 'Browns East London', location: 'Shoreditch, London', address: 'Redchurch Street, E2', hours: '11:00–18:00 Daily', type: 'Boutique' },
-  { name: 'Colette Paris', location: '1st arr., Paris', address: 'Rue Saint-Honoré, Paris', hours: '11:00–19:30 Mon–Sat', type: 'Concept Store' },
+  { name: 'OVERLAB 플래그십', location: '마포구, 서울', address: '서울시 마포구 디자인가 123', hours: '11:00–20:00 매일', type: '플래그십' },
+  { name: '더현대 서울', location: '중구, 서울', address: '서울시 영등포구 더현대', hours: '10:30–20:00 매일', type: '백화점' },
+  { name: '아모레퍼시픽 빌딩', location: '강남구, 서울', address: '서울시 용산구 아모레퍼시픽 HQ', hours: '11:00–21:00 매일', type: '럭셔리 복합몰' },
+  { name: 'Dover Street Market 런던', location: '메이페어, 런던', address: 'Dover Street, London W1S', hours: '11:00–19:00 매일', type: '멀티 브랜드' },
+  { name: 'Browns East 런던', location: '쇼어디치, 런던', address: 'Redchurch Street, E2', hours: '11:00–18:00 매일', type: '부티크' },
+  { name: '콜레트 파리', location: '1구, 파리', address: 'Rue Saint-Honoré, Paris', hours: '11:00–19:30 월–토', type: '콘셉트 스토어' },
 ];
 
 export default function StockistPage() {
@@ -51,18 +51,18 @@ export default function StockistPage() {
             <div className="flex items-center gap-3 mb-8">
               <div className="w-8 h-px" style={{ backgroundColor: '#D8FF3E' }} />
               <span className="font-mono text-xs tracking-[0.3em] uppercase" style={{ color: 'rgba(245,245,239,0.4)' }}>
-                Find Us
+                찾아오시는 방법
               </span>
             </div>
             <h1
               className="font-display text-white leading-none mb-8"
               style={{ fontSize: 'clamp(3.5rem, 10vw, 10rem)', letterSpacing: '-0.03em', lineHeight: 0.88 }}
             >
-              STOCKIST
+              스토어
             </h1>
             <p className="font-serif italic leading-relaxed max-w-lg"
               style={{ color: 'rgba(245,245,239,0.6)', fontSize: 'clamp(1rem, 1.5vw, 1.2rem)' }}>
-              OVERLAB products are available through carefully curated retail partners worldwide.
+              OVERLAB 제품은 전 세계 엄선된 리테일 파트너를 통해 구매하실 수 있습니다.
             </p>
           </motion.div>
         </div>
@@ -80,11 +80,11 @@ export default function StockistPage() {
             transition={{ duration: 0.7 }}>
             <div className="flex items-center gap-3 mb-6">
               <div className="w-8 h-px bg-lime-primary" />
-              <span className="font-mono text-xs text-text-muted uppercase tracking-[0.3em]">Online Retailers</span>
+              <span className="font-mono text-xs text-text-muted uppercase tracking-[0.3em]">온라인 리테일러</span>
             </div>
             <h2 className="font-display text-text-primary leading-none"
               style={{ fontSize: 'clamp(2.5rem, 6vw, 6rem)', letterSpacing: '-0.03em', lineHeight: 0.9 }}>
-              SHOP ONLINE
+              온라인 쇼핑
             </h2>
           </motion.div>
 
@@ -121,7 +121,7 @@ export default function StockistPage() {
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.2em] text-lime-primary hover:text-lime-secondary transition-colors duration-300"
                   >
-                    Visit Store
+                    스토어 방문
                     <span className="group-hover:translate-x-1 transition-transform duration-300">→</span>
                   </a>
                 </div>
@@ -144,11 +144,11 @@ export default function StockistPage() {
             transition={{ duration: 0.7 }}>
             <div className="flex items-center gap-3 mb-6">
               <div className="w-8 h-px bg-lime-primary" />
-              <span className="font-mono text-xs text-text-muted uppercase tracking-[0.3em]">Physical Locations</span>
+              <span className="font-mono text-xs text-text-muted uppercase tracking-[0.3em]">오프라인 매장</span>
             </div>
             <h2 className="font-display text-text-primary leading-none"
               style={{ fontSize: 'clamp(2.5rem, 6vw, 6rem)', letterSpacing: '-0.03em', lineHeight: 0.9 }}>
-              VISIT IN PERSON
+              직접 방문하세요
             </h2>
           </motion.div>
 
@@ -189,13 +189,13 @@ export default function StockistPage() {
 
                   {/* Address */}
                   <div className="col-span-6 md:col-span-4">
-                    <span className="font-mono text-xs text-text-muted uppercase tracking-[0.15em] block mb-1">Address</span>
+                    <span className="font-mono text-xs text-text-muted uppercase tracking-[0.15em] block mb-1">주소</span>
                     <p className="font-sans text-sm text-text-secondary">{store.address}</p>
                   </div>
 
                   {/* Hours */}
                   <div className="col-span-6 md:col-span-2">
-                    <span className="font-mono text-xs text-text-muted uppercase tracking-[0.15em] block mb-1">Hours</span>
+                    <span className="font-mono text-xs text-text-muted uppercase tracking-[0.15em] block mb-1">영업시간</span>
                     <p className="font-sans text-sm text-text-secondary">{store.hours}</p>
                   </div>
                 </div>
@@ -213,7 +213,7 @@ export default function StockistPage() {
             <div className="w-8 h-px bg-lime-primary" />
             <h2 className="font-display text-text-primary"
               style={{ fontSize: 'clamp(1.5rem, 3vw, 3rem)', letterSpacing: '-0.025em' }}>
-              Global Presence
+              글로벌 현황
             </h2>
           </div>
           <div
@@ -225,7 +225,7 @@ export default function StockistPage() {
                 style={{ fontSize: '4rem', letterSpacing: '-0.04em' }}>
                 WORLD
               </div>
-              <div className="font-mono text-xs text-text-muted uppercase tracking-widest">[Interactive Map — 180+ Countries]</div>
+              <div className="font-mono text-xs text-text-muted uppercase tracking-widest">[인터랙티브 맵 — 180개국 이상]</div>
             </div>
             {/* Lime accent corner */}
             <div className="absolute bottom-0 left-0 w-16 h-1" style={{ backgroundColor: '#D8FF3E' }} />

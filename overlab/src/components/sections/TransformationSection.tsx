@@ -6,39 +6,39 @@ import Link from 'next/link';
 const STEPS = [
   {
     num: '01',
-    label: 'Collection',
-    sub: 'Source',
-    desc: 'Retired sports equipment collected from alpine centers, sailing clubs, and diving schools worldwide.',
+    label: '수거',
+    sub: '소스',
+    desc: '전 세계 알파인 센터, 요트 클럽, 다이빙 스쿨에서 수명이 다한 스포츠 장비를 수거합니다.',
   },
   {
     num: '02',
-    label: 'Disassembly',
-    sub: 'Deconstruct',
-    desc: 'Each piece is carefully taken apart by hand. Seams removed, panels separated, hardware catalogued.',
+    label: '분해',
+    sub: '해체',
+    desc: '각 조각은 손으로 조심스럽게 분해됩니다. 봉제선 제거, 패널 분리, 하드웨어 목록화.',
   },
   {
     num: '03',
-    label: 'Inspection',
-    sub: 'Assess',
-    desc: 'Material integrity tested — tensile strength, waterproofing, UV resistance. Only the best advances.',
+    label: '검수',
+    sub: '평가',
+    desc: '소재 무결성 테스트 — 인장 강도, 방수, 자외선 저항성. 오직 최상급만 다음 단계로.',
   },
   {
     num: '04',
-    label: 'Cleaning',
-    sub: 'Restore',
-    desc: 'Industrial treatment removes salt, mineral deposits, and surface wear. Color is preserved, never dyed.',
+    label: '세척',
+    sub: '복원',
+    desc: '산업용 처리로 염분, 광물 침전물, 표면 마모를 제거합니다. 색상은 보존되며, 절대 염색하지 않습니다.',
   },
   {
     num: '05',
-    label: 'Re-cutting',
-    sub: 'Transform',
-    desc: 'Patterns precision-cut around existing wear marks and stitch lines. Each piece is truly unique.',
+    label: '재단',
+    sub: '변환',
+    desc: '기존 마모 흔적과 봉제선 주변을 정밀하게 재단합니다. 각 조각은 진정으로 유니크합니다.',
   },
   {
     num: '06',
-    label: 'Reconstruction',
-    sub: 'Create',
-    desc: 'The material becomes a new object. A tote, a jacket, a cushion. Function reimagined, story preserved.',
+    label: '재구성',
+    sub: '제작',
+    desc: '소재가 새로운 오브제가 됩니다. 토트백, 재킷, 쿠션. 기능은 재탄생하고, 이야기는 보존됩니다.',
   },
 ];
 
@@ -86,7 +86,7 @@ export default function TransformationSection() {
                 <div className="w-8 h-px" style={{ backgroundColor: '#D8FF3E' }} />
                 <span className="font-mono text-xs tracking-[0.3em] uppercase"
                   style={{ color: 'rgba(245,245,239,0.4)' }}>
-                  The Process
+                  제작 과정
                 </span>
               </div>
               <h2
@@ -96,8 +96,8 @@ export default function TransformationSection() {
                   letterSpacing: '-0.03em', lineHeight: 0.92,
                 }}
               >
-                FROM EQUIPMENT<br />
-                <span style={{ color: '#D8FF3E' }}>TO OBJECT.</span>
+                장비에서<br />
+                <span style={{ color: '#D8FF3E' }}>오브제로.</span>
               </h2>
             </motion.div>
             <motion.div
@@ -108,7 +108,7 @@ export default function TransformationSection() {
             >
               <p className="font-serif italic leading-relaxed"
                 style={{ color: 'rgba(245,245,239,0.5)', fontSize: '1rem' }}>
-                Six deliberate steps. Zero waste. Every piece certified and traceable from source to finished object.
+                여섯 가지 의도적인 단계. 낭비 제로. 모든 조각은 출처부터 완성품까지 인증되고 추적 가능합니다.
               </p>
             </motion.div>
           </div>
@@ -172,7 +172,7 @@ export default function TransformationSection() {
             transition={{ delay: 0.7, duration: 0.8 }}
           >
             <div className="flex items-center gap-8 md:gap-12">
-              {[['50K+', 'Items Processed'], ['100%', 'Manual Inspect'], ['0', 'Chemical Dyes']].map(([num, label]) => (
+              {[['50K+', '처리된 제품'], ['100%', '수작업 검수'], ['0', '화학 염료']].map(([num, label]) => (
                 <div key={label}>
                   <div
                     className="font-display leading-none mb-1"
@@ -188,7 +188,7 @@ export default function TransformationSection() {
               ))}
             </div>
             <Link href="/archive" className="btn-outline-dark group inline-flex items-center gap-3">
-              View Full Archive
+              아카이브 전체 보기
               <span className="group-hover:translate-x-1 transition-transform duration-300">→</span>
             </Link>
           </motion.div>

@@ -7,50 +7,50 @@ const PROJECTS = [
   {
     id: 'nike-acg',
     year: '2024',
-    title: 'Nike ACG Collaboration',
-    category: 'Collaboration',
-    desc: 'Co-designed outdoor gear collection merging Nike innovation with OVERLAB sustainability.',
-    impact: '25,000+ units',
+    title: 'Nike ACG 협업',
+    category: '협업',
+    desc: 'Nike 혁신과 OVERLAB 지속가능성을 결합한 아웃도어 기어 컬렉션 공동 기획.',
+    impact: '25,000+ 판매',
   },
   {
     id: 'seoul-design',
     year: '2024',
-    title: 'Seoul Design Festival',
-    category: 'Exhibition',
-    desc: 'Featured as leading sustainable brand. 50+ archive pieces on display.',
-    impact: '12,000 visitors',
+    title: '서울 디자인 페스티벌',
+    category: '전시',
+    desc: '대표 지속가능 브랜드로 선정. 50+ 아카이브 작품 전시.',
+    impact: '12,000+ 관람객',
   },
   {
     id: 'lg-electronics',
     year: '2023',
-    title: 'LG Electronics Partnership',
-    category: 'Partnership',
-    desc: 'Material science collaboration exploring textile recycling and circular economy.',
-    impact: '₩500M+ grant',
+    title: 'LG전자 파트너십',
+    category: '파트너십',
+    desc: '섬유 재활용과 순환경제를 탐구하는 소재 과학 협업.',
+    impact: '5억원+ 연구지원',
   },
   {
     id: 'volvo-residency',
     year: '2023',
-    title: 'Volvo Design Residency',
-    category: 'Residency',
-    desc: 'Three-month immersion exploring material innovation with Volvo Design team.',
-    impact: '3 prototypes',
+    title: '볼보 디자인 레지던시',
+    category: '레지던시',
+    desc: '볼보 디자인 팀과 함께하는 3개월간의 소재 혁신 몰입 프로그램.',
+    impact: '3개 프로토타입',
   },
   {
     id: 'award-2023',
     year: '2023',
-    title: 'Best Upcycling Brand Award',
-    category: 'Award',
-    desc: 'International recognition from Seoul Sustainable Fashion Alliance.',
-    impact: 'Industry Award',
+    title: '최우수 업사이클링 브랜드 수상',
+    category: '수상',
+    desc: '서울 지속가능패션연합으로부터 받은 국제적 인정.',
+    impact: '업계 수상',
   },
   {
     id: 'snow-peak',
     year: '2022',
-    title: 'Snow Peak Outdoor Series',
-    category: 'Product Series',
-    desc: 'Limited edition camping and hiking collection for serious outdoor enthusiasts.',
-    impact: '8,000+ sold',
+    title: 'Snow Peak 아웃도어 시리즈',
+    category: '제품 시리즈',
+    desc: '진지한 아웃도어 애호가를 위한 한정판 캠핑 & 하이킹 컬렉션.',
+    impact: '8,000+ 판매',
   },
 ];
 
@@ -75,7 +75,7 @@ export default function ProjectsSection() {
           <div className="flex items-center gap-3 mb-8">
             <div className="w-8 h-px bg-lime-primary" />
             <span className="font-mono text-xs text-text-muted uppercase tracking-[0.3em]">
-              Recognition & Collaboration
+              수상 & 협업
             </span>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
@@ -84,13 +84,13 @@ export default function ProjectsSection() {
                 className="font-display text-text-primary leading-none"
                 style={{ fontSize: 'clamp(2.8rem, 7.5vw, 8rem)', letterSpacing: '-0.03em', lineHeight: 0.9 }}
               >
-                WORKING WITH<br />
-                <span className="text-lime-primary">PURPOSE.</span>
+                목적을 가지고<br />
+                <span className="text-lime-primary">함께 일합니다.</span>
               </h2>
             </div>
             <div className="lg:col-span-4 flex items-end">
               <p className="font-serif italic text-text-secondary text-base leading-relaxed">
-                Strategic partnerships and industry recognition that validate our approach to sustainable design excellence.
+                지속가능한 디자인 탁월성에 대한 우리의 접근을 검증하는 전략적 파트너십과 업계 인정.
               </p>
             </div>
           </div>
@@ -201,12 +201,12 @@ export default function ProjectsSection() {
         >
           <div>
             <p className="font-serif italic text-text-secondary text-base leading-relaxed max-w-md">
-              Interested in collaborating? OVERLAB is always open to partnerships that align with our mission of sustainable innovation.
+              협업에 관심이 있으신가요? 오버랩은 지속가능한 혁신이라는 우리의 미션과 일치하는 파트너십에 항상 열려 있습니다.
             </p>
           </div>
           <div className="flex gap-4 flex-shrink-0">
             <Link href="/projects" className="btn-outline group inline-flex items-center gap-2 whitespace-nowrap">
-              All Projects →
+              전체 프로젝트 →
             </Link>
           </div>
         </motion.div>

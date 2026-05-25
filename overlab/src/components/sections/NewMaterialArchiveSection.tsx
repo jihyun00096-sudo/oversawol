@@ -6,46 +6,46 @@ import Link from 'next/link';
 const MATERIALS = [
   {
     id: 'paraglider',
-    name: 'Paraglider',
-    tagline: 'Wings to Wonder',
-    origin: 'Alpine Sports Centers',
-    material: 'High-Performance Nylon',
-    weight: 'Ultra-light 80–150g/m²',
+    name: '패러글라이더',
+    tagline: '하늘에서 일상으로',
+    origin: '알파인 스포츠 센터',
+    material: '고성능 나일론',
+    weight: '초경량 80–150g/m²',
     products: 8,
-    desc: 'Ultra-lightweight nylon designed to carry human weight through alpine air. Once retired from the sky, it becomes the lightest, most durable everyday carry imaginable.',
+    desc: '알파인 상공을 가르며 사람의 무게를 지탱하도록 설계된 초경량 나일론. 하늘에서 은퇴한 지금, 상상할 수 없을 만큼 가볍고 내구성 강한 일상의 오브제로 거듭납니다.',
     accentColor: 'rgba(216,255,62,0.12)',
   },
   {
     id: 'tent',
-    name: 'Tent',
-    tagline: 'Shelter Transformed',
-    origin: 'Outdoor Equipment Depots',
-    material: 'Technical Polyester Blend',
-    weight: 'Professional-Grade',
+    name: '텐트',
+    tagline: '쉼터의 변신',
+    origin: '아웃도어 장비 창고',
+    material: '기술 폴리에스터 혼방',
+    weight: '프로페셔널 등급',
     products: 12,
-    desc: 'Weather-resistant layered fabric built to survive monsoons and blizzards. Structural memory woven in. These panels have sheltered climbers on the world\'s highest ridges.',
+    desc: '극한의 조건을 버텨낸 다층 방수 원단. 구조적 기억이 짜여든 이 패널들은 세계 최고봉의 능선에서 등반가들을 지켜왔습니다.',
     accentColor: 'rgba(216,255,62,0.08)',
   },
   {
     id: 'sail',
-    name: 'Sail',
-    tagline: 'Ocean Poetry',
-    origin: 'Sailing Clubs & Marine Centers',
-    material: 'Dacron & Laminate Blend',
-    weight: 'Extreme Weather Tested',
+    name: '세일',
+    tagline: '바다의 시',
+    origin: '요트 클럽 & 마린 센터',
+    material: '다크론 & 라미네이트 혼방',
+    weight: '극한 날씨 테스트 완료',
     products: 6,
-    desc: 'Salt-resistant Dacron laminate that has felt ocean gales and tacked through open water. Each piece carries a faint cartography of its voyages in its weave.',
+    desc: '대양의 돌풍을 맞서고 망망대해를 항해한 내염성 다크론 라미네이트. 각 조각에는 그 항해의 지도가 — 로프, 태양, 파도의 흔적이 — 희미하게 새겨져 있습니다.',
     accentColor: 'rgba(216,255,62,0.06)',
   },
   {
     id: 'diving',
-    name: 'Diving Suit',
-    tagline: 'Depths Reimagined',
-    origin: 'Diving Schools & Sports Centers',
-    material: 'Neoprene & Stretch Fabric',
-    weight: 'High-Performance Insulation',
+    name: '다이빙 슈트',
+    tagline: '깊이를 재상상하다',
+    origin: '다이빙 스쿨 & 스포츠 센터',
+    material: '네오프렌 & 스트레치 소재',
+    weight: '고성능 단열',
     products: 5,
-    desc: 'Thermal-regulating neoprene that once equalized pressure at depth. Dense, flexible, insulating—it translates perfectly into cushions, padding, and soft accessories.',
+    desc: '수심에서 압력을 균형 잡고 차가운 바닷속 다이버를 따뜻하게 지켜온 열조절 네오프렌. 밀도 높고, 유연하고, 단열성이 뛰어나 — 쿠션, 패딩, 소프트 액세서리로 자연스럽게 변환됩니다.',
     accentColor: 'rgba(216,255,62,0.1)',
   },
 ];
@@ -82,20 +82,20 @@ export default function MaterialArchiveShowcaseSection() {
             <div className="flex items-center gap-3 mb-8">
               <div className="w-8 h-px bg-lime-primary" />
               <span className="font-mono text-xs text-text-muted uppercase tracking-[0.3em]">
-                Archive Collections
+                아카이브 컬렉션
               </span>
             </div>
             <h2
               className="font-display text-text-primary leading-none"
               style={{ fontSize: 'clamp(2.8rem, 7.5vw, 8rem)', letterSpacing: '-0.03em', lineHeight: 0.9 }}
             >
-              FOUR SOURCES.<br />
-              <span className="text-lime-primary">ONE ARCHIVE.</span>
+              네 가지 원천.<br />
+              <span className="text-lime-primary">하나의 아카이브.</span>
             </h2>
           </div>
           <div className="lg:col-span-4">
             <p className="font-serif italic text-text-secondary text-base leading-relaxed">
-              Each collection tells the story of its source—where it came from, how it was transformed, and what it became.
+              각 컬렉션은 그 출처의 이야기를 담고 있습니다 — 어디서 왔는지, 어떻게 변환되었는지, 무엇이 되었는지.
             </p>
           </div>
         </motion.div>
@@ -134,14 +134,14 @@ export default function MaterialArchiveShowcaseSection() {
               className="font-display text-text-primary mb-3"
               style={{ fontSize: 'clamp(1.6rem, 3vw, 2.8rem)', letterSpacing: '-0.025em', lineHeight: 1 }}
             >
-              Explore the Full Archive
+              아카이브 전체 탐색
             </h3>
             <p className="font-serif italic text-text-secondary text-sm">
-              31 products across 4 material categories. Each with traceable provenance.
+              4개 소재 카테고리, 31개 제품. 각각 추적 가능한 출처.
             </p>
           </div>
           <Link href="/archive" className="btn-lime group inline-flex items-center gap-3 whitespace-nowrap flex-shrink-0">
-            View Archive
+            아카이브 보기
             <span className="group-hover:translate-x-1 transition-transform duration-300">→</span>
           </Link>
         </motion.div>
@@ -200,7 +200,7 @@ function MaterialCard({
               {mat.name.charAt(0)}
             </div>
             <div className="font-mono text-xs text-text-muted uppercase tracking-widest">
-              [Image Placeholder]
+              [이미지 준비 중]
             </div>
           </div>
         </div>
@@ -215,7 +215,7 @@ function MaterialCard({
               backdropFilter: 'blur(8px)',
             }}
           >
-            {mat.products} Products
+            {mat.products} 제품
           </span>
           <span
             className="font-mono text-xs tracking-[0.2em] uppercase px-3 py-1.5"
@@ -253,7 +253,7 @@ function MaterialCard({
             {mat.tagline}
           </p>
           <div className="flex items-center gap-2 text-lime-primary group-hover:gap-3 transition-all duration-300">
-            <span className="font-mono text-xs tracking-[0.2em] uppercase">Explore</span>
+            <span className="font-mono text-xs tracking-[0.2em] uppercase">탐색하기</span>
             <span>→</span>
           </div>
         </div>

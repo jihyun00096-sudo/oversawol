@@ -1,19 +1,19 @@
 import Link from 'next/link';
 
 const NAV = [
-  { label: 'Home', href: '/' },
-  { label: 'Archive', href: '/archive' },
-  { label: 'Products', href: '/products' },
-  { label: 'Projects', href: '/projects' },
-  { label: 'About', href: '/about' },
-  { label: 'Stockist', href: '/stockist' },
-  { label: 'Pop-Up', href: '/pop-up' },
+  { label: '홈', href: '/' },
+  { label: '아카이브', href: '/archive' },
+  { label: '제품', href: '/products' },
+  { label: '프로젝트', href: '/projects' },
+  { label: '어바웃', href: '/about' },
+  { label: '스토어', href: '/stockist' },
+  { label: '팝업', href: '/pop-up' },
 ];
 
 const SOCIAL = [
-  { label: 'Instagram', href: '#' },
-  { label: 'Newsletter', href: '#' },
-  { label: 'Contact', href: '#' },
+  { label: '인스타그램', href: '#' },
+  { label: '뉴스레터', href: '#' },
+  { label: '문의', href: '#' },
 ];
 
 export default function Footer() {
@@ -41,13 +41,13 @@ export default function Footer() {
               className="font-serif italic leading-relaxed mb-6 max-w-xs"
               style={{ color: 'rgba(245,245,239,0.4)', fontSize: '0.875rem' }}
             >
-              Future Archive. Upcycled leisure sports equipment reimagined as daily design objects.
+              퓨처 아카이브. 업사이클링 레저 스포츠 장비를 일상의 디자인 오브제로.
             </p>
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 rounded-full animate-breathe" style={{ backgroundColor: '#D8FF3E' }} />
               <span className="font-mono text-xs uppercase tracking-[0.2em]"
                 style={{ color: 'rgba(245,245,239,0.3)' }}>
-                Open for Collaboration
+                협업 문의 중
               </span>
             </div>
           </div>
@@ -58,7 +58,7 @@ export default function Footer() {
               className="font-mono text-xs uppercase tracking-[0.3em] mb-6"
               style={{ color: 'rgba(245,245,239,0.25)' }}
             >
-              Navigate
+              탐색
             </p>
             <div className="flex flex-col gap-3">
               {NAV.map((item) => (
@@ -80,7 +80,7 @@ export default function Footer() {
               className="font-mono text-xs uppercase tracking-[0.3em] mb-6"
               style={{ color: 'rgba(245,245,239,0.25)' }}
             >
-              Connect
+              연결
             </p>
             <div className="flex flex-col gap-3 mb-8">
               {SOCIAL.map((item) => (
@@ -98,12 +98,12 @@ export default function Footer() {
             <div>
               <p className="font-mono text-xs uppercase tracking-[0.2em] mb-3"
                 style={{ color: 'rgba(245,245,239,0.3)' }}>
-                Newsletter
+                뉴스레터
               </p>
               <div className="flex">
                 <input
                   type="email"
-                  placeholder="your@email.com"
+                  placeholder="이메일 주소"
                   className="flex-1 px-4 py-2.5 font-serif text-sm focus:outline-none"
                   style={{
                     backgroundColor: 'rgba(255,255,255,0.06)',
@@ -129,22 +129,22 @@ export default function Footer() {
             className="font-mono text-xs uppercase tracking-[0.2em]"
             style={{ color: 'rgba(245,245,239,0.2)' }}
           >
-            © 2024 OVERLAB. All Rights Reserved.
+            © 2024 OVERLAB. 모든 권리 보유.
           </p>
           <div className="flex items-center gap-6">
             <Link href="#" className="font-mono text-xs uppercase tracking-[0.15em]"
               style={{ color: 'rgba(245,245,239,0.2)' }}>
-              Privacy
+              개인정보처리방침
             </Link>
             <Link href="#" className="font-mono text-xs uppercase tracking-[0.15em]"
               style={{ color: 'rgba(245,245,239,0.2)' }}>
-              Terms
+              이용약관
             </Link>
             <span
               className="font-mono text-xs uppercase tracking-[0.15em]"
               style={{ color: 'rgba(216,255,62,0.4)' }}
             >
-              Future Archive
+              퓨처 아카이브
             </span>
           </div>
         </div>

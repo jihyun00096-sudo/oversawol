@@ -4,49 +4,49 @@ import { useRef } from 'react';
 import Link from 'next/link';
 
 const FEATURED = {
-  name: 'Archive Tote',
-  collection: 'Paraglider Series',
-  desc: 'Crafted from decommissioned high-altitude paraglider canopy. Ultralight yet indestructible — this bag has seen the Alps, and now it carries your everyday.',
+  name: '아카이브 토트',
+  collection: '패러글라이더 시리즈',
+  desc: '역할을 다한 고고도 패러글라이더 캐노피로 제작. 믿기 어려울 만큼 가볍지만, 평생을 함께할 내구성 — 이 가방은 알프스를 본 적 있습니다.',
   price: '₩280,000',
-  tags: ['Ultralight', 'Water-resistant', 'Daily Carry'],
+  tags: ['초경량', '방수', '데일리 캐리'],
   ref: '#paraglider',
 };
 
 const PRODUCTS = [
   {
     id: 2,
-    name: 'Sailor Jacket',
-    collection: 'Sail Reborn',
+    name: '세일러 재킷',
+    collection: '세일 리본',
     price: '₩420,000',
-    tags: ['Weather-proof', 'Technical'],
+    tags: ['방수', '테크니컬'],
   },
   {
     id: 3,
-    name: 'Altitude Backpack',
-    collection: 'Paraglider Series',
+    name: '알티튜드 백팩',
+    collection: '패러글라이더 시리즈',
     price: '₩350,000',
-    tags: ['Structured', 'Alpine'],
+    tags: ['구조적', '알파인'],
   },
   {
     id: 4,
-    name: 'Deep Cushion',
-    collection: 'Diving Series',
+    name: '딥 쿠션',
+    collection: '다이빙 시리즈',
     price: '₩180,000',
-    tags: ['Thermal', 'Home'],
+    tags: ['보온', '홈'],
   },
   {
     id: 5,
-    name: 'Shelter Pouch',
-    collection: 'Tent Revival',
+    name: '쉘터 파우치',
+    collection: '텐트 리바이벌',
     price: '₩95,000',
-    tags: ['Compact', 'Travel'],
+    tags: ['컴팩트', '여행'],
   },
   {
     id: 6,
-    name: 'Ocean Basin',
-    collection: 'Sail Reborn',
+    name: '오션 베이신',
+    collection: '세일 리본',
     price: '₩220,000',
-    tags: ['Sculptural', 'Decor'],
+    tags: ['조각적', '데코'],
   },
 ];
 
@@ -72,19 +72,19 @@ export default function ProductShowcaseSection() {
             <div className="flex items-center gap-3 mb-8">
               <div className="w-8 h-px bg-lime-primary" />
               <span className="font-mono text-xs text-text-muted uppercase tracking-[0.3em]">
-                Featured Products
+                주요 제품
               </span>
             </div>
             <h2
               className="font-display text-text-primary leading-none"
               style={{ fontSize: 'clamp(2.8rem, 7.5vw, 8rem)', letterSpacing: '-0.03em', lineHeight: 0.9 }}
             >
-              OBJECTS OF<br />
-              <span className="text-lime-primary">PURPOSE.</span>
+              목적 있는<br />
+              <span className="text-lime-primary">오브제.</span>
             </h2>
           </div>
           <Link href="/products" className="btn-outline group inline-flex items-center gap-3 whitespace-nowrap flex-shrink-0">
-            Shop All
+            전체 보기
             <span className="group-hover:translate-x-1 transition-transform duration-300">→</span>
           </Link>
         </motion.div>
@@ -112,7 +112,7 @@ export default function ProductShowcaseSection() {
                 className="font-mono text-xs tracking-[0.2em] uppercase px-3 py-1.5"
                 style={{ backgroundColor: '#D8FF3E', color: '#111111' }}
               >
-                Featured
+                추천
               </span>
             </div>
 
@@ -138,7 +138,7 @@ export default function ProductShowcaseSection() {
                   {FEATURED.price}
                 </span>
                 <Link href="/products" className="btn-lime group-inner inline-flex items-center gap-2 text-xs py-2 px-5">
-                  Shop Now →
+                  지금 쇼핑하기 →
                 </Link>
               </div>
             </div>
@@ -168,18 +168,18 @@ export default function ProductShowcaseSection() {
               className="font-display text-white mb-1"
               style={{ fontSize: 'clamp(1.4rem, 2.5vw, 2rem)', letterSpacing: '-0.025em' }}
             >
-              Every object has a story.
+              모든 오브제에는 이야기가 있습니다.
             </h3>
             <p className="font-serif italic text-sm" style={{ color: 'rgba(245,245,239,0.5)' }}>
-              Explore the full product archive — 31 pieces across 4 material collections.
+              31개 제품, 4개 소재 컬렉션 — 전체 아카이브를 탐색하세요.
             </p>
           </div>
           <div className="flex gap-4 flex-shrink-0">
             <Link href="/archive" className="btn-outline-dark group inline-flex items-center gap-2 whitespace-nowrap">
-              Archive
+              아카이브
             </Link>
             <Link href="/products" className="btn-lime group inline-flex items-center gap-2 whitespace-nowrap">
-              Shop All →
+              전체 쇼핑 →
             </Link>
           </div>
         </motion.div>
@@ -218,7 +218,7 @@ function ProductCard({
             className="font-mono text-xs tracking-[0.2em] uppercase px-5 py-2.5"
             style={{ backgroundColor: '#D8FF3E', color: '#111111' }}
           >
-            View
+            보기
           </Link>
         </div>
       </div>
@@ -259,7 +259,7 @@ function ProductCard({
             href="/products"
             className="font-mono text-xs text-lime-primary uppercase tracking-[0.2em] hover:text-lime-secondary transition-colors duration-300"
           >
-            Add →
+            담기 →
           </Link>
         </div>
       </div>

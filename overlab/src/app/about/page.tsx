@@ -9,31 +9,31 @@ import Link from 'next/link';
 const VALUES = [
   {
     tag: 'WHY',
-    title: 'Potential Hidden in Plain Sight',
-    body: 'Leisure sports equipment is engineered to withstand the extreme. Safety regulations retire it — not material failure. We see this as an archive, not a landfill.',
+    title: '눈앞에 감춰진 가능성',
+    body: '레저 스포츠 장비는 극한을 견디도록 설계됩니다. 소재의 수명이 다해서가 아닌, 안전 규정에 의해 은퇴합니다. 우리는 이것을 쓰레기 매립지가 아닌 아카이브로 봅니다.',
   },
   {
     tag: 'HOW',
-    title: 'Deconstruct. Inspect. Reconstruct.',
-    body: 'Every piece is individually assessed, hand-cleaned, and re-cut. We use no chemical dyes. Nothing is wasted. Every thread is intentional.',
+    title: '해체. 검수. 재구성.',
+    body: '모든 조각은 개별적으로 평가되고, 손으로 세척되고, 재단됩니다. 화학 염료는 사용하지 않습니다. 낭비되는 것은 없습니다. 모든 실은 의도적입니다.',
   },
   {
     tag: 'IMPACT',
-    title: 'Objects That Carry Memory',
-    body: 'The tote you carry may have once soared over the Alps. The jacket you wear protected someone from an ocean storm. OVERLAB products hold stories.',
+    title: '기억을 담은 오브제',
+    body: '당신이 들고 다니는 토트백은 한때 알프스 상공을 날았을지도 모릅니다. 당신이 입는 재킷은 누군가를 바다 폭풍에서 지켜줬습니다. 오버랩 제품은 이야기를 담고 있습니다.',
   },
   {
     tag: 'VISION',
-    title: 'Archive as Brand Identity',
-    body: 'We are not an eco-label. We are an archive. A place where forgotten journeys are preserved and transformed into objects of lasting beauty and function.',
+    title: '아카이브로서의 브랜드 정체성',
+    body: '우리는 에코 레이블이 아닙니다. 우리는 아카이브입니다. 잊혀진 여정이 보존되고, 오래 지속되는 아름다움과 기능의 오브제로 변환되는 곳입니다.',
   },
 ];
 
 const IMPACT = [
-  { num: '50K+', label: 'Products Created' },
-  { num: '1.2M kg', label: 'Materials Saved' },
-  { num: '180+', label: 'Countries Reached' },
-  { num: '28', label: 'Industry Awards' },
+  { num: '50K+', label: '제작된 제품' },
+  { num: '1.2M kg', label: '절약된 소재' },
+  { num: '180+', label: '진출 국가' },
+  { num: '28', label: '업계 수상' },
 ];
 
 export default function AboutPage() {
@@ -69,21 +69,21 @@ export default function AboutPage() {
               <div className="w-8 h-px" style={{ backgroundColor: '#D8FF3E' }} />
               <span className="font-mono text-xs tracking-[0.3em] uppercase"
                 style={{ color: 'rgba(245,245,239,0.4)' }}>
-                Our Philosophy
+                우리의 철학
               </span>
             </div>
             <h1
               className="font-display text-white leading-none mb-8"
               style={{ fontSize: 'clamp(3.5rem, 10vw, 10rem)', letterSpacing: '-0.03em', lineHeight: 0.88 }}
             >
-              ABOUT<br />
+              어바웃<br />
               <span style={{ color: '#D8FF3E' }}>OVERLAB</span>
             </h1>
             <p
               className="font-serif italic leading-relaxed max-w-xl"
               style={{ color: 'rgba(245,245,239,0.6)', fontSize: 'clamp(1rem, 1.5vw, 1.2rem)' }}
             >
-              We are an archive. A studio. A place where discarded journeys are transformed into objects of lasting beauty.
+              우리는 아카이브입니다. 스튜디오입니다. 버려진 여정이 오래 지속되는 아름다움의 오브제로 변환되는 곳.
             </p>
           </motion.div>
         </div>
@@ -108,7 +108,7 @@ export default function AboutPage() {
                     OVL
                   </div>
                   <div className="font-mono text-xs text-text-muted uppercase tracking-widest">
-                    [Studio Image]
+                    [스튜디오 이미지]
                   </div>
                 </div>
               </div>
@@ -127,29 +127,29 @@ export default function AboutPage() {
           >
             <div className="flex items-center gap-3 mb-8">
               <div className="w-8 h-px bg-lime-primary" />
-              <span className="font-mono text-xs text-text-muted uppercase tracking-[0.3em]">Our Story</span>
+              <span className="font-mono text-xs text-text-muted uppercase tracking-[0.3em]">우리의 이야기</span>
             </div>
             <h2
               className="font-display text-text-primary leading-none mb-10"
               style={{ fontSize: 'clamp(2rem, 5vw, 4.5rem)', letterSpacing: '-0.03em', lineHeight: 0.95 }}
             >
-              BORN FROM A<br />
-              SIMPLE PARADOX
+              단순한 역설에서<br />
+              탄생하다
             </h2>
 
             <div className="space-y-5 font-serif italic text-text-secondary leading-relaxed"
               style={{ fontSize: 'clamp(0.95rem, 1.3vw, 1.1rem)' }}>
               <p>
-                OVERLAB was born from a simple observation: recreational sports equipment — paragliders, tents, sails, diving suits — is designed to be bulletproof.
+                오버랩은 하나의 단순한 관찰에서 시작됩니다. 레저 스포츠 장비 — 패러글라이더, 텐트, 세일, 다이빙 슈트 — 는 완벽하게 내구성을 갖추도록 설계됩니다.
               </p>
               <p>
-                Engineered to withstand extreme conditions, yet discarded based on safety regulations rather than structural failure. A paradox of material excellence and systemic waste.
+                구조적 결함이 아닌 안전 규정에 의해 폐기되는, 소재 탁월성과 시스템적 낭비의 역설. 극한 조건을 견디도록 엔지니어링되었지만 버려집니다.
               </p>
               <p>
-                We saw potential where others saw waste. We recognised that the materials, technology, and craftsmanship embedded in these objects deserved a second life — not a landfill.
+                우리는 다른 이들이 낭비를 보는 곳에서 가능성을 발견했습니다. 이 오브제들에 내재된 소재, 기술, 장인정신이 쓰레기 매립지가 아닌 두 번째 삶을 누릴 자격이 있음을 알아봤습니다.
               </p>
               <p>
-                Today, OVERLAB operates as both archive and studio — a place where forgotten journeys are preserved and transformed into contemporary objects of beauty and function.
+                오늘날 오버랩은 아카이브이자 스튜디오로 운영됩니다 — 잊혀진 여정이 보존되고 현대적인 아름다움과 기능의 오브제로 변환되는 곳.
               </p>
             </div>
           </motion.div>
@@ -170,13 +170,13 @@ export default function AboutPage() {
           >
             <div className="flex items-center gap-3 mb-6">
               <div className="w-8 h-px bg-lime-primary" />
-              <span className="font-mono text-xs text-text-muted uppercase tracking-[0.3em]">Core Philosophy</span>
+              <span className="font-mono text-xs text-text-muted uppercase tracking-[0.3em]">핵심 철학</span>
             </div>
             <h2
               className="font-display text-text-primary leading-none"
               style={{ fontSize: 'clamp(2.5rem, 6vw, 6rem)', letterSpacing: '-0.03em', lineHeight: 0.9 }}
             >
-              HOW WE OPERATE
+              우리가 일하는 방식
             </h2>
           </motion.div>
 
@@ -229,13 +229,13 @@ export default function AboutPage() {
           >
             <div className="flex items-center gap-3 mb-4">
               <div className="w-8 h-px bg-lime-primary" />
-              <span className="font-mono text-xs text-text-muted uppercase tracking-[0.3em]">By The Numbers</span>
+              <span className="font-mono text-xs text-text-muted uppercase tracking-[0.3em]">숫자로 보는</span>
             </div>
             <h2
               className="font-display text-text-primary leading-none"
               style={{ fontSize: 'clamp(2rem, 5vw, 5rem)', letterSpacing: '-0.03em', lineHeight: 0.9 }}
             >
-              OUR IMPACT
+              우리의 임팩트
             </h2>
           </motion.div>
 
@@ -271,19 +271,19 @@ export default function AboutPage() {
               className="font-display text-white leading-none mb-4"
               style={{ fontSize: 'clamp(2rem, 5vw, 5rem)', letterSpacing: '-0.03em', lineHeight: 0.9 }}
             >
-              JOIN THE<br />
-              <span style={{ color: '#D8FF3E' }}>MOVEMENT</span>
+              함께<br />
+              <span style={{ color: '#D8FF3E' }}>움직이세요</span>
             </h2>
             <p className="font-serif italic" style={{ color: 'rgba(245,245,239,0.5)', fontSize: '1rem' }}>
-              Shop, collaborate, or simply follow our archive.
+              쇼핑하거나, 협업하거나, 아카이브를 팔로우하세요.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link href="/products" className="btn-lime group inline-flex items-center gap-3">
-              Shop Now →
+              지금 쇼핑하기 →
             </Link>
             <Link href="/projects" className="btn-outline-dark group inline-flex items-center gap-3">
-              View Projects
+              프로젝트 보기
             </Link>
           </div>
         </div>

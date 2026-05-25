@@ -47,7 +47,7 @@ export default function PhilosophySection() {
               >
                 <div className="w-8 h-px bg-lime-primary" />
                 <span className="font-mono text-xs text-text-muted uppercase tracking-[0.3em]">
-                  The Problem We Solve
+                  우리가 해결하는 문제
                 </span>
               </motion.div>
 
@@ -63,8 +63,8 @@ export default function PhilosophySection() {
                   animate={statementInView ? { y: 0, opacity: 1 } : {}}
                   transition={{ delay: 0.15, duration: 1, ease: [0.16, 1, 0.3, 1] }}
                 >
-                  Equipment Retires.<br />
-                  <span style={{ color: '#D8FF3E' }}>Materials Don&apos;t.</span>
+                  장비는 은퇴하지만,<br />
+                  <span style={{ color: '#D8FF3E' }}>소재는 그렇지 않습니다.</span>
                 </motion.h2>
               </div>
             </div>
@@ -77,12 +77,12 @@ export default function PhilosophySection() {
               transition={{ delay: 0.4, duration: 0.8 }}
             >
               <p className="font-serif text-lg italic leading-relaxed text-text-secondary mb-6">
-                Leisure sports equipment—paragliders, tents, sails, diving suits—is engineered
-                to withstand the most extreme conditions on earth.
+                레저 스포츠 장비—패러글라이더, 텐트, 세일, 다이빙 슈트—는
+                지구상 가장 극한의 환경을 버텨내도록 설계됩니다.
               </p>
               <p className="font-serif text-base italic leading-relaxed text-text-secondary/80">
-                Safety regulations mandate retirement long before the materials fail.
-                At OVERLAB, we see this not as waste—but as an archive waiting to be reopened.
+                안전 규정이 소재 수명보다 훨씬 앞서 장비의 은퇴를 결정합니다.
+                오버랩에서 우리는 이것을 낭비가 아닌, 다시 열릴 기다리는 아카이브로 봅니다.
               </p>
             </motion.div>
           </div>
@@ -100,7 +100,7 @@ export default function PhilosophySection() {
             transition={{ delay: 0.1, duration: 0.7 }}
           >
             <div className="w-8 h-px bg-lime-primary" />
-            <span className="font-mono text-xs text-text-muted uppercase tracking-[0.3em]">Our Philosophy</span>
+            <span className="font-mono text-xs text-text-muted uppercase tracking-[0.3em]">우리의 철학</span>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-px" style={{ backgroundColor: 'rgba(17,17,17,0.08)' }}>
@@ -108,20 +108,20 @@ export default function PhilosophySection() {
               {
                 tag: 'WHY',
                 num: '01',
-                title: 'Potential Hidden in Plain Sight',
-                body: 'Paraglider canopies carry years of alpine engineering. Tent fabrics survive monsoons. Sail material withstands oceans. These objects deserve a second act—not a landfill.',
+                title: '눈앞에 감춰진 가능성',
+                body: '패러글라이더 캐노피는 수년간의 알파인 공학을 담고 있습니다. 텐트 원단은 몬순을 견뎌냅니다. 세일 소재는 바다를 이겨냅니다. 이 오브제들은 쓰레기 매립지가 아닌, 두 번째 무대를 받을 자격이 있습니다.',
               },
               {
                 tag: 'HOW',
                 num: '02',
-                title: 'Deconstruct. Inspect. Reconstruct.',
-                body: 'Every piece is individually assessed, cleaned, and re-cut before becoming something new. Nothing is wasted. Every thread is intentional. We are an archive, not a factory.',
+                title: '해체. 검수. 재구성.',
+                body: '모든 조각은 개별적으로 평가되고, 세척되고, 새로운 것이 되기 전에 재단됩니다. 낭비되는 것은 없습니다. 모든 실은 의도적입니다. 우리는 공장이 아닌 아카이브입니다.',
               },
               {
                 tag: 'IMPACT',
                 num: '03',
-                title: 'Objects That Carry Memory',
-                body: 'The tote you carry may have once soared over the Alps. The jacket you wear protected someone from an ocean storm. OVERLAB products hold stories no new material can carry.',
+                title: '기억을 담은 오브제',
+                body: '당신이 들고 다니는 토트백은 한때 알프스 상공을 날았을지도 모릅니다. 당신이 입는 재킷은 누군가를 바다 폭풍에서 지켜줬습니다. 오버랩 제품은 새 소재가 담을 수 없는 이야기를 품고 있습니다.',
               },
             ].map((item, i) => (
               <motion.div
@@ -192,11 +192,11 @@ export default function PhilosophySection() {
               className="font-serif italic text-text-secondary leading-relaxed"
               style={{ fontSize: 'clamp(1rem, 1.6vw, 1.35rem)' }}
             >
-              &ldquo;We are not an eco brand. We are an archive. A place where forgotten journeys
-              are preserved and transformed into objects of lasting beauty and function.&rdquo;
+              &ldquo;우리는 에코 브랜드가 아닙니다. 우리는 아카이브입니다.
+              잊혀진 여정이 보존되고, 오래 지속되는 아름다움과 기능의 오브제로 변환되는 곳입니다.&rdquo;
             </blockquote>
             <p className="font-mono text-xs text-text-muted uppercase tracking-[0.3em] mt-6">
-              — OVERLAB Manifesto
+              — OVERLAB 선언문
             </p>
           </motion.div>
         </div>

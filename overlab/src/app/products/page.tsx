@@ -6,25 +6,32 @@ import Cursor from '@/components/ui/Cursor';
 import Footer from '@/components/ui/Footer';
 import Link from 'next/link';
 
-const FILTERS = ['All', 'Paraglider', 'Sail', 'Tent', 'Diving'];
+const FILTERS = ['전체', '패러글라이더', '세일', '텐트', '다이빙'];
+const FILTER_MAP: Record<string, string> = {
+  '전체': 'All',
+  '패러글라이더': 'Paraglider',
+  '세일': 'Sail',
+  '텐트': 'Tent',
+  '다이빙': 'Diving',
+};
 
 const PRODUCTS = [
-  { id: 1, name: 'Archive Tote', collection: 'Paraglider Series', price: '₩280,000', tags: ['Ultralight', 'Daily Carry'], filter: 'Paraglider', desc: 'Crafted from decommissioned high-altitude paraglider canopy. Impossibly light, built to last a lifetime.' },
-  { id: 2, name: 'Sailor Jacket', collection: 'Sail Reborn', price: '₩420,000', tags: ['Weather-proof', 'Technical'], filter: 'Sail', desc: 'Marine-grade technical jacket. Every stitch tells a story of ocean voyages transformed into wearable art.' },
-  { id: 3, name: 'Altitude Backpack', collection: 'Paraglider Series', price: '₩350,000', tags: ['Structured', 'Alpine'], filter: 'Paraglider', desc: 'Engineered from vintage paraglider canopies. Minimalist design with functional capacity.' },
-  { id: 4, name: 'Deep Cushion', collection: 'Diving Series', price: '₩180,000', tags: ['Thermal', 'Home'], filter: 'Diving', desc: 'Comfort meets sustainability. Reclaimed diving suit neoprene for ultimate support.' },
-  { id: 5, name: 'Shelter Pouch', collection: 'Tent Revival', price: '₩95,000', tags: ['Compact', 'Travel'], filter: 'Tent', desc: 'From expedition tent to everyday carry. Water-resistant, built to endure.' },
-  { id: 6, name: 'Ocean Basin', collection: 'Sail Reborn', price: '₩220,000', tags: ['Sculptural', 'Decor'], filter: 'Sail', desc: 'A sculptural accent piece. Marine-grade fabric transformed into functional home design.' },
-  { id: 7, name: 'Flight Accessories', collection: 'Paraglider Series', price: '₩60,000–', price2: '₩145,000', tags: ['Collection', 'Accessory'], filter: 'Paraglider', desc: 'Headbands, pouches, straps — all made from premium paraglider fabric.' },
-  { id: 8, name: 'Expedition Coat', collection: 'Tent Revival', price: '₩385,000', tags: ['Weatherproof', 'Adventure'], filter: 'Tent', desc: 'Engineered from technical tent fabric. Weatherproof, breathable, built for adventure.' },
+  { id: 1, name: '아카이브 토트', collection: '패러글라이더 시리즈', price: '₩280,000', tags: ['초경량', '데일리 캐리'], filter: 'Paraglider', desc: '역할을 다한 고고도 패러글라이더 캐노피로 제작. 믿기 어려울 만큼 가볍고, 평생을 함께할 내구성.' },
+  { id: 2, name: '세일러 재킷', collection: '세일 리본', price: '₩420,000', tags: ['방수', '테크니컬'], filter: 'Sail', desc: '해양 등급 테크니컬 재킷. 모든 스티치는 웨어러블 아트로 변환된 대양 항해의 이야기를 담습니다.' },
+  { id: 3, name: '알티튜드 백팩', collection: '패러글라이더 시리즈', price: '₩350,000', tags: ['구조적', '알파인'], filter: 'Paraglider', desc: '빈티지 패러글라이더 캐노피로 엔지니어링. 기능적 용량의 미니멀리스트 디자인.' },
+  { id: 4, name: '딥 쿠션', collection: '다이빙 시리즈', price: '₩180,000', tags: ['보온', '홈'], filter: 'Diving', desc: '편안함과 지속가능성의 만남. 재활용 다이빙 슈트 네오프렌으로 완벽한 지지력.' },
+  { id: 5, name: '쉘터 파우치', collection: '텐트 리바이벌', price: '₩95,000', tags: ['컴팩트', '여행'], filter: 'Tent', desc: '원정 텐트에서 일상 캐리로. 방수 처리, 내구성 강화.' },
+  { id: 6, name: '오션 베이신', collection: '세일 리본', price: '₩220,000', tags: ['조각적', '데코'], filter: 'Sail', desc: '조각적 액센트 피스. 해양 등급 원단이 기능적 홈 디자인으로 변환.' },
+  { id: 7, name: '플라이트 액세서리', collection: '패러글라이더 시리즈', price: '₩60,000–', tags: ['컬렉션', '액세서리'], filter: 'Paraglider', desc: '헤어밴드, 파우치, 스트랩 — 모두 프리미엄 패러글라이더 원단으로 제작.' },
+  { id: 8, name: '익스페디션 코트', collection: '텐트 리바이벌', price: '₩385,000', tags: ['방수', '어드벤처'], filter: 'Tent', desc: '기술 텐트 원단으로 엔지니어링. 방수, 통기성, 어드벤처를 위해 설계.' },
 ];
 
 export default function ProductsPage() {
-  const [active, setActive] = useState('All');
+  const [active, setActive] = useState('전체');
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, amount: 0.1 });
 
-  const filtered = active === 'All' ? PRODUCTS : PRODUCTS.filter(p => p.filter === active);
+  const filtered = active === '전체' ? PRODUCTS : PRODUCTS.filter(p => p.filter === FILTER_MAP[active]);
 
   return (
     <main className="relative w-full overflow-x-hidden bg-bg-primary">
@@ -48,18 +55,18 @@ export default function ProductsPage() {
             <div className="flex items-center gap-3 mb-8">
               <div className="w-8 h-px" style={{ backgroundColor: '#D8FF3E' }} />
               <span className="font-mono text-xs tracking-[0.3em] uppercase" style={{ color: 'rgba(245,245,239,0.4)' }}>
-                Shop the Collection
+                컬렉션 쇼핑하기
               </span>
             </div>
             <h1
               className="font-display text-white leading-none mb-8"
               style={{ fontSize: 'clamp(3.5rem, 10vw, 10rem)', letterSpacing: '-0.03em', lineHeight: 0.88 }}
             >
-              PRODUCTS
+              제품
             </h1>
             <p className="font-serif italic leading-relaxed max-w-lg"
               style={{ color: 'rgba(245,245,239,0.6)', fontSize: 'clamp(1rem, 1.5vw, 1.2rem)' }}>
-              Contemporary objects reimagined from sports equipment. Each piece tells a story of transformation and carries the memory of its previous life.
+              스포츠 장비에서 재탄생한 현대적 오브제. 각 조각은 변환의 이야기를 담고, 이전 삶의 기억을 간직합니다.
             </p>
           </motion.div>
         </div>
@@ -72,7 +79,7 @@ export default function ProductsPage() {
       >
         <div className="max-w-screen-2xl mx-auto flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
           <span className="font-mono text-xs text-text-muted uppercase tracking-[0.2em]">
-            {filtered.length} Products
+            {filtered.length} 제품
           </span>
           <div className="flex flex-wrap gap-2">
             {FILTERS.map((f) => (
@@ -124,7 +131,7 @@ export default function ProductsPage() {
                       className="font-mono text-xs tracking-[0.2em] uppercase px-5 py-2.5"
                       style={{ backgroundColor: '#D8FF3E', color: '#111111' }}
                     >
-                      Quick View
+                      빠른 보기
                     </button>
                   </div>
                 </div>
@@ -157,7 +164,7 @@ export default function ProductsPage() {
                     {product.price}
                   </span>
                   <button className="font-mono text-xs text-lime-primary uppercase tracking-[0.2em] hover:text-lime-secondary transition-colors duration-300">
-                    Add to Cart →
+                    장바구니 담기 →
                   </button>
                 </div>
               </motion.div>
@@ -173,18 +180,18 @@ export default function ProductsPage() {
           <div>
             <h2 className="font-display text-text-primary leading-none mb-5"
               style={{ fontSize: 'clamp(2rem, 4vw, 4rem)', letterSpacing: '-0.03em', lineHeight: 0.95 }}>
-              STILL LOOKING?
+              더 찾고 계신가요?
             </h2>
             <p className="font-serif italic text-text-secondary text-base leading-relaxed mb-8 max-w-md">
-              Explore the archive to learn more about the materials behind our products, or discover ongoing projects and collaborations.
+              아카이브를 탐색하여 제품 뒤에 있는 소재에 대해 더 알아보거나, 진행 중인 프로젝트와 협업을 발견해 보세요.
             </p>
           </div>
           <div className="flex flex-col gap-4">
             <Link href="/archive" className="btn-lime group w-full text-center inline-flex items-center justify-center gap-3">
-              Explore Archive →
+              아카이브 탐색 →
             </Link>
             <Link href="/projects" className="btn-outline group w-full text-center inline-flex items-center justify-center gap-3">
-              View Projects
+              프로젝트 보기
             </Link>
           </div>
         </div>

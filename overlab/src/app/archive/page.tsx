@@ -10,81 +10,81 @@ const MATERIALS = [
   {
     id: 'paraglider',
     num: '01',
-    name: 'Paraglider',
-    tagline: 'Wings to Wonder',
-    origin: 'Alpine Sports Centers',
-    material: 'High-Performance Nylon',
-    weight: 'Ultra-light · 80–150g/m²',
-    properties: 'Water-resistant · Durable · UV-stable',
+    name: '패러글라이더',
+    tagline: '하늘에서 일상으로',
+    origin: '알파인 스포츠 센터',
+    material: '고성능 나일론',
+    weight: '초경량 · 80–150g/m²',
+    properties: '방수 · 내구성 · UV 안정성',
     products: 8,
-    desc: 'Ultra-lightweight nylon with exceptional durability, once designed to catch alpine winds and carry human weight through the sky. Now woven into everyday objects that are impossibly light yet built to last.',
+    desc: '알파인 바람을 가르고 사람의 무게를 지탱하도록 설계된 초경량 나일론. 이제 믿기 어려울 만큼 가볍지만 오래 지속되는 일상의 오브제로 짜여들고 있습니다.',
     process: [
-      'Collection from retired paragliders worldwide',
-      'Detailed analysis of material integrity',
-      'Careful disassembly and seam removal',
-      'Color preservation and quality control',
-      'Re-cutting and pattern design',
-      'Manufacturing into new products',
+      '전 세계 역할을 다한 패러글라이더 수거',
+      '소재 무결성 세밀 분석',
+      '조심스러운 분해 및 봉제선 제거',
+      '색상 보존 및 품질 관리',
+      '재단 및 패턴 디자인',
+      '새로운 제품으로 제조',
     ],
   },
   {
     id: 'tent',
     num: '02',
-    name: 'Tent',
-    tagline: 'Shelter Transformed',
-    origin: 'Outdoor Equipment Depots',
-    material: 'Technical Polyester Blend',
-    weight: 'Professional-Grade',
-    properties: 'Waterproof · Windproof · Breathable',
+    name: '텐트',
+    tagline: '쉼터의 변신',
+    origin: '아웃도어 장비 창고',
+    material: '기술 폴리에스터 혼방',
+    weight: '프로페셔널 등급',
+    properties: '완전 방수 · 방풍 · 통기성',
     products: 12,
-    desc: 'Weather-resistant layered fabric with structural memory, built to withstand extreme conditions. These materials carry stories of journeys and adventures across the globe — mountain ridges, desert plateaus, arctic tundras.',
+    desc: '극한 조건을 견디도록 제작된 구조적 기억이 있는 방수 다층 원단. 이 소재들은 산봉우리, 사막 고원, 북극 툰드라를 가로지르는 여정과 모험의 이야기를 담고 있습니다.',
     process: [
-      'Systematic collection of end-of-life tents',
-      'Material classification and assessment',
-      'Seam removal and careful disassembly',
-      'Industrial washing and treatment',
-      'Panel cutting and sorting by grade',
-      'Assembly into structured products',
+      '수명이 다한 텐트 체계적 수거',
+      '소재 분류 및 평가',
+      '봉제선 제거 및 조심스러운 분해',
+      '산업용 세척 및 처리',
+      '등급별 패널 재단 및 분류',
+      '구조화된 제품으로 조립',
     ],
   },
   {
     id: 'sail',
     num: '03',
-    name: 'Sail',
-    tagline: 'Ocean Poetry',
-    origin: 'Sailing Clubs & Marine Centers',
-    material: 'Dacron & Laminate Blend',
-    weight: 'Extreme Weather Tested',
-    properties: 'Salt-resistant · Elastic · Durable',
+    name: '세일',
+    tagline: '바다의 시',
+    origin: '요트 클럽 & 마린 센터',
+    material: '다크론 & 라미네이트 혼방',
+    weight: '극한 날씨 테스트 완료',
+    properties: '내염성 · 탄성 · 내구성',
     products: 6,
-    desc: 'Marine-grade Dacron laminate with salt-resistant woven construction and natural elasticity. Each piece carries the cartography of its voyages — the faint map of ropes, sun, and ocean gales pressed into the fabric.',
+    desc: '자연적인 탄성과 내염성 직조 구조를 가진 해양 등급 다크론 라미네이트. 각 조각에는 항해의 지도가 새겨져 있습니다 — 로프, 태양, 대양의 돌풍이 직물에 스며든 희미한 흔적.',
     process: [
-      'Partnership with maritime clubs for collection',
-      'Visual inspection for integrity and UV damage',
-      'Stitching removal and layering separation',
-      'Salt and mineral removal treatment',
-      'Color enhancement and conditioning',
-      'Precision cutting and crafting into new forms',
+      '수거를 위한 해양 클럽과의 파트너십',
+      '무결성 및 UV 손상 육안 검사',
+      '봉제 제거 및 레이어 분리',
+      '염분 및 광물 제거 처리',
+      '색상 강화 및 컨디셔닝',
+      '새로운 형태로의 정밀 재단 및 제작',
     ],
   },
   {
     id: 'diving',
     num: '04',
-    name: 'Diving Suit',
-    tagline: 'Depths Reimagined',
-    origin: 'Diving Schools & Sports Centers',
-    material: 'Neoprene & Stretch Fabric',
-    weight: 'High-Performance Insulation',
-    properties: 'Flexible · Insulating · Pressure-tested',
+    name: '다이빙 슈트',
+    tagline: '깊이를 재상상하다',
+    origin: '다이빙 스쿨 & 스포츠 센터',
+    material: '네오프렌 & 스트레치 소재',
+    weight: '고성능 단열',
+    properties: '유연성 · 단열 · 압력 테스트',
     products: 5,
-    desc: 'Thermal-regulating neoprene that once equalized pressure at depth and kept divers warm in cold ocean water. Dense, flexible, and insulating — it translates naturally into cushions, padding, and soft home accessories.',
+    desc: '수심에서 압력을 균형 잡고 차가운 바닷속 다이버를 따뜻하게 유지했던 열조절 네오프렌. 밀도 높고, 유연하고, 단열성이 뛰어나 — 쿠션, 패딩, 소프트 홈 액세서리로 자연스럽게 변환됩니다.',
     process: [
-      'Acquisition from diving equipment suppliers',
-      'Thickness and elasticity testing',
-      'Careful deconstructing of seams and zippers',
-      'Specialized neoprene cleaning process',
-      'Stretching and conditioning',
-      'Precision cutting and assembly into new forms',
+      '다이빙 장비 공급업체로부터 획득',
+      '두께 및 탄성 테스트',
+      '봉제선 및 지퍼의 세심한 분해',
+      '전문 네오프렌 세척 공정',
+      '스트레칭 및 컨디셔닝',
+      '새로운 형태로의 정밀 재단 및 조립',
     ],
   },
 ];
@@ -112,19 +112,18 @@ export default function ArchivePage() {
             <div className="flex items-center gap-3 mb-8">
               <div className="w-8 h-px" style={{ backgroundColor: '#D8FF3E' }} />
               <span className="font-mono text-xs tracking-[0.3em] uppercase" style={{ color: 'rgba(245,245,239,0.4)' }}>
-                Complete Material Archives
+                전체 소재 아카이브
               </span>
             </div>
             <h1
               className="font-display text-white leading-none mb-8"
               style={{ fontSize: 'clamp(3.5rem, 10vw, 10rem)', letterSpacing: '-0.03em', lineHeight: 0.88 }}
             >
-              THE<br />
-              <span style={{ color: '#D8FF3E' }}>ARCHIVE</span>
+              아카이브
             </h1>
             <p className="font-serif italic leading-relaxed max-w-lg"
               style={{ color: 'rgba(245,245,239,0.6)', fontSize: 'clamp(1rem, 1.5vw, 1.2rem)' }}>
-              Every material has a story. Explore the source, the process, and the transformation that brings new life to forgotten objects.
+              모든 소재에는 이야기가 있습니다. 출처, 과정, 그리고 잊혀진 오브제에 새 생명을 불어넣는 변환을 탐색해 보세요.
             </p>
           </motion.div>
         </div>
@@ -148,15 +147,15 @@ export default function ArchivePage() {
               className="font-display text-text-primary leading-none mb-4"
               style={{ fontSize: 'clamp(2rem, 5vw, 5rem)', letterSpacing: '-0.03em', lineHeight: 0.9 }}
             >
-              READY TO OWN<br />
-              <span className="text-lime-primary">A PIECE OF HISTORY?</span>
+              역사의 한 조각을<br />
+              <span className="text-lime-primary">소유할 준비가 되셨나요?</span>
             </h2>
             <p className="font-serif italic text-text-secondary text-base">
-              Each product carries the story of its material source and the artistry of its reconstruction.
+              각 제품은 소재 출처의 이야기와 재구성의 예술성을 담고 있습니다.
             </p>
           </div>
           <Link href="/products" className="btn-lime group inline-flex items-center gap-3 whitespace-nowrap flex-shrink-0">
-            Shop Products →
+            제품 쇼핑하기 →
           </Link>
         </div>
       </section>
@@ -202,7 +201,7 @@ function MaterialSection({ mat, idx }: { mat: (typeof MATERIALS)[0]; idx: number
                   className="font-mono text-xs tracking-[0.2em] uppercase px-3 py-1.5"
                   style={{ backgroundColor: '#D8FF3E', color: '#111111' }}
                 >
-                  {mat.products} Products
+                  {mat.products} 제품
                 </span>
               </div>
               <div className="absolute bottom-0 left-0 right-0 h-1 bg-lime-primary" />
@@ -218,7 +217,7 @@ function MaterialSection({ mat, idx }: { mat: (typeof MATERIALS)[0]; idx: number
           >
             <div className="flex items-center gap-3 mb-6">
               <span className="font-mono text-xs tracking-[0.25em] uppercase text-lime-primary">
-                Material {mat.num}
+                소재 {mat.num}
               </span>
               <div className="flex-1 h-px bg-lime-primary/20" />
               <span className="font-mono text-xs tracking-[0.2em] uppercase text-text-muted">
@@ -243,9 +242,9 @@ function MaterialSection({ mat, idx }: { mat: (typeof MATERIALS)[0]; idx: number
             {/* Specs */}
             <div className="space-y-4 py-8" style={{ borderTop: '1px solid rgba(17,17,17,0.1)', borderBottom: '1px solid rgba(17,17,17,0.1)' }}>
               {[
-                ['Material', mat.material],
-                ['Weight / Grade', mat.weight],
-                ['Properties', mat.properties],
+                ['소재', mat.material],
+                ['무게 / 등급', mat.weight],
+                ['특성', mat.properties],
               ].map(([k, v]) => (
                 <div key={k} className="flex justify-between items-start gap-8">
                   <span className="font-mono text-xs text-text-muted uppercase tracking-[0.2em]">{k}</span>
@@ -256,7 +255,7 @@ function MaterialSection({ mat, idx }: { mat: (typeof MATERIALS)[0]; idx: number
 
             <div className="mt-8 flex gap-4">
               <Link href="/products" className="btn-lime group inline-flex items-center gap-3">
-                View {mat.products} Products →
+                {mat.products}개 제품 보기 →
               </Link>
             </div>
           </motion.div>
@@ -272,7 +271,7 @@ function MaterialSection({ mat, idx }: { mat: (typeof MATERIALS)[0]; idx: number
             <div className="w-8 h-px bg-lime-primary" />
             <h3 className="font-display text-text-primary"
               style={{ fontSize: 'clamp(1.5rem, 3vw, 2.5rem)', letterSpacing: '-0.025em' }}>
-              The Process
+              제작 과정
             </h3>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">

@@ -8,63 +8,63 @@ import Footer from '@/components/ui/Footer';
 const POPUPS = [
   {
     id: 1,
-    title: 'OVERLAB × The Hyundai Seoul',
-    date: 'May – June 2024',
-    location: 'The Hyundai, Gangnam, Seoul',
-    desc: 'A three-week immersive exhibition showcasing the complete transformation journey of sports equipment into everyday objects. Interactive archive stations, material samples, and exclusive products.',
-    highlights: ['Interactive Archives', 'Live Talks', 'Exclusive Products'],
-    status: 'Ongoing',
+    title: 'OVERLAB × 더현대 서울',
+    date: '2024년 5월 – 6월',
+    location: '더현대, 강남, 서울',
+    desc: '스포츠 장비가 일상의 오브제로 변환되는 완전한 여정을 선보이는 3주간의 몰입형 전시. 인터랙티브 아카이브 스테이션, 소재 샘플, 단독 제품.',
+    highlights: ['인터랙티브 아카이브', '라이브 토크', '단독 제품'],
+    status: '진행 중',
   },
   {
     id: 2,
-    title: 'Archive Pop-Up at Candyland',
-    date: 'March – April 2024',
-    location: 'Hongdae, Seoul',
-    desc: 'A collaborative pop-up with independent curator highlighting emerging sustainable brands. Featured a 50-piece curated collection with community events and product demonstrations.',
-    highlights: ['Community Events', 'Product Demos', 'Artist Collaboration'],
-    status: 'Completed',
+    title: '아카이브 팝업 at Candyland',
+    date: '2024년 3월 – 4월',
+    location: '홍대, 서울',
+    desc: '신진 지속가능 브랜드를 조명하는 독립 큐레이터와의 협업 팝업. 50개 큐레이션 컬렉션과 커뮤니티 이벤트, 제품 시연.',
+    highlights: ['커뮤니티 이벤트', '제품 시연', '아티스트 협업'],
+    status: '완료',
   },
   {
     id: 3,
-    title: 'OVERLAB Flagship Experience',
-    date: 'Ongoing',
-    location: '123 Design Street, Mapo-gu, Seoul',
-    desc: 'Our permanent flagship store serves as archive, exhibition space, and workshop. Visit for guided tours of the archive, personal consultations, and exclusive in-store events.',
-    highlights: ['Permanent Archive', 'Personal Fitting', 'Workshop Space'],
-    status: 'Ongoing',
+    title: 'OVERLAB 플래그십 익스피리언스',
+    date: '상시 운영',
+    location: '마포구 디자인가 123, 서울',
+    desc: '아카이브, 전시 공간, 워크숍이 공존하는 상설 플래그십 스토어. 아카이브 가이드 투어, 개인 컨설팅, 단독 인스토어 이벤트.',
+    highlights: ['상설 아카이브', '개인 피팅', '워크숍 공간'],
+    status: '진행 중',
   },
   {
     id: 4,
-    title: 'Seoul Design Festival Exhibition',
-    date: 'October 2023',
-    location: 'DDP, Jung-gu, Seoul',
-    desc: 'Featured as leading sustainable brand with 60+ works on display at DDP. Panel discussions on circular design, material innovation, and the future of fashion archives.',
-    highlights: ['60+ Works', 'Panel Discussion', 'Award Recognition'],
-    status: 'Completed',
+    title: '서울 디자인 페스티벌 전시',
+    date: '2023년 10월',
+    location: 'DDP, 중구, 서울',
+    desc: '대표 지속가능 브랜드로 DDP에서 60+ 작품 전시. 순환 디자인, 소재 혁신, 패션 아카이브의 미래에 관한 패널 토론.',
+    highlights: ['60+ 작품', '패널 토론', '수상 인정'],
+    status: '완료',
   },
   {
     id: 5,
-    title: 'Colette Paris Debut',
-    date: 'February – March 2024',
-    location: '213 Rue Saint-Honoré, Paris',
-    desc: 'European debut at the iconic Parisian concept store. A limited edition European collection launched exclusively, with archive installations throughout the ground floor.',
-    highlights: ['European Launch', 'Limited Edition', 'Luxury Retail'],
-    status: 'Completed',
+    title: '콜레트 파리 데뷔',
+    date: '2024년 2월 – 3월',
+    location: '213 Rue Saint-Honoré, 파리',
+    desc: '파리의 상징적인 콘셉트 스토어에서의 유럽 데뷔. 단독 한정판 유럽 컬렉션 런칭, 1층 전체의 아카이브 설치.',
+    highlights: ['유럽 런칭', '한정판', '럭셔리 리테일'],
+    status: '완료',
   },
   {
     id: 6,
-    title: 'Browns Shoreditch Residency',
-    date: 'January – February 2024',
-    location: 'Redchurch Street, Shoreditch, London',
-    desc: 'A month-long residency at the premium London boutique featuring in-store installations and weekly design talks on material archiving and sustainable craft.',
-    highlights: ['Artist Residency', 'Design Talks', 'Installation Art'],
-    status: 'Completed',
+    title: 'Browns 쇼어디치 레지던시',
+    date: '2024년 1월 – 2월',
+    location: 'Redchurch Street, 쇼어디치, 런던',
+    desc: '프리미엄 런던 부티크에서의 한 달간 레지던시. 인스토어 설치와 소재 아카이빙 및 지속가능한 크래프트에 관한 주간 디자인 토크.',
+    highlights: ['아티스트 레지던시', '디자인 토크', '설치 미술'],
+    status: '완료',
   },
 ];
 
 const UPCOMING = [
-  { title: 'OVERLAB × Dover Street Market Tokyo', date: 'July 2024', location: 'Tokyo, Japan' },
-  { title: 'Seoul Design Week Installation', date: 'September 2024', location: 'Seoul, Korea' },
+  { title: 'OVERLAB × Dover Street Market 도쿄', date: '2024년 7월', location: '도쿄, 일본' },
+  { title: '서울 디자인 위크 설치', date: '2024년 9월', location: '서울, 한국' },
 ];
 
 export default function PopUpPage() {
@@ -93,19 +93,19 @@ export default function PopUpPage() {
             <div className="flex items-center gap-3 mb-8">
               <div className="w-8 h-px" style={{ backgroundColor: '#D8FF3E' }} />
               <span className="font-mono text-xs tracking-[0.3em] uppercase" style={{ color: 'rgba(245,245,239,0.4)' }}>
-                Experience Spaces
+                경험 공간
               </span>
             </div>
             <h1
               className="font-display text-white leading-none mb-8"
               style={{ fontSize: 'clamp(3rem, 9vw, 9rem)', letterSpacing: '-0.03em', lineHeight: 0.88 }}
             >
-              POP-UPS &amp;<br />
-              <span style={{ color: '#D8FF3E' }}>EXHIBITIONS</span>
+              팝업 &amp;<br />
+              <span style={{ color: '#D8FF3E' }}>전시회</span>
             </h1>
             <p className="font-serif italic leading-relaxed max-w-lg"
               style={{ color: 'rgba(245,245,239,0.6)', fontSize: 'clamp(1rem, 1.5vw, 1.2rem)' }}>
-              Temporary and permanent spaces where OVERLAB&apos;s archive comes alive. Exhibitions, workshops, and immersive experiences.
+              OVERLAB 아카이브가 생동하는 임시 및 상설 공간. 전시, 워크숍, 몰입형 경험.
             </p>
           </motion.div>
         </div>
@@ -117,7 +117,7 @@ export default function PopUpPage() {
         style={{ backgroundColor: 'rgba(245,245,239,0.92)', borderBottom: '1px solid rgba(17,17,17,0.08)' }}
       >
         <div className="max-w-screen-2xl mx-auto flex gap-2">
-          {['All', 'Ongoing', 'Completed'].map((f, i) => (
+          {['전체', '진행 중', '완료'].map((f, i) => (
             <button key={f} className="font-mono text-xs uppercase tracking-[0.2em] px-4 py-2 transition-all duration-300"
               style={{
                 border: `1px solid ${i === 0 ? '#D8FF3E' : 'rgba(17,17,17,0.2)'}`,
@@ -156,8 +156,8 @@ export default function PopUpPage() {
                     <span
                       className="font-mono text-xs tracking-[0.2em] uppercase px-2.5 py-1"
                       style={{
-                        backgroundColor: popup.status === 'Ongoing' ? '#D8FF3E' : 'rgba(17,17,17,0.6)',
-                        color: popup.status === 'Ongoing' ? '#111111' : 'rgba(245,245,239,0.8)',
+                        backgroundColor: popup.status === '진행 중' ? '#D8FF3E' : 'rgba(17,17,17,0.6)',
+                        color: popup.status === '진행 중' ? '#111111' : 'rgba(245,245,239,0.8)',
                         backdropFilter: 'blur(8px)',
                       }}
                     >
@@ -171,7 +171,7 @@ export default function PopUpPage() {
                   <div className="flex items-center gap-3 mb-4">
                     <div
                       className="w-2 h-2 rounded-full"
-                      style={{ backgroundColor: popup.status === 'Ongoing' ? '#D8FF3E' : '#6B6B6B' }}
+                      style={{ backgroundColor: popup.status === '진행 중' ? '#D8FF3E' : '#6B6B6B' }}
                     />
                     <span className="font-mono text-xs text-text-muted uppercase tracking-[0.2em]">
                       {popup.status}
@@ -187,11 +187,11 @@ export default function PopUpPage() {
 
                   <div className="flex flex-col sm:flex-row gap-2 sm:gap-6 mb-5">
                     <span className="font-serif italic text-text-secondary text-sm">
-                      <span className="font-mono text-xs text-text-muted uppercase tracking-[0.15em] mr-2">When:</span>
+                      <span className="font-mono text-xs text-text-muted uppercase tracking-[0.15em] mr-2">날짜:</span>
                       {popup.date}
                     </span>
                     <span className="font-serif italic text-text-secondary text-sm">
-                      <span className="font-mono text-xs text-text-muted uppercase tracking-[0.15em] mr-2">Where:</span>
+                      <span className="font-mono text-xs text-text-muted uppercase tracking-[0.15em] mr-2">장소:</span>
                       {popup.location}
                     </span>
                   </div>
@@ -223,7 +223,7 @@ export default function PopUpPage() {
             <div className="w-8 h-px bg-lime-primary" />
             <h2 className="font-display text-text-primary"
               style={{ fontSize: 'clamp(2rem, 5vw, 5rem)', letterSpacing: '-0.03em', lineHeight: 0.95 }}>
-              COMING SOON
+              곧 오픈
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
@@ -239,7 +239,7 @@ export default function PopUpPage() {
               >
                 <span className="font-mono text-xs uppercase tracking-[0.2em] px-2.5 py-1 mb-5 inline-block"
                   style={{ backgroundColor: 'rgba(216,255,62,0.1)', color: 'rgba(216,255,62,0.8)' }}>
-                  Coming Soon
+                  곧 오픈
                 </span>
                 <h3 className="font-display text-text-primary mb-4 group-hover:text-lime-primary transition-colors duration-300"
                   style={{ fontSize: 'clamp(1.3rem, 2.5vw, 2rem)', letterSpacing: '-0.025em', lineHeight: 1.05 }}>
@@ -247,11 +247,11 @@ export default function PopUpPage() {
                 </h3>
                 <div className="flex gap-6">
                   <span className="font-serif italic text-text-secondary text-sm">
-                    <span className="font-mono text-xs text-text-muted uppercase tracking-[0.15em] mr-2">When:</span>
+                    <span className="font-mono text-xs text-text-muted uppercase tracking-[0.15em] mr-2">날짜:</span>
                     {event.date}
                   </span>
                   <span className="font-serif italic text-text-secondary text-sm">
-                    <span className="font-mono text-xs text-text-muted uppercase tracking-[0.15em] mr-2">Where:</span>
+                    <span className="font-mono text-xs text-text-muted uppercase tracking-[0.15em] mr-2">장소:</span>
                     {event.location}
                   </span>
                 </div>
@@ -268,16 +268,16 @@ export default function PopUpPage() {
           <div>
             <h2 className="font-display text-text-primary leading-none mb-3"
               style={{ fontSize: 'clamp(2rem, 4.5vw, 4.5rem)', letterSpacing: '-0.03em', lineHeight: 0.95 }}>
-              STAY CONNECTED
+              연결 상태 유지
             </h2>
             <p className="font-serif italic text-text-secondary text-base max-w-md">
-              Subscribe for early access to upcoming events, exclusive collections, and archive releases.
+              다가오는 이벤트, 단독 컬렉션, 아카이브 출시에 대한 우선 접근을 위해 구독하세요.
             </p>
           </div>
           <div className="flex w-full md:w-auto max-w-sm">
             <input
               type="email"
-              placeholder="your@email.com"
+              placeholder="이메일 주소"
               className="flex-1 px-5 py-3 font-serif text-sm focus:outline-none"
               style={{
                 border: '1px solid rgba(17,17,17,0.15)',
@@ -290,7 +290,7 @@ export default function PopUpPage() {
               className="px-6 font-mono text-xs tracking-widest uppercase whitespace-nowrap"
               style={{ backgroundColor: '#D8FF3E', color: '#111111', border: '1px solid #D8FF3E' }}
             >
-              Subscribe
+              구독하기
             </button>
           </div>
         </div>

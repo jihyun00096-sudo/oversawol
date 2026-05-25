@@ -49,13 +49,13 @@ export default function CTASection() {
                 className="font-display text-white leading-none"
                 style={{ fontSize: 'clamp(3rem, 10vw, 10rem)', letterSpacing: '-0.03em', lineHeight: 0.88 }}
               >
-                THE FUTURE<br />
-                IS{' '}
+                미래는<br />
+                {' '}
                 <span style={{ color: '#D8FF3E', WebkitTextStroke: '0', textShadow: '0 0 60px rgba(216,255,62,0.4)' }}>
-                  ALREADY
+                  이미
                 </span>
                 <br />
-                HERE.
+                여기 있습니다.
               </h2>
             </motion.div>
           </div>
@@ -73,25 +73,25 @@ export default function CTASection() {
                 className="font-serif italic leading-relaxed mb-8"
                 style={{ color: 'rgba(245,245,239,0.6)', fontSize: 'clamp(1rem, 1.5vw, 1.25rem)' }}
               >
-                Join us in the movement toward design that doesn&apos;t compromise on quality, craft, or conscience.
-                Every OVERLAB object carries the memory of something that was once moving.
+                품질, 장인정신, 그리고 양심을 타협하지 않는 디자인을 향한 움직임에 함께하세요.
+                모든 오버랩 오브제는 한때 움직였던 무언가의 기억을 담고 있습니다.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link href="/products" className="btn-lime group inline-flex items-center gap-3">
-                  Shop the Archive
+                  아카이브 쇼핑하기
                   <span className="group-hover:translate-x-1 transition-transform duration-300">→</span>
                 </Link>
                 <Link href="/archive" className="btn-outline-dark group inline-flex items-center gap-3">
-                  Explore Archive
+                  아카이브 탐색
                 </Link>
               </div>
             </div>
 
             <div className="flex flex-col gap-6 justify-start">
               {[
-                ['50,000+', 'Products Created'],
-                ['1.2M kg', 'Materials Saved'],
-                ['28', 'Industry Awards'],
+                ['50,000+', '제작된 제품'],
+                ['1.2M kg', '절약된 소재'],
+                ['28', '업계 수상'],
               ].map(([num, label]) => (
                 <div
                   key={label}
@@ -125,11 +125,11 @@ export default function CTASection() {
           >
             <p className="font-mono text-xs uppercase tracking-[0.25em]"
               style={{ color: 'rgba(245,245,239,0.25)' }}>
-              Available Worldwide · Free Shipping on Orders Over ₩100,000
+              전 세계 배송 가능 · ₩100,000 이상 무료 배송
             </p>
             <p className="font-serif italic text-xs"
               style={{ color: 'rgba(245,245,239,0.25)' }}>
-              Sustainability isn&apos;t a trend. It&apos;s a movement.
+              지속가능성은 트렌드가 아닙니다. 그것은 움직임입니다.
             </p>
           </motion.div>
         </div>
