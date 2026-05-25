@@ -24,15 +24,20 @@ export default function PhilosophySection() {
             {/* Left */}
             <div className="lg:col-span-7">
               <motion.div
-                className="flex items-center gap-3 mb-10"
+                className="mb-10"
                 initial={{ opacity: 0, x: -20 }}
                 animate={statementInView ? { opacity: 1, x: 0 } : {}}
                 transition={{ duration: 0.7 }}
               >
-                <div className="w-8 h-px bg-lime-primary" />
-                <span className="font-mono text-xs text-text-muted uppercase tracking-[0.3em]">
-                  우리가 해결하는 문제
-                </span>
+                <div
+                  className="inline-flex items-center gap-2 px-3 py-1.5"
+                  style={{ border: '1px solid rgba(196,200,40,0.45)', backgroundColor: 'rgba(196,200,40,0.07)' }}
+                >
+                  <div className="w-1 h-1 rounded-full bg-lime-primary flex-shrink-0" />
+                  <span className="font-mono text-xs text-text-muted uppercase tracking-[0.3em]">
+                    우리가 해결하는 문제
+                  </span>
+                </div>
               </motion.div>
 
               <div className="overflow-hidden">
@@ -49,7 +54,9 @@ export default function PhilosophySection() {
                   transition={{ delay: 0.15, duration: 1, ease: [0.16, 1, 0.3, 1] }}
                 >
                   장비는 은퇴하지만,<br />
-                  <span style={{ color: 'var(--lime-on-light)' }}>소재는 그렇지 않습니다.</span>
+                  <span style={{ borderBottom: '2px solid var(--lime-primary)', paddingBottom: '0.1em' }}>
+                    소재는 그렇지 않습니다.
+                  </span>
                 </motion.h2>
               </div>
             </div>
@@ -81,13 +88,18 @@ export default function PhilosophySection() {
         <div className="max-w-screen-2xl mx-auto">
 
           <motion.div
-            className="flex items-center gap-3 mb-16 md:mb-24"
+            className="mb-16 md:mb-24"
             initial={{ opacity: 0 }}
             animate={inView ? { opacity: 1 } : {}}
             transition={{ delay: 0.1, duration: 0.7 }}
           >
-            <div className="w-8 h-px bg-lime-primary" />
-            <span className="font-mono text-xs text-text-muted uppercase tracking-[0.3em]">우리의 철학</span>
+            <div
+              className="inline-flex items-center gap-2 px-3 py-1.5"
+              style={{ border: '1px solid rgba(196,200,40,0.45)', backgroundColor: 'rgba(196,200,40,0.07)' }}
+            >
+              <div className="w-1 h-1 rounded-full bg-lime-primary flex-shrink-0" />
+              <span className="font-mono text-xs text-text-muted uppercase tracking-[0.3em]">우리의 철학</span>
+            </div>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-px" style={{ backgroundColor: 'rgba(17,17,17,0.08)' }}>
@@ -118,7 +130,9 @@ export default function PhilosophySection() {
                 animate={inView ? { opacity: 1, y: 0 } : {}}
                 transition={{ delay: 0.2 + i * 0.12, duration: 0.8 }}
               >
-                <div className="absolute inset-0 bg-lime-primary/4 opacity-0 group-hover:opacity-100 transition-opacity duration-400 pointer-events-none" />
+                {/* Left bar reveal on hover */}
+                <div className="absolute left-0 top-0 h-full w-0.5 bg-lime-primary origin-top scale-y-0 group-hover:scale-y-100 transition-transform duration-400" />
+                <div className="absolute inset-0 bg-lime-primary/[0.03] opacity-0 group-hover:opacity-100 transition-opacity duration-400 pointer-events-none" />
 
                 <div
                   className="absolute bottom-4 right-4 font-display leading-none pointer-events-none select-none"
@@ -128,17 +142,26 @@ export default function PhilosophySection() {
                 </div>
 
                 <div className="relative z-10">
-                  <div className="flex items-center gap-3 mb-10">
-                    <div className="w-5 h-5 flex items-center justify-center border border-lime-primary">
-                      <span className="font-mono leading-none" style={{ fontSize: '8px', color: 'var(--lime-on-light)' }}>
-                        {item.tag}
-                      </span>
-                    </div>
-                    <div className="flex-1 h-px bg-lime-primary/25" />
+                  {/* Archive tag label */}
+                  <div className="flex items-center gap-4 mb-10">
+                    <span
+                      className="font-mono text-xs tracking-[0.2em] uppercase px-2.5 py-1 flex-shrink-0"
+                      style={{
+                        border: '1px solid rgba(196,200,40,0.45)',
+                        backgroundColor: 'rgba(196,200,40,0.07)',
+                        color: 'var(--text-muted)',
+                      }}
+                    >
+                      {item.tag}
+                    </span>
+                    <div
+                      className="flex-1 h-px"
+                      style={{ background: 'linear-gradient(90deg, rgba(196,200,40,0.35) 0%, transparent 80%)' }}
+                    />
                   </div>
 
                   <h3
-                    className="font-ko text-text-primary mb-5 group-hover:text-lime-primary transition-colors duration-300"
+                    className="font-ko text-text-primary mb-5 transition-colors duration-300"
                     style={{ fontSize: 'clamp(1.1rem, 1.6vw, 1.6rem)', letterSpacing: '-0.01em', lineHeight: 1.2, fontWeight: 700 }}
                   >
                     {item.title}
