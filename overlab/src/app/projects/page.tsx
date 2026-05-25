@@ -78,7 +78,7 @@ export default function ProjectsPage() {
         style={{ backgroundColor: '#181A16' }}
       >
         <div className="absolute inset-0 pointer-events-none"
-          style={{ background: 'radial-gradient(ellipse at 80% 50%, rgba(216,255,62,0.1) 0%, transparent 55%)' }} />
+          style={{ background: 'radial-gradient(ellipse at 80% 50%, rgba(196,200,40,0.1) 0%, transparent 55%)' }} />
         <div className="absolute inset-0 pointer-events-none"
           style={{
             backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E")`,
@@ -87,7 +87,7 @@ export default function ProjectsPage() {
         <div className="relative z-10 w-full px-6 md:px-12 lg:px-16 xl:px-20 pb-16 md:pb-20 pt-36 max-w-screen-2xl mx-auto">
           <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.9 }}>
             <div className="flex items-center gap-3 mb-8">
-              <div className="w-8 h-px" style={{ backgroundColor: '#D8FF3E' }} />
+              <div className="w-8 h-px" style={{ backgroundColor: 'var(--lime-primary)' }} />
               <span className="font-mono text-xs tracking-[0.3em] uppercase" style={{ color: 'rgba(245,245,239,0.4)' }}>
                 협업 & 수상
               </span>
@@ -138,7 +138,7 @@ export default function ProjectsPage() {
             <h2 className="font-ko text-text-primary mb-5"
               style={{ fontSize: 'clamp(1.7rem, 3.2vw, 3.5rem)', letterSpacing: '-0.02em', lineHeight: 1.1 }}>
               협업에<br />
-              <span className="text-lime-primary">관심이 있으신가요?</span>
+              <span className="text-lime-on-light">관심이 있으신가요?</span>
             </h2>
             <p className="font-serif italic text-text-secondary text-base leading-relaxed max-w-md">
               오버랩은 지속가능한 혁신과 디자인 탁월성이라는 우리의 미션과 일치하는 파트너십에 항상 열려 있습니다.
@@ -181,7 +181,7 @@ function ProjectRow({
       >
         {/* Hover wash */}
         <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-400 pointer-events-none"
-          style={{ backgroundColor: 'rgba(216,255,62,0.03)' }} />
+          style={{ backgroundColor: 'rgba(196,200,40,0.03)' }} />
 
         {/* Year */}
         <div className="col-span-4 md:col-span-1 flex items-start">
@@ -192,7 +192,7 @@ function ProjectRow({
         <div className="hidden md:flex col-span-2 items-start pt-0.5">
           <span
             className="font-mono text-xs uppercase tracking-[0.15em] px-2.5 py-1"
-            style={{ border: '1px solid rgba(216,255,62,0.35)', color: 'rgba(216,255,62,0.75)' }}
+            style={{ border: '1px solid rgba(196,200,40,0.35)', color: 'rgba(196,200,40,0.75)' }}
           >
             {project.category}
           </span>

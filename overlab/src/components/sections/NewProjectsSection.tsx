@@ -85,7 +85,7 @@ export default function ProjectsSection() {
                 style={{ fontSize: 'clamp(1.9rem, 3.8vw, 4.5rem)', letterSpacing: '-0.02em', lineHeight: 1.1 }}
               >
                 목적을 가지고<br />
-                <span className="text-lime-primary">함께 일합니다.</span>
+                <span className="text-lime-on-light">함께 일합니다.</span>
               </h2>
             </div>
             <div className="lg:col-span-4 flex items-end">
@@ -135,7 +135,7 @@ export default function ProjectsSection() {
                 >
                   {/* Hover wash */}
                   <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-400 pointer-events-none"
-                    style={{ backgroundColor: 'rgba(216,255,62,0.03)' }} />
+                    style={{ backgroundColor: 'rgba(196,200,40,0.03)' }} />
 
                   {/* Year */}
                   <div className="col-span-2 md:col-span-1 flex items-center">
@@ -150,7 +150,7 @@ export default function ProjectsSection() {
                   <div className="hidden md:flex col-span-2 items-center">
                     <span
                       className="font-mono text-xs uppercase tracking-[0.15em] px-2.5 py-1"
-                      style={{ border: '1px solid rgba(216,255,62,0.3)', color: 'rgba(216,255,62,0.7)' }}
+                      style={{ border: '1px solid rgba(196,200,40,0.3)', color: 'rgba(196,200,40,0.7)' }}
                     >
                       {project.category}
                     </span>

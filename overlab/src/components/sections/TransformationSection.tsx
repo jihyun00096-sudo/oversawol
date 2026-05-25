@@ -67,7 +67,7 @@ export default function TransformationSection() {
           top: '50%', left: '50%',
           transform: 'translate(-50%, -50%)',
           width: '800px', height: '400px',
-          background: 'radial-gradient(ellipse, rgba(216,255,62,0.06) 0%, transparent 70%)',
+          background: 'radial-gradient(ellipse, rgba(196,200,40,0.06) 0%, transparent 70%)',
         }}
       />
 
@@ -83,7 +83,7 @@ export default function TransformationSection() {
               transition={{ duration: 0.8 }}
             >
               <div className="flex items-center gap-3 mb-8">
-                <div className="w-8 h-px" style={{ backgroundColor: '#D8FF3E' }} />
+                <div className="w-8 h-px" style={{ backgroundColor: 'var(--lime-primary)' }} />
                 <span className="font-mono text-xs tracking-[0.3em] uppercase"
                   style={{ color: 'rgba(245,245,239,0.4)' }}>
                   제작 과정
@@ -97,7 +97,7 @@ export default function TransformationSection() {
                 }}
               >
                 장비에서<br />
-                <span style={{ color: '#D8FF3E' }}>오브제로.</span>
+                <span style={{ color: 'var(--lime-primary)' }}>오브제로.</span>
               </h2>
             </motion.div>
             <motion.div
@@ -129,7 +129,7 @@ export default function TransformationSection() {
               >
                 <div
                   className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
-                  style={{ backgroundColor: 'rgba(216,255,62,0.04)' }}
+                  style={{ backgroundColor: 'rgba(196,200,40,0.04)' }}
                 />
                 <div
                   className="absolute bottom-4 right-6 font-display leading-none pointer-events-none select-none"
@@ -140,13 +140,13 @@ export default function TransformationSection() {
                 <div className="relative z-10">
                   <div className="flex items-center justify-between mb-6">
                     <span className="font-mono text-xs tracking-[0.25em] uppercase"
-                      style={{ color: '#D8FF3E', opacity: 0.8 }}>{step.num}</span>
+                      style={{ color: 'var(--lime-primary)', opacity: 0.8 }}>{step.num}</span>
                     <span className="font-mono text-xs tracking-[0.2em] uppercase"
                       style={{ color: 'rgba(245,245,239,0.25)' }}>{step.sub}</span>
                   </div>
                   <div
                     className="w-full h-px mb-8 group-hover:opacity-100 transition-opacity duration-300"
-                    style={{ backgroundColor: 'rgba(216,255,62,0.2)', opacity: 0.4 }}
+                    style={{ backgroundColor: 'rgba(196,200,40,0.2)', opacity: 0.4 }}
                   />
                   <h3
                     className="font-ko text-white mb-4 group-hover:text-lime-primary transition-colors duration-300"
@@ -176,7 +176,7 @@ export default function TransformationSection() {
                 <div key={label}>
                   <div
                     className="font-display leading-none mb-1"
-                    style={{ color: '#D8FF3E', fontSize: 'clamp(1.4rem, 3vw, 2.4rem)', letterSpacing: '-0.03em' }}
+                    style={{ color: 'var(--lime-primary)', fontSize: 'clamp(1.4rem, 3vw, 2.4rem)', letterSpacing: '-0.03em' }}
                   >
                     {num}
                   </div>

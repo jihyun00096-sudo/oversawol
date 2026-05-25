@@ -101,7 +101,7 @@ export default function ArchivePage() {
         style={{ backgroundColor: '#181A16' }}
       >
         <div className="absolute inset-0 pointer-events-none"
-          style={{ background: 'radial-gradient(ellipse at 80% 20%, rgba(216,255,62,0.1) 0%, transparent 55%)' }} />
+          style={{ background: 'radial-gradient(ellipse at 80% 20%, rgba(196,200,40,0.1) 0%, transparent 55%)' }} />
         <div className="absolute inset-0 pointer-events-none"
           style={{
             backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E")`,
@@ -110,7 +110,7 @@ export default function ArchivePage() {
         <div className="relative z-10 w-full px-6 md:px-12 lg:px-16 xl:px-20 pb-16 md:pb-20 pt-36 max-w-screen-2xl mx-auto">
           <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.9 }}>
             <div className="flex items-center gap-3 mb-8">
-              <div className="w-8 h-px" style={{ backgroundColor: '#D8FF3E' }} />
+              <div className="w-8 h-px" style={{ backgroundColor: 'var(--lime-primary)' }} />
               <span className="font-mono text-xs tracking-[0.3em] uppercase" style={{ color: 'rgba(245,245,239,0.4)' }}>
                 전체 소재 아카이브
               </span>
@@ -148,7 +148,7 @@ export default function ArchivePage() {
               style={{ fontSize: 'clamp(1.7rem, 3.2vw, 3.5rem)', letterSpacing: '-0.02em', lineHeight: 1.1 }}
             >
               역사의 한 조각을<br />
-              <span className="text-lime-primary">소유할 준비가 되셨나요?</span>
+              <span className="text-lime-on-light">소유할 준비가 되셨나요?</span>
             </h2>
             <p className="font-serif italic text-text-secondary text-base">
               각 제품은 소재 출처의 이야기와 재구성의 예술성을 담고 있습니다.
@@ -199,7 +199,7 @@ function MaterialSection({ mat, idx }: { mat: (typeof MATERIALS)[0]; idx: number
               <div className="absolute top-6 left-6">
                 <span
                   className="font-mono text-xs tracking-[0.2em] uppercase px-3 py-1.5"
-                  style={{ backgroundColor: '#D8FF3E', color: '#111111' }}
+                  style={{ backgroundColor: 'var(--lime-primary)', color: '#111111' }}
                 >
                   {mat.products} 제품
                 </span>
@@ -282,7 +282,7 @@ function MaterialSection({ mat, idx }: { mat: (typeof MATERIALS)[0]; idx: number
                 style={{ border: '1px solid rgba(17,17,17,0.1)' }}
               >
                 <div className="absolute -top-3 left-4 w-6 h-6 flex items-center justify-center font-mono text-xs"
-                  style={{ backgroundColor: '#D8FF3E', color: '#111111' }}>
+                  style={{ backgroundColor: 'var(--lime-primary)', color: '#111111' }}>
                   {String(i + 1).padStart(2, '0')}
                 </div>
                 <p className="font-serif italic text-text-secondary text-sm leading-relaxed pt-3">{step}</p>

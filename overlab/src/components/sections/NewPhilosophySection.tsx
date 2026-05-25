@@ -16,7 +16,7 @@ export default function PhilosophySection() {
       <div
         ref={statementRef}
         className="relative w-full py-28 md:py-40 lg:py-52 px-6 md:px-12 lg:px-16 xl:px-20"
-        style={{ borderBottom: '1px solid rgba(17,17,17,0.07)' }}
+        style={{ borderBottom: '1px solid rgba(17,17,17,0.08)' }}
       >
         <div className="max-w-screen-2xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 items-end">
@@ -49,7 +49,7 @@ export default function PhilosophySection() {
                   transition={{ delay: 0.15, duration: 1, ease: [0.16, 1, 0.3, 1] }}
                 >
                   장비는 은퇴하지만,<br />
-                  <span style={{ color: '#D8FF3E' }}>소재는 그렇지 않습니다.</span>
+                  <span style={{ color: 'var(--lime-on-light)' }}>소재는 그렇지 않습니다.</span>
                 </motion.h2>
               </div>
             </div>
@@ -90,7 +90,7 @@ export default function PhilosophySection() {
             <span className="font-mono text-xs text-text-muted uppercase tracking-[0.3em]">우리의 철학</span>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-px" style={{ backgroundColor: 'rgba(17,17,17,0.07)' }}>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-px" style={{ backgroundColor: 'rgba(17,17,17,0.08)' }}>
             {[
               {
                 tag: 'WHY',
@@ -130,7 +130,7 @@ export default function PhilosophySection() {
                 <div className="relative z-10">
                   <div className="flex items-center gap-3 mb-10">
                     <div className="w-5 h-5 flex items-center justify-center border border-lime-primary">
-                      <span className="font-mono leading-none" style={{ fontSize: '8px', color: '#D8FF3E' }}>
+                      <span className="font-mono leading-none" style={{ fontSize: '8px', color: 'var(--lime-on-light)' }}>
                         {item.tag}
                       </span>
                     </div>

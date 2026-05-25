@@ -51,7 +51,7 @@ export default function AboutPage() {
         style={{ backgroundColor: '#181A16' }}
       >
         <div className="absolute inset-0 pointer-events-none"
-          style={{ background: 'radial-gradient(ellipse at 70% 30%, rgba(216,255,62,0.1) 0%, transparent 60%)' }} />
+          style={{ background: 'radial-gradient(ellipse at 70% 30%, rgba(196,200,40,0.1) 0%, transparent 60%)' }} />
         <div
           className="absolute inset-0 pointer-events-none"
           style={{
@@ -66,7 +66,7 @@ export default function AboutPage() {
             transition={{ duration: 0.9 }}
           >
             <div className="flex items-center gap-3 mb-8">
-              <div className="w-8 h-px" style={{ backgroundColor: '#D8FF3E' }} />
+              <div className="w-8 h-px" style={{ backgroundColor: 'var(--lime-primary)' }} />
               <span className="font-mono text-xs tracking-[0.3em] uppercase"
                 style={{ color: 'rgba(245,245,239,0.4)' }}>
                 우리의 철학
@@ -77,7 +77,7 @@ export default function AboutPage() {
               style={{ fontSize: 'clamp(2.2rem, 5.5vw, 6rem)', letterSpacing: '-0.02em', lineHeight: 1.05 }}
             >
               어바웃<br />
-              <span style={{ color: '#D8FF3E' }}>OVERLAB</span>
+              <span style={{ color: 'var(--lime-primary)' }}>OVERLAB</span>
             </h1>
             <p
               className="font-serif italic leading-relaxed max-w-xl"
@@ -113,7 +113,7 @@ export default function AboutPage() {
                 </div>
               </div>
               {/* Lime border accent */}
-              <div className="absolute bottom-0 left-0 w-24 h-1" style={{ backgroundColor: '#D8FF3E' }} />
+              <div className="absolute bottom-0 left-0 w-24 h-1" style={{ backgroundColor: 'var(--lime-primary)' }} />
             </div>
           </div>
 
@@ -197,10 +197,10 @@ export default function AboutPage() {
                 <div className="relative z-10">
                   <div className="flex items-center gap-3 mb-8">
                     <span className="font-mono text-xs tracking-[0.25em] uppercase px-2.5 py-1"
-                      style={{ border: '1px solid rgba(216,255,62,0.4)', color: 'rgba(216,255,62,0.8)' }}>
+                      style={{ border: '1px solid rgba(196,200,40,0.4)', color: 'rgba(196,200,40,0.8)' }}>
                       {v.tag}
                     </span>
-                    <div className="flex-1 h-px" style={{ backgroundColor: 'rgba(216,255,62,0.15)' }} />
+                    <div className="flex-1 h-px" style={{ backgroundColor: 'rgba(196,200,40,0.15)' }} />
                   </div>
                   <h3
                     className="font-ko text-text-primary mb-5 group-hover:text-lime-primary transition-colors duration-300"
@@ -272,7 +272,7 @@ export default function AboutPage() {
               style={{ fontSize: 'clamp(1.7rem, 3.2vw, 3.5rem)', letterSpacing: '-0.02em', lineHeight: 1.1 }}
             >
               함께<br />
-              <span style={{ color: '#D8FF3E' }}>움직이세요</span>
+              <span style={{ color: 'var(--lime-primary)' }}>움직이세요</span>
             </h2>
             <p className="font-serif italic" style={{ color: 'rgba(245,245,239,0.5)', fontSize: '1rem' }}>
               쇼핑하거나, 협업하거나, 아카이브를 팔로우하세요.

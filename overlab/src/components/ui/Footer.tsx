@@ -44,7 +44,7 @@ export default function Footer() {
               퓨처 아카이브. 업사이클링 레저 스포츠 장비를 일상의 디자인 오브제로.
             </p>
             <div className="flex items-center gap-2">
-              <div className="w-2 h-2 rounded-full animate-breathe" style={{ backgroundColor: '#D8FF3E' }} />
+              <div className="w-2 h-2 rounded-full animate-breathe" style={{ backgroundColor: 'var(--lime-primary)' }} />
               <span className="font-mono text-xs uppercase tracking-[0.2em]"
                 style={{ color: 'rgba(245,245,239,0.3)' }}>
                 협업 문의 중
@@ -114,7 +114,7 @@ export default function Footer() {
                 />
                 <button
                   className="px-4 font-mono text-xs tracking-widest uppercase transition-colors duration-300"
-                  style={{ backgroundColor: '#D8FF3E', color: '#111111', border: '1px solid #D8FF3E' }}
+                  style={{ backgroundColor: 'var(--lime-primary)', color: '#111111', border: '1px solid #D8FF3E' }}
                 >
                   →
                 </button>
@@ -142,7 +142,7 @@ export default function Footer() {
             </Link>
             <span
               className="font-mono text-xs uppercase tracking-[0.15em]"
-              style={{ color: 'rgba(216,255,62,0.4)' }}
+              style={{ color: 'rgba(196,200,40,0.5)' }}
             >
               퓨처 아카이브
             </span>

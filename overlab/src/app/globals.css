@@ -12,10 +12,11 @@
   --text-secondary: #1B1B1B;
   --text-muted: #6B6B6B;
 
-  /* Accent - Lime */
-  --lime-primary: #D8FF3E;
-  --lime-secondary: #CFFF3A;
-  --lime-soft: #B7F500;
+  /* Accent - Olive Lime */
+  --lime-primary: #C4C828;
+  --lime-secondary: #B4B820;
+  --lime-soft: #A0A618;
+  --lime-on-light: #4A5010;
 
   /* Charcoal */
   --charcoal: #2B2F2A;
@@ -53,8 +54,8 @@ body {
 }
 
 body::selection {
-  background: var(--lime-primary);
-  color: var(--text-primary);
+  background: var(--charcoal);
+  color: var(--bg-primary);
 }
 
 /* Custom cursor - high-end minimal style */
@@ -223,10 +224,10 @@ a {
 
 @keyframes glow {
   0%, 100% {
-    box-shadow: 0 0 20px rgba(216, 255, 62, 0.3);
+    box-shadow: 0 0 20px rgba(196, 200, 40, 0.2);
   }
   50% {
-    box-shadow: 0 0 40px rgba(216, 255, 62, 0.5);
+    box-shadow: 0 0 40px rgba(196, 200, 40, 0.35);
   }
 }
 
@@ -242,6 +243,10 @@ a {
 
 .text-lime {
   color: var(--lime-primary);
+}
+
+.text-lime-on-light {
+  color: var(--lime-on-light);
 }
 
 .border-lime {
@@ -400,7 +405,8 @@ a {
   transition: background 0.3s ease, transform 0.2s ease;
 }
 .btn-lime:hover {
-  background: var(--lime-secondary);
+  background: var(--lime-soft);
+  transform: translateY(-1px);
 }
 
 /* Outline button */
@@ -418,8 +424,9 @@ a {
   transition: border-color 0.3s ease, color 0.3s ease;
 }
 .btn-outline:hover {
-  border-color: var(--lime-primary);
-  color: var(--lime-primary);
+  border-color: var(--charcoal);
+  color: var(--text-primary);
+  background: rgba(17, 17, 17, 0.04);
 }
 
 /* Outline button dark variant */
@@ -437,8 +444,9 @@ a {
   transition: border-color 0.3s ease, color 0.3s ease;
 }
 .btn-outline-dark:hover {
-  border-color: var(--lime-primary);
-  color: var(--lime-primary);
+  border-color: rgba(245, 245, 239, 0.7);
+  color: rgba(245, 245, 239, 1);
+  background: rgba(245, 245, 239, 0.06);
 }
 
 /* Process step line */

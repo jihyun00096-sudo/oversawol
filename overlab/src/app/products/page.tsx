@@ -44,7 +44,7 @@ export default function ProductsPage() {
         style={{ backgroundColor: '#181A16' }}
       >
         <div className="absolute inset-0 pointer-events-none"
-          style={{ background: 'radial-gradient(ellipse at 20% 80%, rgba(216,255,62,0.1) 0%, transparent 55%)' }} />
+          style={{ background: 'radial-gradient(ellipse at 20% 80%, rgba(196,200,40,0.1) 0%, transparent 55%)' }} />
         <div className="absolute inset-0 pointer-events-none"
           style={{
             backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E")`,
@@ -53,7 +53,7 @@ export default function ProductsPage() {
         <div className="relative z-10 w-full px-6 md:px-12 lg:px-16 xl:px-20 pb-16 md:pb-20 pt-36 max-w-screen-2xl mx-auto">
           <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.9 }}>
             <div className="flex items-center gap-3 mb-8">
-              <div className="w-8 h-px" style={{ backgroundColor: '#D8FF3E' }} />
+              <div className="w-8 h-px" style={{ backgroundColor: 'var(--lime-primary)' }} />
               <span className="font-mono text-xs tracking-[0.3em] uppercase" style={{ color: 'rgba(245,245,239,0.4)' }}>
                 컬렉션 쇼핑하기
               </span>
@@ -88,9 +88,9 @@ export default function ProductsPage() {
                 onClick={() => setActive(f)}
                 className="font-mono text-xs uppercase tracking-[0.2em] px-4 py-2 transition-all duration-300"
                 style={{
-                  border: `1px solid ${active === f ? '#D8FF3E' : 'rgba(17,17,17,0.2)'}`,
+                  border: `1px solid ${active === f ? 'var(--lime-primary)' : 'rgba(17,17,17,0.2)'}`,
                   color: active === f ? '#111111' : '#6B6B6B',
-                  backgroundColor: active === f ? '#D8FF3E' : 'transparent',
+                  backgroundColor: active === f ? 'var(--lime-primary)' : 'transparent',
                 }}
               >
                 {f}
@@ -129,7 +129,7 @@ export default function ProductsPage() {
                   >
                     <button
                       className="font-mono text-xs tracking-[0.2em] uppercase px-5 py-2.5"
-                      style={{ backgroundColor: '#D8FF3E', color: '#111111' }}
+                      style={{ backgroundColor: 'var(--lime-primary)', color: '#111111' }}
                     >
                       빠른 보기
                     </button>

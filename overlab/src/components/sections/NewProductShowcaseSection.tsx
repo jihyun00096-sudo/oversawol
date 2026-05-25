@@ -80,7 +80,7 @@ export default function ProductShowcaseSection() {
               style={{ fontSize: 'clamp(1.9rem, 3.8vw, 4.5rem)', letterSpacing: '-0.02em', lineHeight: 1.1 }}
             >
               목적 있는<br />
-              <span className="text-lime-primary">오브제.</span>
+              <span className="text-lime-on-light">오브제.</span>
             </h2>
           </div>
           <Link href="/products" className="btn-outline group inline-flex items-center gap-3 whitespace-nowrap flex-shrink-0">
@@ -110,7 +110,7 @@ export default function ProductShowcaseSection() {
             <div className="absolute top-6 left-6">
               <span
                 className="font-mono text-xs tracking-[0.2em] uppercase px-3 py-1.5"
-                style={{ backgroundColor: '#D8FF3E', color: '#111111' }}
+                style={{ backgroundColor: 'var(--lime-primary)', color: '#111111' }}
               >
                 추천
               </span>
@@ -216,7 +216,7 @@ function ProductCard({
           <Link
             href="/products"
             className="font-mono text-xs tracking-[0.2em] uppercase px-5 py-2.5"
-            style={{ backgroundColor: '#D8FF3E', color: '#111111' }}
+            style={{ backgroundColor: 'var(--lime-primary)', color: '#111111' }}
           >
             보기
           </Link>

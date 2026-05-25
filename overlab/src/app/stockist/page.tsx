@@ -40,7 +40,7 @@ export default function StockistPage() {
         style={{ backgroundColor: '#181A16' }}
       >
         <div className="absolute inset-0 pointer-events-none"
-          style={{ background: 'radial-gradient(ellipse at 30% 70%, rgba(216,255,62,0.1) 0%, transparent 55%)' }} />
+          style={{ background: 'radial-gradient(ellipse at 30% 70%, rgba(196,200,40,0.1) 0%, transparent 55%)' }} />
         <div className="absolute inset-0 pointer-events-none"
           style={{
             backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E")`,
@@ -49,7 +49,7 @@ export default function StockistPage() {
         <div className="relative z-10 w-full px-6 md:px-12 lg:px-16 xl:px-20 pb-16 md:pb-20 pt-36 max-w-screen-2xl mx-auto">
           <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.9 }}>
             <div className="flex items-center gap-3 mb-8">
-              <div className="w-8 h-px" style={{ backgroundColor: '#D8FF3E' }} />
+              <div className="w-8 h-px" style={{ backgroundColor: 'var(--lime-primary)' }} />
               <span className="font-mono text-xs tracking-[0.3em] uppercase" style={{ color: 'rgba(245,245,239,0.4)' }}>
                 찾아오시는 방법
               </span>
@@ -103,7 +103,7 @@ export default function StockistPage() {
                   <div className="flex items-center justify-between mb-4">
                     <span
                       className="font-mono text-xs uppercase tracking-[0.2em] px-2.5 py-1"
-                      style={{ backgroundColor: 'rgba(216,255,62,0.1)', color: 'rgba(216,255,62,0.8)' }}
+                      style={{ backgroundColor: 'rgba(196,200,40,0.1)', color: 'rgba(196,200,40,0.8)' }}
                     >
                       {store.type}
                     </span>
@@ -166,12 +166,12 @@ export default function StockistPage() {
                   style={{ borderBottom: '1px solid rgba(17,17,17,0.08)' }}
                 >
                   <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-400 pointer-events-none"
-                    style={{ backgroundColor: 'rgba(216,255,62,0.03)' }} />
+                    style={{ backgroundColor: 'rgba(196,200,40,0.03)' }} />
 
                   {/* Type badge */}
                   <div className="col-span-12 md:col-span-2 flex items-center md:items-start md:pt-1">
                     <span className="font-mono text-xs uppercase tracking-[0.15em] px-2.5 py-1"
-                      style={{ border: '1px solid rgba(216,255,62,0.35)', color: 'rgba(216,255,62,0.75)' }}>
+                      style={{ border: '1px solid rgba(196,200,40,0.35)', color: 'rgba(196,200,40,0.75)' }}>
                       {store.type}
                     </span>
                   </div>
@@ -228,7 +228,7 @@ export default function StockistPage() {
               <div className="font-mono text-xs text-text-muted uppercase tracking-widest">[인터랙티브 맵 — 180개국 이상]</div>
             </div>
             {/* Lime accent corner */}
-            <div className="absolute bottom-0 left-0 w-16 h-1" style={{ backgroundColor: '#D8FF3E' }} />
+            <div className="absolute bottom-0 left-0 w-16 h-1" style={{ backgroundColor: 'var(--lime-primary)' }} />
           </div>
         </div>
       </section>

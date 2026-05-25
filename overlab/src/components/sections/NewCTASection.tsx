@@ -27,9 +27,9 @@ export default function CTASection() {
         className="absolute inset-0 pointer-events-none z-0"
         animate={{
           background: [
-            'radial-gradient(ellipse at 50% 50%, rgba(216,255,62,0.1) 0%, transparent 65%)',
-            'radial-gradient(ellipse at 50% 50%, rgba(216,255,62,0.16) 0%, transparent 65%)',
-            'radial-gradient(ellipse at 50% 50%, rgba(216,255,62,0.1) 0%, transparent 65%)',
+            'radial-gradient(ellipse at 50% 50%, rgba(196,200,40,0.1) 0%, transparent 65%)',
+            'radial-gradient(ellipse at 50% 50%, rgba(196,200,40,0.16) 0%, transparent 65%)',
+            'radial-gradient(ellipse at 50% 50%, rgba(196,200,40,0.1) 0%, transparent 65%)',
           ],
         }}
         transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }}
@@ -51,7 +51,7 @@ export default function CTASection() {
               >
                 미래는<br />
                 {' '}
-                <span style={{ color: '#D8FF3E', WebkitTextStroke: '0', textShadow: '0 0 60px rgba(216,255,62,0.4)' }}>
+                <span style={{ color: 'var(--lime-primary)', textShadow: '0 0 50px rgba(196,200,40,0.28)' }}>
                   이미
                 </span>
                 <br />

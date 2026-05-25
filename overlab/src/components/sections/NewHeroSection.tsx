@@ -41,7 +41,7 @@ export default function NewHeroSection() {
         style={{
           top: '0%', right: '10%',
           width: '600px', height: '600px',
-          background: 'radial-gradient(circle, rgba(216, 255, 62, 0.07) 0%, transparent 65%)',
+          background: 'radial-gradient(circle, rgba(196, 200, 40, 0.07) 0%, transparent 65%)',
           transform: `translateY(${scrollY * 0.08}px)`,
         }}
       />
@@ -51,7 +51,7 @@ export default function NewHeroSection() {
         style={{
           bottom: '10%', left: '0%',
           width: '400px', height: '400px',
-          background: 'radial-gradient(circle, rgba(216, 255, 62, 0.04) 0%, transparent 65%)',
+          background: 'radial-gradient(circle, rgba(196, 200, 40, 0.04) 0%, transparent 65%)',
           transform: `translateY(${-scrollY * 0.05}px)`,
         }}
       />
@@ -71,7 +71,7 @@ export default function NewHeroSection() {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.1, duration: 0.8 }}
               >
-                <div className="w-8 h-px" style={{ backgroundColor: '#D8FF3E' }} />
+                <div className="w-8 h-px" style={{ backgroundColor: 'var(--lime-primary)' }} />
                 <span className="font-mono text-xs tracking-[0.3em] uppercase"
                   style={{ color: 'rgba(245,245,239,0.4)' }}>
                   퓨처 아카이브
@@ -223,7 +223,7 @@ export default function NewHeroSection() {
               <span key={i} className="font-mono text-xs tracking-[0.3em] uppercase px-8"
                 style={{ color: 'rgba(245,245,239,0.2)', whiteSpace: 'nowrap' }}>
                 {item}
-                <span style={{ color: '#D8FF3E', marginLeft: '28px' }}>·</span>
+                <span style={{ color: 'var(--lime-primary)', marginLeft: '28px' }}>·</span>
               </span>
             ))}
           </div>

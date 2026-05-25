@@ -17,9 +17,10 @@ const config: Config = {
         "text-secondary": "#1B1B1B",
         "text-muted": "#6B6B6B",
         "charcoal": "#2B2F2A",
-        "lime-primary": "#D8FF3E",
-        "lime-secondary": "#CFFF3A",
-        "lime-soft": "#B7F500",
+        "lime-primary": "#C4C828",
+        "lime-secondary": "#B4B820",
+        "lime-soft": "#A0A618",
+        "lime-on-light": "#4A5010",
       },
       fontFamily: {
         display: ["Bebas Neue", "sans-serif"],

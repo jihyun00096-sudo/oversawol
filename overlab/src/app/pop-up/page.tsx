@@ -82,7 +82,7 @@ export default function PopUpPage() {
         style={{ backgroundColor: '#181A16' }}
       >
         <div className="absolute inset-0 pointer-events-none"
-          style={{ background: 'radial-gradient(ellipse at 60% 20%, rgba(216,255,62,0.1) 0%, transparent 55%)' }} />
+          style={{ background: 'radial-gradient(ellipse at 60% 20%, rgba(196,200,40,0.1) 0%, transparent 55%)' }} />
         <div className="absolute inset-0 pointer-events-none"
           style={{
             backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E")`,
@@ -91,7 +91,7 @@ export default function PopUpPage() {
         <div className="relative z-10 w-full px-6 md:px-12 lg:px-16 xl:px-20 pb-16 md:pb-20 pt-36 max-w-screen-2xl mx-auto">
           <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.9 }}>
             <div className="flex items-center gap-3 mb-8">
-              <div className="w-8 h-px" style={{ backgroundColor: '#D8FF3E' }} />
+              <div className="w-8 h-px" style={{ backgroundColor: 'var(--lime-primary)' }} />
               <span className="font-mono text-xs tracking-[0.3em] uppercase" style={{ color: 'rgba(245,245,239,0.4)' }}>
                 경험 공간
               </span>
@@ -101,7 +101,7 @@ export default function PopUpPage() {
               style={{ fontSize: 'clamp(2.2rem, 5.5vw, 6rem)', letterSpacing: '-0.02em', lineHeight: 1.05 }}
             >
               팝업 &amp;<br />
-              <span style={{ color: '#D8FF3E' }}>전시회</span>
+              <span style={{ color: 'var(--lime-primary)' }}>전시회</span>
             </h1>
             <p className="font-serif italic leading-relaxed max-w-lg"
               style={{ color: 'rgba(245,245,239,0.6)', fontSize: 'clamp(1rem, 1.5vw, 1.2rem)' }}>
@@ -120,9 +120,9 @@ export default function PopUpPage() {
           {['전체', '진행 중', '완료'].map((f, i) => (
             <button key={f} className="font-mono text-xs uppercase tracking-[0.2em] px-4 py-2 transition-all duration-300"
               style={{
-                border: `1px solid ${i === 0 ? '#D8FF3E' : 'rgba(17,17,17,0.2)'}`,
+                border: `1px solid ${i === 0 ? 'var(--lime-primary)' : 'rgba(17,17,17,0.2)'}`,
                 color: i === 0 ? '#111111' : '#6B6B6B',
-                backgroundColor: i === 0 ? '#D8FF3E' : 'transparent',
+                backgroundColor: i === 0 ? 'var(--lime-primary)' : 'transparent',
               }}>
               {f}
             </button>
@@ -147,7 +147,7 @@ export default function PopUpPage() {
               >
                 {/* Hover wash */}
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-400 pointer-events-none"
-                  style={{ backgroundColor: 'rgba(216,255,62,0.03)' }} />
+                  style={{ backgroundColor: 'rgba(196,200,40,0.03)' }} />
 
                 {/* Image placeholder */}
                 <div className="lg:col-span-4 relative img-placeholder overflow-hidden"
@@ -156,7 +156,7 @@ export default function PopUpPage() {
                     <span
                       className="font-mono text-xs tracking-[0.2em] uppercase px-2.5 py-1"
                       style={{
-                        backgroundColor: popup.status === '진행 중' ? '#D8FF3E' : 'rgba(17,17,17,0.6)',
+                        backgroundColor: popup.status === '진행 중' ? 'var(--lime-primary)' : 'rgba(17,17,17,0.6)',
                         color: popup.status === '진행 중' ? '#111111' : 'rgba(245,245,239,0.8)',
                         backdropFilter: 'blur(8px)',
                       }}
@@ -171,7 +171,7 @@ export default function PopUpPage() {
                   <div className="flex items-center gap-3 mb-4">
                     <div
                       className="w-2 h-2 rounded-full"
-                      style={{ backgroundColor: popup.status === '진행 중' ? '#D8FF3E' : '#6B6B6B' }}
+                      style={{ backgroundColor: popup.status === '진행 중' ? 'var(--lime-primary)' : '#6B6B6B' }}
                     />
                     <span className="font-mono text-xs text-text-muted uppercase tracking-[0.2em]">
                       {popup.status}
@@ -203,7 +203,7 @@ export default function PopUpPage() {
                   <div className="flex flex-wrap gap-2">
                     {popup.highlights.map((h) => (
                       <span key={h} className="font-mono text-xs uppercase tracking-[0.15em] px-3 py-1"
-                        style={{ backgroundColor: 'rgba(216,255,62,0.1)', color: 'rgba(216,255,62,0.8)' }}>
+                        style={{ backgroundColor: 'rgba(196,200,40,0.1)', color: 'rgba(196,200,40,0.8)' }}>
                         {h}
                       </span>
                     ))}
@@ -238,7 +238,7 @@ export default function PopUpPage() {
                 viewport={{ once: true }}
               >
                 <span className="font-mono text-xs uppercase tracking-[0.2em] px-2.5 py-1 mb-5 inline-block"
-                  style={{ backgroundColor: 'rgba(216,255,62,0.1)', color: 'rgba(216,255,62,0.8)' }}>
+                  style={{ backgroundColor: 'rgba(196,200,40,0.1)', color: 'rgba(196,200,40,0.8)' }}>
                   곧 오픈
                 </span>
                 <h3 className="font-ko text-text-primary mb-4 group-hover:text-lime-primary transition-colors duration-300"
@@ -288,7 +288,7 @@ export default function PopUpPage() {
             />
             <button
               className="px-6 font-mono text-xs tracking-widest uppercase whitespace-nowrap"
-              style={{ backgroundColor: '#D8FF3E', color: '#111111', border: '1px solid #D8FF3E' }}
+              style={{ backgroundColor: 'var(--lime-primary)', color: '#111111', border: '1px solid #D8FF3E' }}
             >
               구독하기
             </button>
