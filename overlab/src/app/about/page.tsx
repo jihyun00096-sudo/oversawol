@@ -125,8 +125,11 @@ export default function AboutPage() {
             transition={{ duration: 0.9 }}
             viewport={{ once: true }}
           >
-            <div className="flex items-center gap-3 mb-8">
-              <div className="w-8 h-px bg-lime-primary" />
+            <div
+              className="inline-flex items-center gap-2 px-3 py-1.5 mb-8"
+              style={{ border: '1px solid rgba(196,200,40,0.45)', backgroundColor: 'rgba(196,200,40,0.07)' }}
+            >
+              <div className="w-1 h-1 rounded-full bg-lime-primary flex-shrink-0" />
               <span className="font-mono text-xs text-text-muted uppercase tracking-[0.3em]">우리의 이야기</span>
             </div>
             <h2
@@ -168,8 +171,11 @@ export default function AboutPage() {
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7 }}
           >
-            <div className="flex items-center gap-3 mb-6">
-              <div className="w-8 h-px bg-lime-primary" />
+            <div
+              className="inline-flex items-center gap-2 px-3 py-1.5 mb-6"
+              style={{ border: '1px solid rgba(196,200,40,0.45)', backgroundColor: 'rgba(196,200,40,0.07)' }}
+            >
+              <div className="w-1 h-1 rounded-full bg-lime-primary flex-shrink-0" />
               <span className="font-mono text-xs text-text-muted uppercase tracking-[0.3em]">핵심 철학</span>
             </div>
             <h2
@@ -189,6 +195,7 @@ export default function AboutPage() {
                 animate={inView ? { opacity: 1, y: 0 } : {}}
                 transition={{ delay: 0.1 + i * 0.1, duration: 0.8 }}
               >
+                <div className="absolute left-0 top-0 h-full w-0.5 bg-lime-primary origin-top scale-y-0 group-hover:scale-y-100 transition-transform duration-400" />
                 <div className="absolute inset-0 bg-lime-primary/4 opacity-0 group-hover:opacity-100 transition-opacity duration-400 pointer-events-none" />
                 <div className="absolute bottom-4 right-6 font-display leading-none pointer-events-none select-none"
                   style={{ fontSize: '5rem', color: 'rgba(17,17,17,0.04)', letterSpacing: '-0.04em' }}>
@@ -203,7 +210,7 @@ export default function AboutPage() {
                     <div className="flex-1 h-px" style={{ backgroundColor: 'rgba(196,200,40,0.15)' }} />
                   </div>
                   <h3
-                    className="font-ko text-text-primary mb-5 group-hover:text-lime-primary transition-colors duration-300"
+                    className="font-ko text-text-primary mb-5"
                     style={{ fontSize: 'clamp(1.1rem, 1.7vw, 1.7rem)', letterSpacing: '-0.01em', lineHeight: 1.2 }}
                   >
                     {v.title}
@@ -227,8 +234,11 @@ export default function AboutPage() {
             transition={{ duration: 0.7 }}
             viewport={{ once: true }}
           >
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-8 h-px bg-lime-primary" />
+            <div
+              className="inline-flex items-center gap-2 px-3 py-1.5 mb-4"
+              style={{ border: '1px solid rgba(196,200,40,0.45)', backgroundColor: 'rgba(196,200,40,0.07)' }}
+            >
+              <div className="w-1 h-1 rounded-full bg-lime-primary flex-shrink-0" />
               <span className="font-mono text-xs text-text-muted uppercase tracking-[0.3em]">숫자로 보는</span>
             </div>
             <h2

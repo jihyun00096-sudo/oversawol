@@ -138,7 +138,7 @@ export default function ProjectsPage() {
             <h2 className="font-ko text-text-primary mb-5"
               style={{ fontSize: 'clamp(1.7rem, 3.2vw, 3.5rem)', letterSpacing: '-0.02em', lineHeight: 1.1 }}>
               협업에<br />
-              <span className="text-lime-on-light">관심이 있으신가요?</span>
+              <span style={{ borderBottom: '2px solid var(--lime-primary)', paddingBottom: '0.1em' }}>관심이 있으신가요?</span>
             </h2>
             <p className="font-serif italic text-text-secondary text-base leading-relaxed max-w-md">
               오버랩은 지속가능한 혁신과 디자인 탁월성이라는 우리의 미션과 일치하는 파트너십에 항상 열려 있습니다.
@@ -179,6 +179,8 @@ function ProjectRow({
         style={{ borderBottom: '1px solid rgba(17,17,17,0.08)' }}
         id={project.id}
       >
+        {/* Left bar reveal */}
+        <div className="absolute left-0 top-0 h-full w-0.5 bg-lime-primary origin-top scale-y-0 group-hover:scale-y-100 transition-transform duration-300" />
         {/* Hover wash */}
         <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-400 pointer-events-none"
           style={{ backgroundColor: 'rgba(196,200,40,0.03)' }} />
@@ -201,7 +203,7 @@ function ProjectRow({
         {/* Content */}
         <div className="col-span-7 md:col-span-5">
           <h3
-            className="font-ko text-text-primary mb-2 group-hover:text-lime-primary transition-colors duration-300"
+            className="font-ko text-text-primary mb-2"
             style={{ fontSize: 'clamp(1.1rem, 1.8vw, 1.6rem)', letterSpacing: '-0.01em', lineHeight: 1.2 }}
           >
             {project.title}

@@ -148,7 +148,7 @@ export default function ArchivePage() {
               style={{ fontSize: 'clamp(1.7rem, 3.2vw, 3.5rem)', letterSpacing: '-0.02em', lineHeight: 1.1 }}
             >
               역사의 한 조각을<br />
-              <span className="text-lime-on-light">소유할 준비가 되셨나요?</span>
+              <span style={{ borderBottom: '2px solid var(--lime-primary)', paddingBottom: '0.1em' }}>소유할 준비가 되셨나요?</span>
             </h2>
             <p className="font-serif italic text-text-secondary text-base">
               각 제품은 소재 출처의 이야기와 재구성의 예술성을 담고 있습니다.
@@ -268,7 +268,7 @@ function MaterialSection({ mat, idx }: { mat: (typeof MATERIALS)[0]; idx: number
           transition={{ delay: 0.4, duration: 0.8 }}
         >
           <div className="flex items-center gap-3 mb-10">
-            <div className="w-8 h-px bg-lime-primary" />
+            <div className="w-1 h-1 rounded-full bg-lime-primary flex-shrink-0" />
             <h3 className="font-ko text-text-primary"
               style={{ fontSize: 'clamp(1.1rem, 1.8vw, 1.8rem)', letterSpacing: '-0.01em', lineHeight: 1.2 }}>
               제작 과정

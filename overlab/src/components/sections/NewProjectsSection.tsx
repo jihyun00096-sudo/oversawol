@@ -72,12 +72,22 @@ export default function ProjectsSection() {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
         >
-          <div className="flex items-center gap-3 mb-8">
-            <div className="w-8 h-px bg-lime-primary" />
-            <span className="font-mono text-xs text-text-muted uppercase tracking-[0.3em]">
-              수상 & 협업
-            </span>
-          </div>
+          <motion.div
+            className="mb-8"
+            initial={{ opacity: 0, x: -20 }}
+            animate={inView ? { opacity: 1, x: 0 } : {}}
+            transition={{ duration: 0.7 }}
+          >
+            <div
+              className="inline-flex items-center gap-2 px-3 py-1.5"
+              style={{ border: '1px solid rgba(196,200,40,0.45)', backgroundColor: 'rgba(196,200,40,0.07)' }}
+            >
+              <div className="w-1 h-1 rounded-full bg-lime-primary flex-shrink-0" />
+              <span className="font-mono text-xs text-text-muted uppercase tracking-[0.3em]">
+                수상 & 협업
+              </span>
+            </div>
+          </motion.div>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
             <div className="lg:col-span-8">
               <h2
@@ -85,7 +95,7 @@ export default function ProjectsSection() {
                 style={{ fontSize: 'clamp(1.9rem, 3.8vw, 4.5rem)', letterSpacing: '-0.02em', lineHeight: 1.1 }}
               >
                 목적을 가지고<br />
-                <span className="text-lime-on-light">함께 일합니다.</span>
+                <span style={{ borderBottom: '2px solid var(--lime-primary)', paddingBottom: '0.1em' }}>함께 일합니다.</span>
               </h2>
             </div>
             <div className="lg:col-span-4 flex items-end">
@@ -133,6 +143,8 @@ export default function ProjectsSection() {
                   className="relative grid grid-cols-12 gap-4 md:gap-8 py-8 md:py-10 px-0 overflow-hidden transition-all duration-300"
                   style={{ borderBottom: '1px solid rgba(17,17,17,0.08)' }}
                 >
+                  {/* Left bar reveal */}
+                  <div className="absolute left-0 top-0 h-full w-0.5 bg-lime-primary origin-top scale-y-0 group-hover:scale-y-100 transition-transform duration-300" />
                   {/* Hover wash */}
                   <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-400 pointer-events-none"
                     style={{ backgroundColor: 'rgba(196,200,40,0.03)' }} />
@@ -159,7 +171,7 @@ export default function ProjectsSection() {
                   {/* Title + desc */}
                   <div className="col-span-8 md:col-span-6 flex flex-col justify-center">
                     <h3
-                      className="font-ko text-text-primary mb-1 group-hover:text-lime-primary transition-colors duration-300"
+                      className="font-ko text-text-primary mb-1"
                       style={{ fontSize: 'clamp(1.1rem, 1.8vw, 1.6rem)', letterSpacing: '-0.01em', lineHeight: 1.2 }}
                     >
                       {project.title}

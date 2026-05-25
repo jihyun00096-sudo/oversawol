@@ -69,18 +69,28 @@ export default function ProductShowcaseSection() {
           transition={{ duration: 0.8 }}
         >
           <div>
-            <div className="flex items-center gap-3 mb-8">
-              <div className="w-8 h-px bg-lime-primary" />
-              <span className="font-mono text-xs text-text-muted uppercase tracking-[0.3em]">
-                주요 제품
-              </span>
-            </div>
+            <motion.div
+              className="mb-8"
+              initial={{ opacity: 0, x: -20 }}
+              animate={inView ? { opacity: 1, x: 0 } : {}}
+              transition={{ duration: 0.7 }}
+            >
+              <div
+                className="inline-flex items-center gap-2 px-3 py-1.5"
+                style={{ border: '1px solid rgba(196,200,40,0.45)', backgroundColor: 'rgba(196,200,40,0.07)' }}
+              >
+                <div className="w-1 h-1 rounded-full bg-lime-primary flex-shrink-0" />
+                <span className="font-mono text-xs text-text-muted uppercase tracking-[0.3em]">
+                  주요 제품
+                </span>
+              </div>
+            </motion.div>
             <h2
               className="font-ko text-text-primary"
               style={{ fontSize: 'clamp(1.9rem, 3.8vw, 4.5rem)', letterSpacing: '-0.02em', lineHeight: 1.1 }}
             >
               목적 있는<br />
-              <span className="text-lime-on-light">오브제.</span>
+              <span style={{ borderBottom: '2px solid var(--lime-primary)', paddingBottom: '0.1em' }}>오브제.</span>
             </h2>
           </div>
           <Link href="/products" className="btn-outline group inline-flex items-center gap-3 whitespace-nowrap flex-shrink-0">

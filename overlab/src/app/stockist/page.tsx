@@ -78,8 +78,11 @@ export default function StockistPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={onlineInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7 }}>
-            <div className="flex items-center gap-3 mb-6">
-              <div className="w-8 h-px bg-lime-primary" />
+            <div
+              className="inline-flex items-center gap-2 px-3 py-1.5 mb-6"
+              style={{ border: '1px solid rgba(196,200,40,0.45)', backgroundColor: 'rgba(196,200,40,0.07)' }}
+            >
+              <div className="w-1 h-1 rounded-full bg-lime-primary flex-shrink-0" />
               <span className="font-mono text-xs text-text-muted uppercase tracking-[0.3em]">온라인 리테일러</span>
             </div>
             <h2 className="font-ko text-text-primary"
