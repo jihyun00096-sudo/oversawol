@@ -93,8 +93,8 @@ export default function ProjectsPage() {
               </span>
             </div>
             <h1
-              className="font-display text-white leading-none mb-8"
-              style={{ fontSize: 'clamp(3.5rem, 10vw, 10rem)', letterSpacing: '-0.03em', lineHeight: 0.88 }}
+              className="font-ko text-white mb-8"
+              style={{ fontSize: 'clamp(2.5rem, 6vw, 7rem)', letterSpacing: '-0.02em', lineHeight: 1.0 }}
             >
               프로젝트
             </h1>
@@ -135,8 +135,8 @@ export default function ProjectsPage() {
         style={{ borderTop: '1px solid rgba(17,17,17,0.08)' }}>
         <div className="max-w-screen-2xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center">
           <div>
-            <h2 className="font-display text-text-primary leading-none mb-5"
-              style={{ fontSize: 'clamp(2rem, 4vw, 4.5rem)', letterSpacing: '-0.03em', lineHeight: 0.95 }}>
+            <h2 className="font-ko text-text-primary mb-5"
+              style={{ fontSize: 'clamp(1.7rem, 3.2vw, 3.5rem)', letterSpacing: '-0.02em', lineHeight: 1.1 }}>
               협업에<br />
               <span className="text-lime-primary">관심이 있으신가요?</span>
             </h2>
@@ -201,8 +201,8 @@ function ProjectRow({
         {/* Content */}
         <div className="col-span-7 md:col-span-5">
           <h3
-            className="font-display text-text-primary mb-2 group-hover:text-lime-primary transition-colors duration-300"
-            style={{ fontSize: 'clamp(1.2rem, 2.5vw, 2rem)', letterSpacing: '-0.025em', lineHeight: 1.05 }}
+            className="font-ko text-text-primary mb-2 group-hover:text-lime-primary transition-colors duration-300"
+            style={{ fontSize: 'clamp(1.1rem, 1.8vw, 1.6rem)', letterSpacing: '-0.01em', lineHeight: 1.2 }}
           >
             {project.title}
           </h3>

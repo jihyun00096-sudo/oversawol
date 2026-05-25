@@ -46,8 +46,8 @@ export default function CTASection() {
               transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
             >
               <h2
-                className="font-display text-white leading-none"
-                style={{ fontSize: 'clamp(3rem, 10vw, 10rem)', letterSpacing: '-0.03em', lineHeight: 0.88 }}
+                className="font-ko text-white"
+                style={{ fontSize: 'clamp(2.2rem, 6vw, 6rem)', letterSpacing: '-0.02em', lineHeight: 1.05 }}
               >
                 미래는<br />
                 {' '}

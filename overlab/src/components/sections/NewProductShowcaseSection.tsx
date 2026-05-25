@@ -57,7 +57,7 @@ export default function ProductShowcaseSection() {
   return (
     <section
       ref={ref}
-      className="relative w-full bg-bg-secondary overflow-hidden py-24 md:py-32 lg:py-40"
+      className="relative w-full bg-bg-secondary overflow-hidden py-28 md:py-36 lg:py-48"
     >
       <div className="px-6 md:px-12 lg:px-16 xl:px-20 max-w-screen-2xl mx-auto">
 
@@ -76,8 +76,8 @@ export default function ProductShowcaseSection() {
               </span>
             </div>
             <h2
-              className="font-display text-text-primary leading-none"
-              style={{ fontSize: 'clamp(2.8rem, 7.5vw, 8rem)', letterSpacing: '-0.03em', lineHeight: 0.9 }}
+              className="font-ko text-text-primary"
+              style={{ fontSize: 'clamp(1.9rem, 3.8vw, 4.5rem)', letterSpacing: '-0.02em', lineHeight: 1.1 }}
             >
               목적 있는<br />
               <span className="text-lime-primary">오브제.</span>
@@ -122,8 +122,8 @@ export default function ProductShowcaseSection() {
                 {FEATURED.collection}
               </span>
               <h3
-                className="font-display text-white mb-4 group-hover:text-lime-primary transition-colors duration-300"
-                style={{ fontSize: 'clamp(2rem, 4vw, 3.2rem)', letterSpacing: '-0.025em', lineHeight: 1 }}
+                className="font-ko text-white mb-4 group-hover:text-lime-primary transition-colors duration-300"
+                style={{ fontSize: 'clamp(1.4rem, 2.5vw, 2.2rem)', letterSpacing: '-0.02em', lineHeight: 1.1 }}
               >
                 {FEATURED.name}
               </h3>
@@ -165,8 +165,8 @@ export default function ProductShowcaseSection() {
         >
           <div>
             <h3
-              className="font-display text-white mb-1"
-              style={{ fontSize: 'clamp(1.4rem, 2.5vw, 2rem)', letterSpacing: '-0.025em' }}
+              className="font-ko text-white mb-1"
+              style={{ fontSize: 'clamp(1.1rem, 1.8vw, 1.6rem)', letterSpacing: '-0.02em', lineHeight: 1.2 }}
             >
               모든 오브제에는 이야기가 있습니다.
             </h3>
@@ -229,8 +229,8 @@ function ProductCard({
           {product.collection}
         </span>
         <h4
-          className="font-display text-text-primary mb-3 group-hover:text-lime-primary transition-colors duration-300"
-          style={{ fontSize: 'clamp(1.1rem, 1.8vw, 1.5rem)', letterSpacing: '-0.02em', lineHeight: 1.1 }}
+          className="font-ko text-text-primary mb-3 group-hover:text-lime-primary transition-colors duration-300"
+          style={{ fontSize: 'clamp(1rem, 1.4vw, 1.3rem)', letterSpacing: '-0.01em', lineHeight: 1.2 }}
         >
           {product.name}
         </h4>

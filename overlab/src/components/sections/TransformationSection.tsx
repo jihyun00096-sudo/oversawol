@@ -71,7 +71,7 @@ export default function TransformationSection() {
         }}
       />
 
-      <div className="relative z-10 py-24 md:py-32 lg:py-40 px-6 md:px-12 lg:px-16 xl:px-20">
+      <div className="relative z-10 py-28 md:py-36 lg:py-48 px-6 md:px-12 lg:px-16 xl:px-20">
         <div className="max-w-screen-2xl mx-auto">
 
           {/* Header */}
@@ -90,10 +90,10 @@ export default function TransformationSection() {
                 </span>
               </div>
               <h2
-                className="font-display leading-none text-white"
+                className="font-ko text-white"
                 style={{
-                  fontSize: 'clamp(2.8rem, 7vw, 7rem)',
-                  letterSpacing: '-0.03em', lineHeight: 0.92,
+                  fontSize: 'clamp(1.8rem, 3.5vw, 4rem)',
+                  letterSpacing: '-0.02em', lineHeight: 1.1,
                 }}
               >
                 장비에서<br />
@@ -149,8 +149,8 @@ export default function TransformationSection() {
                     style={{ backgroundColor: 'rgba(216,255,62,0.2)', opacity: 0.4 }}
                   />
                   <h3
-                    className="font-display text-white mb-4 group-hover:text-lime-primary transition-colors duration-300"
-                    style={{ fontSize: 'clamp(1.6rem, 2.5vw, 2.2rem)', letterSpacing: '-0.02em', lineHeight: 1 }}
+                    className="font-ko text-white mb-4 group-hover:text-lime-primary transition-colors duration-300"
+                    style={{ fontSize: 'clamp(1.2rem, 1.8vw, 1.8rem)', letterSpacing: '-0.02em', lineHeight: 1.1 }}
                   >
                     {step.label}
                   </h3>

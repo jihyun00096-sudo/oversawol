@@ -97,8 +97,8 @@ export default function PopUpPage() {
               </span>
             </div>
             <h1
-              className="font-display text-white leading-none mb-8"
-              style={{ fontSize: 'clamp(3rem, 9vw, 9rem)', letterSpacing: '-0.03em', lineHeight: 0.88 }}
+              className="font-ko text-white mb-8"
+              style={{ fontSize: 'clamp(2.2rem, 5.5vw, 6rem)', letterSpacing: '-0.02em', lineHeight: 1.05 }}
             >
               팝업 &amp;<br />
               <span style={{ color: '#D8FF3E' }}>전시회</span>
@@ -179,8 +179,8 @@ export default function PopUpPage() {
                   </div>
 
                   <h3
-                    className="font-display text-text-primary mb-3 group-hover:text-lime-primary transition-colors duration-300"
-                    style={{ fontSize: 'clamp(1.3rem, 3vw, 2.5rem)', letterSpacing: '-0.025em', lineHeight: 1.05 }}
+                    className="font-ko text-text-primary mb-3 group-hover:text-lime-primary transition-colors duration-300"
+                    style={{ fontSize: 'clamp(1.1rem, 1.8vw, 1.8rem)', letterSpacing: '-0.01em', lineHeight: 1.2 }}
                   >
                     {popup.title}
                   </h3>
@@ -221,8 +221,8 @@ export default function PopUpPage() {
         <div className="max-w-screen-2xl mx-auto">
           <div className="flex items-center gap-3 mb-10">
             <div className="w-8 h-px bg-lime-primary" />
-            <h2 className="font-display text-text-primary"
-              style={{ fontSize: 'clamp(2rem, 5vw, 5rem)', letterSpacing: '-0.03em', lineHeight: 0.95 }}>
+            <h2 className="font-ko text-text-primary"
+              style={{ fontSize: 'clamp(1.7rem, 3.2vw, 3.5rem)', letterSpacing: '-0.02em', lineHeight: 1.1 }}>
               곧 오픈
             </h2>
           </div>
@@ -241,8 +241,8 @@ export default function PopUpPage() {
                   style={{ backgroundColor: 'rgba(216,255,62,0.1)', color: 'rgba(216,255,62,0.8)' }}>
                   곧 오픈
                 </span>
-                <h3 className="font-display text-text-primary mb-4 group-hover:text-lime-primary transition-colors duration-300"
-                  style={{ fontSize: 'clamp(1.3rem, 2.5vw, 2rem)', letterSpacing: '-0.025em', lineHeight: 1.05 }}>
+                <h3 className="font-ko text-text-primary mb-4 group-hover:text-lime-primary transition-colors duration-300"
+                  style={{ fontSize: 'clamp(1.1rem, 1.8vw, 1.6rem)', letterSpacing: '-0.01em', lineHeight: 1.2 }}>
                   {event.title}
                 </h3>
                 <div className="flex gap-6">
@@ -266,8 +266,8 @@ export default function PopUpPage() {
         style={{ borderTop: '1px solid rgba(17,17,17,0.08)' }}>
         <div className="max-w-screen-2xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
           <div>
-            <h2 className="font-display text-text-primary leading-none mb-3"
-              style={{ fontSize: 'clamp(2rem, 4.5vw, 4.5rem)', letterSpacing: '-0.03em', lineHeight: 0.95 }}>
+            <h2 className="font-ko text-text-primary mb-3"
+              style={{ fontSize: 'clamp(1.7rem, 3.2vw, 3.5rem)', letterSpacing: '-0.02em', lineHeight: 1.1 }}>
               연결 상태 유지
             </h2>
             <p className="font-serif italic text-text-secondary text-base max-w-md">

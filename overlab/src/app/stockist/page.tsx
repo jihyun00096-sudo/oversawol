@@ -55,8 +55,8 @@ export default function StockistPage() {
               </span>
             </div>
             <h1
-              className="font-display text-white leading-none mb-8"
-              style={{ fontSize: 'clamp(3.5rem, 10vw, 10rem)', letterSpacing: '-0.03em', lineHeight: 0.88 }}
+              className="font-ko text-white mb-8"
+              style={{ fontSize: 'clamp(2.5rem, 6vw, 7rem)', letterSpacing: '-0.02em', lineHeight: 1.0 }}
             >
               스토어
             </h1>
@@ -82,8 +82,8 @@ export default function StockistPage() {
               <div className="w-8 h-px bg-lime-primary" />
               <span className="font-mono text-xs text-text-muted uppercase tracking-[0.3em]">온라인 리테일러</span>
             </div>
-            <h2 className="font-display text-text-primary leading-none"
-              style={{ fontSize: 'clamp(2.5rem, 6vw, 6rem)', letterSpacing: '-0.03em', lineHeight: 0.9 }}>
+            <h2 className="font-ko text-text-primary"
+              style={{ fontSize: 'clamp(1.7rem, 3.2vw, 3.5rem)', letterSpacing: '-0.02em', lineHeight: 1.1 }}>
               온라인 쇼핑
             </h2>
           </motion.div>
@@ -110,8 +110,8 @@ export default function StockistPage() {
                     <span className="font-mono text-xs text-text-muted uppercase tracking-[0.15em]">{store.region}</span>
                   </div>
                   <h3
-                    className="font-display text-text-primary mb-6 group-hover:text-lime-primary transition-colors duration-300"
-                    style={{ fontSize: 'clamp(1.3rem, 2.5vw, 2rem)', letterSpacing: '-0.025em', lineHeight: 1.05 }}
+                    className="font-ko text-text-primary mb-6 group-hover:text-lime-primary transition-colors duration-300"
+                    style={{ fontSize: 'clamp(1.1rem, 1.6vw, 1.5rem)', letterSpacing: '-0.01em', lineHeight: 1.2 }}
                   >
                     {store.name}
                   </h3>
@@ -146,8 +146,8 @@ export default function StockistPage() {
               <div className="w-8 h-px bg-lime-primary" />
               <span className="font-mono text-xs text-text-muted uppercase tracking-[0.3em]">오프라인 매장</span>
             </div>
-            <h2 className="font-display text-text-primary leading-none"
-              style={{ fontSize: 'clamp(2.5rem, 6vw, 6rem)', letterSpacing: '-0.03em', lineHeight: 0.9 }}>
+            <h2 className="font-ko text-text-primary"
+              style={{ fontSize: 'clamp(1.7rem, 3.2vw, 3.5rem)', letterSpacing: '-0.02em', lineHeight: 1.1 }}>
               직접 방문하세요
             </h2>
           </motion.div>
@@ -179,8 +179,8 @@ export default function StockistPage() {
                   {/* Name + location */}
                   <div className="col-span-12 md:col-span-4">
                     <h3
-                      className="font-display text-text-primary mb-1 group-hover:text-lime-primary transition-colors duration-300"
-                      style={{ fontSize: 'clamp(1.2rem, 2.5vw, 2rem)', letterSpacing: '-0.025em', lineHeight: 1.05 }}
+                      className="font-ko text-text-primary mb-1 group-hover:text-lime-primary transition-colors duration-300"
+                      style={{ fontSize: 'clamp(1.1rem, 1.6vw, 1.5rem)', letterSpacing: '-0.01em', lineHeight: 1.2 }}
                     >
                       {store.name}
                     </h3>
@@ -211,8 +211,8 @@ export default function StockistPage() {
         <div className="max-w-screen-2xl mx-auto">
           <div className="flex items-center gap-3 mb-8">
             <div className="w-8 h-px bg-lime-primary" />
-            <h2 className="font-display text-text-primary"
-              style={{ fontSize: 'clamp(1.5rem, 3vw, 3rem)', letterSpacing: '-0.025em' }}>
+            <h2 className="font-ko text-text-primary"
+              style={{ fontSize: 'clamp(1.3rem, 2vw, 2.2rem)', letterSpacing: '-0.01em', lineHeight: 1.2 }}>
               글로벌 현황
             </h2>
           </div>

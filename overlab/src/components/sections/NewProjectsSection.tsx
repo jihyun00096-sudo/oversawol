@@ -61,7 +61,7 @@ export default function ProjectsSection() {
   const inView = useInView(ref, { once: true, amount: 0.1 });
 
   return (
-    <section ref={ref} className="relative w-full bg-bg-primary overflow-hidden py-24 md:py-32 lg:py-40">
+    <section ref={ref} className="relative w-full bg-bg-primary overflow-hidden py-28 md:py-36 lg:py-48">
 
       <div className="px-6 md:px-12 lg:px-16 xl:px-20 max-w-screen-2xl mx-auto">
 
@@ -81,8 +81,8 @@ export default function ProjectsSection() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
             <div className="lg:col-span-8">
               <h2
-                className="font-display text-text-primary leading-none"
-                style={{ fontSize: 'clamp(2.8rem, 7.5vw, 8rem)', letterSpacing: '-0.03em', lineHeight: 0.9 }}
+                className="font-ko text-text-primary"
+                style={{ fontSize: 'clamp(1.9rem, 3.8vw, 4.5rem)', letterSpacing: '-0.02em', lineHeight: 1.1 }}
               >
                 목적을 가지고<br />
                 <span className="text-lime-primary">함께 일합니다.</span>
@@ -159,8 +159,8 @@ export default function ProjectsSection() {
                   {/* Title + desc */}
                   <div className="col-span-8 md:col-span-6 flex flex-col justify-center">
                     <h3
-                      className="font-display text-text-primary mb-1 group-hover:text-lime-primary transition-colors duration-300"
-                      style={{ fontSize: 'clamp(1.2rem, 2.5vw, 2rem)', letterSpacing: '-0.025em', lineHeight: 1.1 }}
+                      className="font-ko text-text-primary mb-1 group-hover:text-lime-primary transition-colors duration-300"
+                      style={{ fontSize: 'clamp(1.1rem, 1.8vw, 1.6rem)', letterSpacing: '-0.01em', lineHeight: 1.2 }}
                     >
                       {project.title}
                     </h3>

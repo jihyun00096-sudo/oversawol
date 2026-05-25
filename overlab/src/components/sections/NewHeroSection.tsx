@@ -40,8 +40,8 @@ export default function NewHeroSection() {
         className="absolute pointer-events-none z-0"
         style={{
           top: '0%', right: '10%',
-          width: '700px', height: '700px',
-          background: 'radial-gradient(circle, rgba(216, 255, 62, 0.09) 0%, transparent 65%)',
+          width: '600px', height: '600px',
+          background: 'radial-gradient(circle, rgba(216, 255, 62, 0.07) 0%, transparent 65%)',
           transform: `translateY(${scrollY * 0.08}px)`,
         }}
       />
@@ -50,14 +50,14 @@ export default function NewHeroSection() {
         className="absolute pointer-events-none z-0"
         style={{
           bottom: '10%', left: '0%',
-          width: '500px', height: '500px',
-          background: 'radial-gradient(circle, rgba(216, 255, 62, 0.05) 0%, transparent 65%)',
+          width: '400px', height: '400px',
+          background: 'radial-gradient(circle, rgba(216, 255, 62, 0.04) 0%, transparent 65%)',
           transform: `translateY(${-scrollY * 0.05}px)`,
         }}
       />
 
       {/* ── Main content ── */}
-      <div className="relative z-10 flex-1 flex items-center w-full pt-28 md:pt-32 pb-20 px-6 md:px-12 lg:px-16 xl:px-20">
+      <div className="relative z-10 flex-1 flex items-center w-full pt-32 md:pt-40 pb-24 px-6 md:px-12 lg:px-16 xl:px-20">
         <div className="w-full max-w-screen-2xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-0 items-center">
 
@@ -84,7 +84,7 @@ export default function NewHeroSection() {
               </motion.div>
 
               {/* Headline */}
-              <div className="mb-12 md:mb-16">
+              <div className="mb-14 md:mb-20">
                 {HEADLINE.map((word, i) => (
                   <div key={word} className="overflow-hidden">
                     <motion.div
@@ -93,10 +93,12 @@ export default function NewHeroSection() {
                       transition={{ delay: 0.18 + i * 0.13, duration: 1, ease: [0.16, 1, 0.3, 1] }}
                     >
                       <h1
-                        className="font-display leading-none text-white"
+                        className="font-ko text-white"
                         style={{
-                          fontSize: 'clamp(3.2rem, 11.5vw, 11.5rem)',
-                          letterSpacing: '-0.03em', lineHeight: 0.88,
+                          fontSize: 'clamp(2.8rem, 7vw, 7.5rem)',
+                          letterSpacing: '-0.01em',
+                          lineHeight: 1.05,
+                          fontWeight: 900,
                         }}
                       >
                         {word}
@@ -108,7 +110,7 @@ export default function NewHeroSection() {
 
               {/* Divider + sub content */}
               <motion.div
-                className="grid grid-cols-1 sm:grid-cols-2 gap-8 pt-8"
+                className="grid grid-cols-1 sm:grid-cols-2 gap-8 md:gap-12 pt-8 md:pt-10"
                 style={{ borderTop: '1px solid rgba(255,255,255,0.1)' }}
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -116,8 +118,8 @@ export default function NewHeroSection() {
               >
                 {/* Description */}
                 <div>
-                  <p className="font-serif text-base md:text-lg italic leading-relaxed mb-6"
-                    style={{ color: 'rgba(245,245,239,0.6)' }}>
+                  <p className="font-serif text-base md:text-lg italic leading-relaxed mb-8"
+                    style={{ color: 'rgba(245,245,239,0.55)', maxWidth: '32ch' }}>
                     버려진 스포츠 장비가 일상의 시(詩)가 되는 곳.
                     오버랩은 한때 움직였던 것들을 새롭게 재탄생시킵니다.
                   </p>
@@ -128,7 +130,7 @@ export default function NewHeroSection() {
                     </span>
                     <motion.div
                       className="w-px h-6 origin-top"
-                      style={{ backgroundColor: 'rgba(245,245,239,0.25)' }}
+                      style={{ backgroundColor: 'rgba(245,245,239,0.2)' }}
                       animate={{ scaleY: [0, 1, 0] }}
                       transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
                     />
@@ -152,14 +154,14 @@ export default function NewHeroSection() {
             {/* ── Right: Abstract visual ── */}
             <div className="hidden lg:flex lg:col-span-4 items-center justify-center">
               <motion.div
-                className="relative w-full max-w-sm aspect-square"
+                className="relative w-full max-w-xs aspect-square"
                 initial={{ opacity: 0, scale: 0.85 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.45, duration: 1.4, ease: [0.16, 1, 0.3, 1] }}
               >
                 <div
                   className="absolute inset-0 pointer-events-none"
-                  style={{ background: 'radial-gradient(circle at 50% 50%, rgba(216,255,62,0.18) 0%, transparent 60%)' }}
+                  style={{ background: 'radial-gradient(circle at 50% 50%, rgba(216,255,62,0.14) 0%, transparent 60%)' }}
                 />
                 <svg viewBox="0 0 400 400" fill="none" className="w-full h-full">
                   <circle cx="200" cy="200" r="170" stroke="rgba(255,255,255,0.06)" strokeWidth="0.8" />
@@ -219,7 +221,7 @@ export default function NewHeroSection() {
           <div className="animate-marquee">
             {TICKER.map((item, i) => (
               <span key={i} className="font-mono text-xs tracking-[0.3em] uppercase px-8"
-                style={{ color: 'rgba(245,245,239,0.25)', whiteSpace: 'nowrap' }}>
+                style={{ color: 'rgba(245,245,239,0.2)', whiteSpace: 'nowrap' }}>
                 {item}
                 <span style={{ color: '#D8FF3E', marginLeft: '28px' }}>·</span>
               </span>

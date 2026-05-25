@@ -55,7 +55,7 @@ export default function MaterialArchiveShowcaseSection() {
   const inView = useInView(ref, { once: true, amount: 0.1 });
 
   return (
-    <section ref={ref} className="relative w-full bg-bg-primary overflow-hidden py-24 md:py-32 lg:py-40">
+    <section ref={ref} className="relative w-full bg-bg-primary overflow-hidden py-28 md:py-36 lg:py-48">
 
       {/* Subtle grid bg */}
       <div className="absolute inset-0 -z-10 opacity-[0.025]">
@@ -86,8 +86,8 @@ export default function MaterialArchiveShowcaseSection() {
               </span>
             </div>
             <h2
-              className="font-display text-text-primary leading-none"
-              style={{ fontSize: 'clamp(2.8rem, 7.5vw, 8rem)', letterSpacing: '-0.03em', lineHeight: 0.9 }}
+              className="font-ko text-text-primary"
+              style={{ fontSize: 'clamp(1.9rem, 3.8vw, 4.5rem)', letterSpacing: '-0.02em', lineHeight: 1.1 }}
             >
               네 가지 원천.<br />
               <span className="text-lime-primary">하나의 아카이브.</span>
@@ -131,8 +131,8 @@ export default function MaterialArchiveShowcaseSection() {
         >
           <div>
             <h3
-              className="font-display text-text-primary mb-3"
-              style={{ fontSize: 'clamp(1.6rem, 3vw, 2.8rem)', letterSpacing: '-0.025em', lineHeight: 1 }}
+              className="font-ko text-text-primary mb-3"
+              style={{ fontSize: 'clamp(1.2rem, 2vw, 2rem)', letterSpacing: '-0.02em', lineHeight: 1.1 }}
             >
               아카이브 전체 탐색
             </h3>
@@ -237,8 +237,8 @@ function MaterialCard({
             </span>
           </div>
           <h3
-            className="font-display text-white mb-2 group-hover:text-lime-primary transition-colors duration-300"
-            style={{ fontSize: 'clamp(1.8rem, 4vw, 3.5rem)', letterSpacing: '-0.03em', lineHeight: 1 }}
+            className="font-ko text-white mb-2 group-hover:text-lime-primary transition-colors duration-300"
+            style={{ fontSize: 'clamp(1.3rem, 2.5vw, 2.2rem)', letterSpacing: '-0.02em', lineHeight: 1.1 }}
           >
             {mat.name}
           </h3>

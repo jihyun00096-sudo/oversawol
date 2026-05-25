@@ -59,8 +59,8 @@ export default function ProductsPage() {
               </span>
             </div>
             <h1
-              className="font-display text-white leading-none mb-8"
-              style={{ fontSize: 'clamp(3.5rem, 10vw, 10rem)', letterSpacing: '-0.03em', lineHeight: 0.88 }}
+              className="font-ko text-white mb-8"
+              style={{ fontSize: 'clamp(2.5rem, 6vw, 7rem)', letterSpacing: '-0.02em', lineHeight: 1.0 }}
             >
               제품
             </h1>
@@ -141,8 +141,8 @@ export default function ProductsPage() {
                   {product.collection}
                 </span>
                 <h3
-                  className="font-display text-text-primary mb-2 group-hover:text-lime-primary transition-colors duration-300"
-                  style={{ fontSize: 'clamp(1.1rem, 2vw, 1.5rem)', letterSpacing: '-0.02em', lineHeight: 1.1 }}
+                  className="font-ko text-text-primary mb-2 group-hover:text-lime-primary transition-colors duration-300"
+                  style={{ fontSize: 'clamp(1rem, 1.4vw, 1.3rem)', letterSpacing: '-0.01em', lineHeight: 1.2 }}
                 >
                   {product.name}
                 </h3>
@@ -178,8 +178,8 @@ export default function ProductsPage() {
         style={{ borderTop: '1px solid rgba(17,17,17,0.08)' }}>
         <div className="max-w-screen-2xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center">
           <div>
-            <h2 className="font-display text-text-primary leading-none mb-5"
-              style={{ fontSize: 'clamp(2rem, 4vw, 4rem)', letterSpacing: '-0.03em', lineHeight: 0.95 }}>
+            <h2 className="font-ko text-text-primary mb-5"
+              style={{ fontSize: 'clamp(1.7rem, 3.2vw, 3.5rem)', letterSpacing: '-0.02em', lineHeight: 1.1 }}>
               더 찾고 계신가요?
             </h2>
             <p className="font-serif italic text-text-secondary text-base leading-relaxed mb-8 max-w-md">

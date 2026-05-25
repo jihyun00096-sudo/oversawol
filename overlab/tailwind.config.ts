@@ -26,6 +26,7 @@ const config: Config = {
         serif: ["Cormorant Garamond", "serif"],
         mono: ["Space Mono", "monospace"],
         sans: ["Inter", "sans-serif"],
+        ko: ["Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", "Inter", "sans-serif"],
       },
       fontSize: {
         "display-xl": ["64px", { lineHeight: "1.1", letterSpacing: "-0.02em" }],

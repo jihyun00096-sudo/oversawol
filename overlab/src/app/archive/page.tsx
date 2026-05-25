@@ -116,8 +116,8 @@ export default function ArchivePage() {
               </span>
             </div>
             <h1
-              className="font-display text-white leading-none mb-8"
-              style={{ fontSize: 'clamp(3.5rem, 10vw, 10rem)', letterSpacing: '-0.03em', lineHeight: 0.88 }}
+              className="font-ko text-white mb-8"
+              style={{ fontSize: 'clamp(2.5rem, 6vw, 7rem)', letterSpacing: '-0.02em', lineHeight: 1.0 }}
             >
               아카이브
             </h1>
@@ -144,8 +144,8 @@ export default function ArchivePage() {
         <div className="max-w-screen-2xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-10">
           <div>
             <h2
-              className="font-display text-text-primary leading-none mb-4"
-              style={{ fontSize: 'clamp(2rem, 5vw, 5rem)', letterSpacing: '-0.03em', lineHeight: 0.9 }}
+              className="font-ko text-text-primary mb-4"
+              style={{ fontSize: 'clamp(1.7rem, 3.2vw, 3.5rem)', letterSpacing: '-0.02em', lineHeight: 1.1 }}
             >
               역사의 한 조각을<br />
               <span className="text-lime-primary">소유할 준비가 되셨나요?</span>
@@ -226,10 +226,10 @@ function MaterialSection({ mat, idx }: { mat: (typeof MATERIALS)[0]; idx: number
             </div>
 
             <h2
-              className="font-display text-text-primary leading-none mb-3"
-              style={{ fontSize: 'clamp(2.5rem, 6vw, 6rem)', letterSpacing: '-0.03em', lineHeight: 0.9 }}
+              className="font-ko text-text-primary mb-3"
+              style={{ fontSize: 'clamp(1.9rem, 3.8vw, 4.5rem)', letterSpacing: '-0.02em', lineHeight: 1.1 }}
             >
-              {mat.name.toUpperCase()}
+              {mat.name}
             </h2>
             <p className="font-serif italic text-text-secondary mb-8"
               style={{ fontSize: 'clamp(1.1rem, 2vw, 1.5rem)' }}>
@@ -269,8 +269,8 @@ function MaterialSection({ mat, idx }: { mat: (typeof MATERIALS)[0]; idx: number
         >
           <div className="flex items-center gap-3 mb-10">
             <div className="w-8 h-px bg-lime-primary" />
-            <h3 className="font-display text-text-primary"
-              style={{ fontSize: 'clamp(1.5rem, 3vw, 2.5rem)', letterSpacing: '-0.025em' }}>
+            <h3 className="font-ko text-text-primary"
+              style={{ fontSize: 'clamp(1.1rem, 1.8vw, 1.8rem)', letterSpacing: '-0.01em', lineHeight: 1.2 }}>
               제작 과정
             </h3>
           </div>

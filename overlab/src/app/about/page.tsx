@@ -73,8 +73,8 @@ export default function AboutPage() {
               </span>
             </div>
             <h1
-              className="font-display text-white leading-none mb-8"
-              style={{ fontSize: 'clamp(3.5rem, 10vw, 10rem)', letterSpacing: '-0.03em', lineHeight: 0.88 }}
+              className="font-ko text-white mb-8"
+              style={{ fontSize: 'clamp(2.2rem, 5.5vw, 6rem)', letterSpacing: '-0.02em', lineHeight: 1.05 }}
             >
               어바웃<br />
               <span style={{ color: '#D8FF3E' }}>OVERLAB</span>
@@ -130,8 +130,8 @@ export default function AboutPage() {
               <span className="font-mono text-xs text-text-muted uppercase tracking-[0.3em]">우리의 이야기</span>
             </div>
             <h2
-              className="font-display text-text-primary leading-none mb-10"
-              style={{ fontSize: 'clamp(2rem, 5vw, 4.5rem)', letterSpacing: '-0.03em', lineHeight: 0.95 }}
+              className="font-ko text-text-primary mb-10"
+              style={{ fontSize: 'clamp(1.7rem, 3.2vw, 3.5rem)', letterSpacing: '-0.02em', lineHeight: 1.1 }}
             >
               단순한 역설에서<br />
               탄생하다
@@ -173,8 +173,8 @@ export default function AboutPage() {
               <span className="font-mono text-xs text-text-muted uppercase tracking-[0.3em]">핵심 철학</span>
             </div>
             <h2
-              className="font-display text-text-primary leading-none"
-              style={{ fontSize: 'clamp(2.5rem, 6vw, 6rem)', letterSpacing: '-0.03em', lineHeight: 0.9 }}
+              className="font-ko text-text-primary"
+              style={{ fontSize: 'clamp(1.7rem, 3.2vw, 3.5rem)', letterSpacing: '-0.02em', lineHeight: 1.1 }}
             >
               우리가 일하는 방식
             </h2>
@@ -203,8 +203,8 @@ export default function AboutPage() {
                     <div className="flex-1 h-px" style={{ backgroundColor: 'rgba(216,255,62,0.15)' }} />
                   </div>
                   <h3
-                    className="font-display text-text-primary mb-5 group-hover:text-lime-primary transition-colors duration-300"
-                    style={{ fontSize: 'clamp(1.5rem, 2.5vw, 2.2rem)', letterSpacing: '-0.025em', lineHeight: 1.05 }}
+                    className="font-ko text-text-primary mb-5 group-hover:text-lime-primary transition-colors duration-300"
+                    style={{ fontSize: 'clamp(1.1rem, 1.7vw, 1.7rem)', letterSpacing: '-0.01em', lineHeight: 1.2 }}
                   >
                     {v.title}
                   </h3>
@@ -232,8 +232,8 @@ export default function AboutPage() {
               <span className="font-mono text-xs text-text-muted uppercase tracking-[0.3em]">숫자로 보는</span>
             </div>
             <h2
-              className="font-display text-text-primary leading-none"
-              style={{ fontSize: 'clamp(2rem, 5vw, 5rem)', letterSpacing: '-0.03em', lineHeight: 0.9 }}
+              className="font-ko text-text-primary"
+              style={{ fontSize: 'clamp(1.7rem, 3.2vw, 3.5rem)', letterSpacing: '-0.02em', lineHeight: 1.1 }}
             >
               우리의 임팩트
             </h2>
@@ -268,8 +268,8 @@ export default function AboutPage() {
         <div className="max-w-screen-2xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-10">
           <div>
             <h2
-              className="font-display text-white leading-none mb-4"
-              style={{ fontSize: 'clamp(2rem, 5vw, 5rem)', letterSpacing: '-0.03em', lineHeight: 0.9 }}
+              className="font-ko text-white mb-4"
+              style={{ fontSize: 'clamp(1.7rem, 3.2vw, 3.5rem)', letterSpacing: '-0.02em', lineHeight: 1.1 }}
             >
               함께<br />
               <span style={{ color: '#D8FF3E' }}>움직이세요</span>
