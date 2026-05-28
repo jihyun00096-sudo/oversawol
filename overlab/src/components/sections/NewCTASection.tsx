@@ -71,7 +71,7 @@ export default function CTASection() {
             <div>
               <p
                 className="font-serif italic leading-relaxed mb-8"
-                style={{ color: 'rgba(245,245,239,0.6)', fontSize: 'clamp(1rem, 1.5vw, 1.25rem)' }}
+                style={{ color: 'rgba(245,245,239,0.78)', fontSize: 'clamp(1rem, 1.5vw, 1.25rem)' }}
               >
                 품질, 장인정신, 그리고 양심을 타협하지 않는 디자인을 향한 움직임에 함께하세요.
                 모든 오버랩 오브제는 한때 움직였던 무언가의 기억을 담고 있습니다.
@@ -106,7 +106,7 @@ export default function CTASection() {
                   </span>
                   <span
                     className="font-mono text-xs uppercase tracking-[0.25em]"
-                    style={{ color: 'rgba(245,245,239,0.35)' }}
+                    style={{ color: 'rgba(245,245,239,0.55)' }}
                   >
                     {label}
                   </span>
@@ -124,11 +124,11 @@ export default function CTASection() {
             transition={{ delay: 0.7, duration: 0.8 }}
           >
             <p className="font-mono text-xs uppercase tracking-[0.25em]"
-              style={{ color: 'rgba(245,245,239,0.25)' }}>
+              style={{ color: 'rgba(245,245,239,0.42)' }}>
               전 세계 배송 가능 · ₩100,000 이상 무료 배송
             </p>
             <p className="font-serif italic text-xs"
-              style={{ color: 'rgba(245,245,239,0.25)' }}>
+              style={{ color: 'rgba(245,245,239,0.42)' }}>
               지속가능성은 트렌드가 아닙니다. 그것은 움직임입니다.
             </p>
           </motion.div>

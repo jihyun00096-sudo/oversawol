@@ -99,7 +99,7 @@ export default function ProjectsPage() {
               프로젝트
             </h1>
             <p className="font-serif italic leading-relaxed max-w-lg"
-              style={{ color: 'rgba(245,245,239,0.6)', fontSize: 'clamp(1rem, 1.5vw, 1.2rem)' }}>
+              style={{ color: 'rgba(245,245,239,0.78)', fontSize: 'clamp(1rem, 1.5vw, 1.2rem)' }}>
               지속가능한 디자인을 변환하는 우리의 미션을 검증하는 전략적 파트너십, 전시, 그리고 업계 인정.
             </p>
           </motion.div>

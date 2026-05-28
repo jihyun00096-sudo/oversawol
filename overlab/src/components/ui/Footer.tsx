@@ -39,14 +39,14 @@ export default function Footer() {
             </Link>
             <p
               className="font-serif italic leading-relaxed mb-6 max-w-xs"
-              style={{ color: 'rgba(245,245,239,0.4)', fontSize: '0.875rem' }}
+              style={{ color: 'rgba(245,245,239,0.65)', fontSize: '0.9rem' }}
             >
               퓨처 아카이브. 업사이클링 레저 스포츠 장비를 일상의 디자인 오브제로.
             </p>
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 rounded-full animate-breathe" style={{ backgroundColor: 'var(--lime-primary)' }} />
               <span className="font-mono text-xs uppercase tracking-[0.2em]"
-                style={{ color: 'rgba(245,245,239,0.3)' }}>
+                style={{ color: 'rgba(245,245,239,0.48)' }}>
                 협업 문의 중
               </span>
             </div>
@@ -56,7 +56,7 @@ export default function Footer() {
           <div className="md:col-span-3 md:col-start-6">
             <p
               className="font-mono text-xs uppercase tracking-[0.3em] mb-6"
-              style={{ color: 'rgba(245,245,239,0.25)' }}
+              style={{ color: 'rgba(245,245,239,0.42)' }}
             >
               탐색
             </p>
@@ -66,7 +66,7 @@ export default function Footer() {
                   key={item.label}
                   href={item.href}
                   className="font-mono text-xs uppercase tracking-[0.2em] hover-underline w-fit transition-colors duration-300"
-                  style={{ color: 'rgba(245,245,239,0.5)' }}
+                  style={{ color: 'rgba(245,245,239,0.68)' }}
                 >
                   {item.label}
                 </Link>
@@ -78,7 +78,7 @@ export default function Footer() {
           <div className="md:col-span-3 md:col-start-10">
             <p
               className="font-mono text-xs uppercase tracking-[0.3em] mb-6"
-              style={{ color: 'rgba(245,245,239,0.25)' }}
+              style={{ color: 'rgba(245,245,239,0.42)' }}
             >
               연결
             </p>
@@ -88,7 +88,7 @@ export default function Footer() {
                   key={item.label}
                   href={item.href}
                   className="font-mono text-xs uppercase tracking-[0.2em] hover-underline w-fit transition-colors duration-300"
-                  style={{ color: 'rgba(245,245,239,0.5)' }}
+                  style={{ color: 'rgba(245,245,239,0.68)' }}
                 >
                   {item.label}
                 </Link>
@@ -97,7 +97,7 @@ export default function Footer() {
             {/* Email subscribe */}
             <div>
               <p className="font-mono text-xs uppercase tracking-[0.2em] mb-3"
-                style={{ color: 'rgba(245,245,239,0.3)' }}>
+                style={{ color: 'rgba(245,245,239,0.48)' }}>
                 뉴스레터
               </p>
               <div className="flex">
@@ -127,22 +127,22 @@ export default function Footer() {
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
           <p
             className="font-mono text-xs uppercase tracking-[0.2em]"
-            style={{ color: 'rgba(245,245,239,0.2)' }}
+            style={{ color: 'rgba(245,245,239,0.38)' }}
           >
             © 2024 OVERLAB. 모든 권리 보유.
           </p>
           <div className="flex items-center gap-6">
             <Link href="#" className="font-mono text-xs uppercase tracking-[0.15em]"
-              style={{ color: 'rgba(245,245,239,0.2)' }}>
+              style={{ color: 'rgba(245,245,239,0.38)' }}>
               개인정보처리방침
             </Link>
             <Link href="#" className="font-mono text-xs uppercase tracking-[0.15em]"
-              style={{ color: 'rgba(245,245,239,0.2)' }}>
+              style={{ color: 'rgba(245,245,239,0.38)' }}>
               이용약관
             </Link>
             <span
               className="font-mono text-xs uppercase tracking-[0.15em]"
-              style={{ color: 'rgba(196,200,40,0.5)' }}
+              style={{ color: 'rgba(163,230,53,0.7)' }}
             >
               퓨처 아카이브
             </span>

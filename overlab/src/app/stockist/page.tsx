@@ -61,7 +61,7 @@ export default function StockistPage() {
               스토어
             </h1>
             <p className="font-serif italic leading-relaxed max-w-lg"
-              style={{ color: 'rgba(245,245,239,0.6)', fontSize: 'clamp(1rem, 1.5vw, 1.2rem)' }}>
+              style={{ color: 'rgba(245,245,239,0.78)', fontSize: 'clamp(1rem, 1.5vw, 1.2rem)' }}>
               OVERLAB 제품은 전 세계 엄선된 리테일 파트너를 통해 구매하실 수 있습니다.
             </p>
           </motion.div>

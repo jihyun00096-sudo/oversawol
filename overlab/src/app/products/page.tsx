@@ -65,7 +65,7 @@ export default function ProductsPage() {
               제품
             </h1>
             <p className="font-serif italic leading-relaxed max-w-lg"
-              style={{ color: 'rgba(245,245,239,0.6)', fontSize: 'clamp(1rem, 1.5vw, 1.2rem)' }}>
+              style={{ color: 'rgba(245,245,239,0.78)', fontSize: 'clamp(1rem, 1.5vw, 1.2rem)' }}>
               스포츠 장비에서 재탄생한 현대적 오브제. 각 조각은 변환의 이야기를 담고, 이전 삶의 기억을 간직합니다.
             </p>
           </motion.div>

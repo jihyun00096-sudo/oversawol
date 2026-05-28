@@ -69,12 +69,12 @@ export default function PhilosophySection() {
               transition={{ delay: 0.4, duration: 0.8 }}
             >
               <p className="font-serif text-base italic leading-relaxed text-text-secondary mb-5"
-                style={{ maxWidth: '36ch' }}>
+                style={{ maxWidth: '38ch', lineHeight: 1.75 }}>
                 레저 스포츠 장비는 지구상 가장 극한의 환경을
                 버텨내도록 설계됩니다.
               </p>
-              <p className="font-serif text-sm italic leading-relaxed text-text-secondary/70"
-                style={{ maxWidth: '36ch' }}>
+              <p className="font-serif text-sm italic leading-relaxed text-text-secondary"
+                style={{ maxWidth: '38ch', lineHeight: 1.75 }}>
                 안전 규정이 소재 수명보다 훨씬 앞서 은퇴를 결정합니다.
                 오버랩에서 우리는 이것을 낭비가 아닌, 다시 열릴 아카이브로 봅니다.
               </p>
@@ -167,8 +167,8 @@ export default function PhilosophySection() {
                     {item.title}
                   </h3>
 
-                  <p className="font-serif text-sm italic text-text-secondary leading-relaxed"
-                    style={{ maxWidth: '30ch' }}>
+                  <p className="font-serif italic text-text-secondary leading-relaxed"
+                    style={{ maxWidth: '32ch', fontSize: 'clamp(0.9rem, 1.2vw, 1rem)', lineHeight: 1.78 }}>
                     {item.body}
                   </p>
                 </div>

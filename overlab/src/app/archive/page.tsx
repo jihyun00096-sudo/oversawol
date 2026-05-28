@@ -122,7 +122,7 @@ export default function ArchivePage() {
               아카이브
             </h1>
             <p className="font-serif italic leading-relaxed max-w-lg"
-              style={{ color: 'rgba(245,245,239,0.6)', fontSize: 'clamp(1rem, 1.5vw, 1.2rem)' }}>
+              style={{ color: 'rgba(245,245,239,0.78)', fontSize: 'clamp(1rem, 1.5vw, 1.2rem)' }}>
               모든 소재에는 이야기가 있습니다. 출처, 과정, 그리고 잊혀진 오브제에 새 생명을 불어넣는 변환을 탐색해 보세요.
             </p>
           </motion.div>

@@ -10,19 +10,19 @@
   /* Text colors */
   --text-primary: #111111;
   --text-secondary: #1B1B1B;
-  --text-muted: #6B6B6B;
+  --text-muted: #555555;
 
-  /* Accent - Olive Lime */
-  --lime-primary: #C4C828;
-  --lime-secondary: #B4B820;
-  --lime-soft: #A0A618;
-  --lime-on-light: #4A5010;
+  /* Accent - Bright Lime */
+  --lime-primary: #A3E635;
+  --lime-secondary: #84CC16;
+  --lime-soft: #65A30D;
+  --lime-on-light: #3F6212;
 
   /* Charcoal */
   --charcoal: #2B2F2A;
 
   /* Utilities */
-  --border: #E0E0E0;
+  --border: #D8D8D2;
   --shadow-light: rgba(17, 17, 17, 0.06);
   --shadow-md: rgba(17, 17, 17, 0.12);
   --shadow-lg: rgba(17, 17, 17, 0.18);
@@ -43,11 +43,12 @@ body {
   color: var(--text-primary);
   font-family: 'Noto Sans KR', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   font-weight: 400;
-  letter-spacing: 0.02em;
-  line-height: 1.8;
+  letter-spacing: -0.01em;
+  line-height: 1.85;
   overflow-x: hidden;
   cursor: none;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   word-break: keep-all;
   overflow-wrap: break-word;
@@ -114,6 +115,7 @@ body::before {
   font-family: 'Cormorant Garamond', serif;
   letter-spacing: 0.01em;
   font-weight: 400;
+  line-height: 1.72;
   word-break: keep-all;
 }
 
@@ -224,10 +226,10 @@ a {
 
 @keyframes glow {
   0%, 100% {
-    box-shadow: 0 0 20px rgba(196, 200, 40, 0.2);
+    box-shadow: 0 0 20px rgba(163, 230, 53, 0.25);
   }
   50% {
-    box-shadow: 0 0 40px rgba(196, 200, 40, 0.35);
+    box-shadow: 0 0 40px rgba(163, 230, 53, 0.42);
   }
 }
 
@@ -395,18 +397,20 @@ a {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  padding: 12px 28px;
+  padding: 13px 28px;
   background: var(--lime-primary);
-  color: var(--text-primary);
+  color: #111111;
   font-family: 'Space Mono', monospace;
   font-size: 11px;
+  font-weight: 700;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  transition: background 0.3s ease, transform 0.2s ease;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
 }
 .btn-lime:hover {
-  background: var(--lime-soft);
-  transform: translateY(-1px);
+  background: var(--lime-secondary);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(163, 230, 53, 0.28);
 }
 
 /* Outline button */
@@ -414,19 +418,20 @@ a {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  padding: 12px 28px;
-  border: 1px solid var(--text-primary);
+  padding: 13px 28px;
+  border: 1px solid rgba(17, 17, 17, 0.55);
   color: var(--text-primary);
   font-family: 'Space Mono', monospace;
   font-size: 11px;
+  font-weight: 500;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  transition: border-color 0.3s ease, color 0.3s ease;
+  transition: border-color 0.3s ease, color 0.3s ease, background 0.3s ease;
 }
 .btn-outline:hover {
-  border-color: var(--charcoal);
+  border-color: var(--text-primary);
   color: var(--text-primary);
-  background: rgba(17, 17, 17, 0.04);
+  background: rgba(17, 17, 17, 0.06);
 }
 
 /* Outline button dark variant */
@@ -434,24 +439,25 @@ a {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  padding: 12px 28px;
-  border: 1px solid rgba(245, 245, 239, 0.3);
-  color: rgba(245, 245, 239, 0.9);
+  padding: 13px 28px;
+  border: 1px solid rgba(245, 245, 239, 0.45);
+  color: rgba(245, 245, 239, 0.92);
   font-family: 'Space Mono', monospace;
   font-size: 11px;
+  font-weight: 500;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  transition: border-color 0.3s ease, color 0.3s ease;
+  transition: border-color 0.3s ease, color 0.3s ease, background 0.3s ease;
 }
 .btn-outline-dark:hover {
-  border-color: rgba(245, 245, 239, 0.7);
+  border-color: rgba(245, 245, 239, 0.85);
   color: rgba(245, 245, 239, 1);
-  background: rgba(245, 245, 239, 0.06);
+  background: rgba(245, 245, 239, 0.08);
 }
 
 /* Process step line */
 .process-line {
   flex: 1;
   height: 1px;
-  background: linear-gradient(90deg, rgba(17,17,17,0.15) 0%, rgba(196,200,40,0.3) 50%, rgba(17,17,17,0.15) 100%);
+  background: linear-gradient(90deg, rgba(17,17,17,0.12) 0%, rgba(163,230,53,0.32) 50%, rgba(17,17,17,0.12) 100%);
 }

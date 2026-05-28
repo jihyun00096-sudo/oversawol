@@ -81,7 +81,7 @@ export default function AboutPage() {
             </h1>
             <p
               className="font-serif italic leading-relaxed max-w-xl"
-              style={{ color: 'rgba(245,245,239,0.6)', fontSize: 'clamp(1rem, 1.5vw, 1.2rem)' }}
+              style={{ color: 'rgba(245,245,239,0.78)', fontSize: 'clamp(1rem, 1.5vw, 1.2rem)' }}
             >
               우리는 아카이브입니다. 스튜디오입니다. 버려진 여정이 오래 지속되는 아름다움의 오브제로 변환되는 곳.
             </p>
@@ -284,7 +284,7 @@ export default function AboutPage() {
               함께<br />
               <span style={{ color: 'var(--lime-primary)' }}>움직이세요</span>
             </h2>
-            <p className="font-serif italic" style={{ color: 'rgba(245,245,239,0.5)', fontSize: '1rem' }}>
+            <p className="font-serif italic" style={{ color: 'rgba(245,245,239,0.72)', fontSize: '1rem' }}>
               쇼핑하거나, 협업하거나, 아카이브를 팔로우하세요.
             </p>
           </div>

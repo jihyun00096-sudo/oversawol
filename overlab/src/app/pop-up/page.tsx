@@ -104,7 +104,7 @@ export default function PopUpPage() {
               <span style={{ color: 'var(--lime-primary)' }}>전시회</span>
             </h1>
             <p className="font-serif italic leading-relaxed max-w-lg"
-              style={{ color: 'rgba(245,245,239,0.6)', fontSize: 'clamp(1rem, 1.5vw, 1.2rem)' }}>
+              style={{ color: 'rgba(245,245,239,0.78)', fontSize: 'clamp(1rem, 1.5vw, 1.2rem)' }}>
               OVERLAB 아카이브가 생동하는 임시 및 상설 공간. 전시, 워크숍, 몰입형 경험.
             </p>
           </motion.div>

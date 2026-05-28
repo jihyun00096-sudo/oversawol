@@ -73,12 +73,12 @@ export default function NewHeroSection() {
               >
                 <div className="w-8 h-px" style={{ backgroundColor: 'var(--lime-primary)' }} />
                 <span className="font-mono text-xs tracking-[0.3em] uppercase"
-                  style={{ color: 'rgba(245,245,239,0.4)' }}>
+                  style={{ color: 'rgba(245,245,239,0.62)' }}>
                   퓨처 아카이브
                 </span>
-                <div className="w-8 h-px" style={{ backgroundColor: 'rgba(245,245,239,0.15)' }} />
+                <div className="w-8 h-px" style={{ backgroundColor: 'rgba(245,245,239,0.2)' }} />
                 <span className="font-mono text-xs tracking-[0.3em] uppercase"
-                  style={{ color: 'rgba(245,245,239,0.25)' }}>
+                  style={{ color: 'rgba(245,245,239,0.42)' }}>
                   SS 2024
                 </span>
               </motion.div>
@@ -119,13 +119,13 @@ export default function NewHeroSection() {
                 {/* Description */}
                 <div>
                   <p className="font-serif text-base md:text-lg italic leading-relaxed mb-8"
-                    style={{ color: 'rgba(245,245,239,0.55)', maxWidth: '32ch' }}>
+                    style={{ color: 'rgba(245,245,239,0.78)', maxWidth: '32ch' }}>
                     버려진 스포츠 장비가 일상의 시(詩)가 되는 곳.
                     오버랩은 한때 움직였던 것들을 새롭게 재탄생시킵니다.
                   </p>
                   <div className="flex items-center gap-3">
                     <span className="font-mono text-xs tracking-[0.25em] uppercase"
-                      style={{ color: 'rgba(245,245,239,0.3)' }}>
+                      style={{ color: 'rgba(245,245,239,0.48)' }}>
                       스크롤하여 탐색
                     </span>
                     <motion.div
@@ -161,14 +161,14 @@ export default function NewHeroSection() {
               >
                 <div
                   className="absolute inset-0 pointer-events-none"
-                  style={{ background: 'radial-gradient(circle at 50% 50%, rgba(196,200,40,0.14) 0%, transparent 60%)' }}
+                  style={{ background: 'radial-gradient(circle at 50% 50%, rgba(163,230,53,0.14) 0%, transparent 60%)' }}
                 />
                 <svg viewBox="0 0 400 400" fill="none" className="w-full h-full">
                   <circle cx="200" cy="200" r="170" stroke="rgba(255,255,255,0.06)" strokeWidth="0.8" />
                   <circle cx="200" cy="200" r="140" stroke="rgba(255,255,255,0.08)" strokeWidth="0.6" />
                   <circle cx="200" cy="200" r="100" stroke="rgba(255,255,255,0.07)" strokeWidth="0.6" />
-                  <circle cx="200" cy="200" r="60" stroke="rgba(196,200,40,0.2)" strokeWidth="0.8" />
-                  <circle cx="200" cy="200" r="20" stroke="rgba(196,200,40,0.5)" strokeWidth="1" />
+                  <circle cx="200" cy="200" r="60" stroke="rgba(163,230,53,0.2)" strokeWidth="0.8" />
+                  <circle cx="200" cy="200" r="20" stroke="rgba(163,230,53,0.5)" strokeWidth="1" />
                   {Array.from({ length: 24 }).map((_, i) => (
                     <line key={`rl-${i}`}
                       x1={200 + Math.cos((i * 15 * Math.PI) / 180) * 22}
@@ -180,29 +180,29 @@ export default function NewHeroSection() {
                   ))}
                   <line x1="30" y1="200" x2="370" y2="200" stroke="rgba(255,255,255,0.06)" strokeWidth="0.5" />
                   <line x1="200" y1="30" x2="200" y2="370" stroke="rgba(255,255,255,0.06)" strokeWidth="0.5" />
-                  <path d="M 60 230 Q 200 70 340 230" stroke="rgba(196,200,40,0.25)" strokeWidth="1.2" fill="none" />
-                  <path d="M 90 230 Q 200 95 310 230" stroke="rgba(196,200,40,0.15)" strokeWidth="0.8" fill="none" />
-                  <path d="M 120 230 Q 200 120 280 230" stroke="rgba(196,200,40,0.1)" strokeWidth="0.6" fill="none" />
+                  <path d="M 60 230 Q 200 70 340 230" stroke="rgba(163,230,53,0.25)" strokeWidth="1.2" fill="none" />
+                  <path d="M 90 230 Q 200 95 310 230" stroke="rgba(163,230,53,0.15)" strokeWidth="0.8" fill="none" />
+                  <path d="M 120 230 Q 200 120 280 230" stroke="rgba(163,230,53,0.1)" strokeWidth="0.6" fill="none" />
                   {[100, 130, 160, 200, 240, 270, 300].map((x, i) => (
                     <line key={`sl-${i}`}
                       x1={x} y1={230 - (i < 3 ? (3 - i) * 12 : i > 3 ? (i - 3) * 12 : 0)}
                       x2="200" y2="200"
-                      stroke="rgba(196,200,40,0.08)" strokeWidth="0.5"
+                      stroke="rgba(163,230,53,0.08)" strokeWidth="0.5"
                     />
                   ))}
-                  <rect x="28" y="28" width="12" height="12" stroke="rgba(196,200,40,0.3)" strokeWidth="0.8" fill="none" />
-                  <rect x="360" y="28" width="12" height="12" stroke="rgba(196,200,40,0.3)" strokeWidth="0.8" fill="none" />
-                  <rect x="28" y="360" width="12" height="12" stroke="rgba(196,200,40,0.3)" strokeWidth="0.8" fill="none" />
-                  <rect x="360" y="360" width="12" height="12" stroke="rgba(196,200,40,0.3)" strokeWidth="0.8" fill="none" />
-                  <circle cx="200" cy="200" r="5" fill="#C4C828" opacity="0.9" />
-                  <circle cx="200" cy="200" r="10" fill="#C4C828" opacity="0.15" />
-                  <text x="216" y="197" fontSize="7" fill="rgba(196,200,40,0.5)" fontFamily="Space Mono" letterSpacing="2">원점</text>
+                  <rect x="28" y="28" width="12" height="12" stroke="rgba(163,230,53,0.3)" strokeWidth="0.8" fill="none" />
+                  <rect x="360" y="28" width="12" height="12" stroke="rgba(163,230,53,0.3)" strokeWidth="0.8" fill="none" />
+                  <rect x="28" y="360" width="12" height="12" stroke="rgba(163,230,53,0.3)" strokeWidth="0.8" fill="none" />
+                  <rect x="360" y="360" width="12" height="12" stroke="rgba(163,230,53,0.3)" strokeWidth="0.8" fill="none" />
+                  <circle cx="200" cy="200" r="5" fill="#A3E635" opacity="0.9" />
+                  <circle cx="200" cy="200" r="10" fill="#A3E635" opacity="0.15" />
+                  <text x="216" y="197" fontSize="7" fill="rgba(163,230,53,0.5)" fontFamily="Space Mono" letterSpacing="2">원점</text>
                   <text x="32" y="22" fontSize="6" fill="rgba(255,255,255,0.2)" fontFamily="Space Mono" letterSpacing="1">OVL-001</text>
                   <text x="22" y="390" fontSize="6" fill="rgba(255,255,255,0.15)" fontFamily="Space Mono" letterSpacing="1">아카이브 · 2024</text>
                 </svg>
                 <motion.div
                   className="absolute top-4 right-4 font-mono text-xs tracking-widest uppercase"
-                  style={{ color: 'rgba(196,200,40,0.4)', fontSize: '9px' }}
+                  style={{ color: 'rgba(163,230,53,0.4)', fontSize: '9px' }}
                   animate={{ opacity: [0.4, 0.8, 0.4] }}
                   transition={{ duration: 3, repeat: Infinity }}
                 >
@@ -221,7 +221,7 @@ export default function NewHeroSection() {
           <div className="animate-marquee">
             {TICKER.map((item, i) => (
               <span key={i} className="font-mono text-xs tracking-[0.3em] uppercase px-8"
-                style={{ color: 'rgba(245,245,239,0.2)', whiteSpace: 'nowrap' }}>
+                style={{ color: 'rgba(245,245,239,0.35)', whiteSpace: 'nowrap' }}>
                 {item}
                 <span style={{ color: 'var(--lime-primary)', marginLeft: '28px' }}>·</span>
               </span>

@@ -180,7 +180,7 @@ export default function ProductShowcaseSection() {
             >
               모든 오브제에는 이야기가 있습니다.
             </h3>
-            <p className="font-serif italic text-sm" style={{ color: 'rgba(245,245,239,0.5)' }}>
+            <p className="font-serif italic text-sm" style={{ color: 'rgba(245,245,239,0.72)' }}>
               31개 제품, 4개 소재 컬렉션 — 전체 아카이브를 탐색하세요.
             </p>
           </div>

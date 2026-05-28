@@ -85,7 +85,7 @@ export default function TransformationSection() {
               <div className="flex items-center gap-3 mb-8">
                 <div className="w-8 h-px" style={{ backgroundColor: 'var(--lime-primary)' }} />
                 <span className="font-mono text-xs tracking-[0.3em] uppercase"
-                  style={{ color: 'rgba(245,245,239,0.4)' }}>
+                  style={{ color: 'rgba(245,245,239,0.6)' }}>
                   제작 과정
                 </span>
               </div>
@@ -107,7 +107,7 @@ export default function TransformationSection() {
               transition={{ delay: 0.3, duration: 0.8 }}
             >
               <p className="font-serif italic leading-relaxed"
-                style={{ color: 'rgba(245,245,239,0.5)', fontSize: '1rem' }}>
+                style={{ color: 'rgba(245,245,239,0.72)', fontSize: 'clamp(1rem, 1.4vw, 1.1rem)' }}>
                 여섯 가지 의도적인 단계. 낭비 제로. 모든 조각은 출처부터 완성품까지 인증되고 추적 가능합니다.
               </p>
             </motion.div>
@@ -142,7 +142,7 @@ export default function TransformationSection() {
                     <span className="font-mono text-xs tracking-[0.25em] uppercase"
                       style={{ color: 'var(--lime-primary)', opacity: 0.8 }}>{step.num}</span>
                     <span className="font-mono text-xs tracking-[0.2em] uppercase"
-                      style={{ color: 'rgba(245,245,239,0.25)' }}>{step.sub}</span>
+                      style={{ color: 'rgba(245,245,239,0.42)' }}>{step.sub}</span>
                   </div>
                   <div
                     className="w-full h-px mb-8 group-hover:opacity-100 transition-opacity duration-300"
@@ -154,8 +154,8 @@ export default function TransformationSection() {
                   >
                     {step.label}
                   </h3>
-                  <p className="font-serif italic text-sm leading-relaxed"
-                    style={{ color: 'rgba(245,245,239,0.5)' }}>
+                  <p className="font-serif italic leading-relaxed"
+                    style={{ color: 'rgba(245,245,239,0.70)', fontSize: 'clamp(0.9rem, 1.2vw, 1rem)' }}>
                     {step.desc}
                   </p>
                 </div>
@@ -181,7 +181,7 @@ export default function TransformationSection() {
                     {num}
                   </div>
                   <div className="font-mono text-xs uppercase tracking-[0.2em]"
-                    style={{ color: 'rgba(245,245,239,0.3)' }}>
+                    style={{ color: 'rgba(245,245,239,0.48)' }}>
                     {label}
                   </div>
                 </div>
