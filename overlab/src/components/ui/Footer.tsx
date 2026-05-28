@@ -114,7 +114,7 @@ export default function Footer() {
                 />
                 <button
                   className="px-4 font-mono text-xs tracking-widest uppercase transition-colors duration-300"
-                  style={{ backgroundColor: 'var(--lime-primary)', color: '#111111', border: '1px solid #D8FF3E' }}
+                  style={{ backgroundColor: 'var(--lime-primary)', color: '#111111', border: '1px solid var(--lime-primary)' }}
                 >
                   →
                 </button>

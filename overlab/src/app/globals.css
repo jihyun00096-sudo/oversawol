@@ -346,7 +346,7 @@ a {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, transparent 40%, rgba(216, 255, 62, 0.04) 100%);
+  background: linear-gradient(135deg, transparent 40%, rgba(196, 200, 40, 0.04) 100%);
 }
 
 /* Hover underline animation */
@@ -453,5 +453,5 @@ a {
 .process-line {
   flex: 1;
   height: 1px;
-  background: linear-gradient(90deg, rgba(17,17,17,0.15) 0%, rgba(216,255,62,0.3) 50%, rgba(17,17,17,0.15) 100%);
+  background: linear-gradient(90deg, rgba(17,17,17,0.15) 0%, rgba(196,200,40,0.3) 50%, rgba(17,17,17,0.15) 100%);
 }

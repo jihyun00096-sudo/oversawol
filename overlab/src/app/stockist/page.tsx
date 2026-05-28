@@ -145,8 +145,11 @@ export default function StockistPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={physicalInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7 }}>
-            <div className="flex items-center gap-3 mb-6">
-              <div className="w-8 h-px bg-lime-primary" />
+            <div
+              className="inline-flex items-center gap-2 px-3 py-1.5 mb-6"
+              style={{ border: '1px solid rgba(196,200,40,0.45)', backgroundColor: 'rgba(196,200,40,0.07)' }}
+            >
+              <div className="w-1 h-1 rounded-full bg-lime-primary flex-shrink-0" />
               <span className="font-mono text-xs text-text-muted uppercase tracking-[0.3em]">오프라인 매장</span>
             </div>
             <h2 className="font-ko text-text-primary"
@@ -213,7 +216,7 @@ export default function StockistPage() {
         style={{ borderTop: '1px solid rgba(17,17,17,0.08)' }}>
         <div className="max-w-screen-2xl mx-auto">
           <div className="flex items-center gap-3 mb-8">
-            <div className="w-8 h-px bg-lime-primary" />
+            <div className="w-1 h-1 rounded-full bg-lime-primary flex-shrink-0" />
             <h2 className="font-ko text-text-primary"
               style={{ fontSize: 'clamp(1.3rem, 2vw, 2.2rem)', letterSpacing: '-0.01em', lineHeight: 1.2 }}>
               글로벌 현황

@@ -220,7 +220,7 @@ export default function PopUpPage() {
         style={{ borderTop: '1px solid rgba(17,17,17,0.08)' }}>
         <div className="max-w-screen-2xl mx-auto">
           <div className="flex items-center gap-3 mb-10">
-            <div className="w-8 h-px bg-lime-primary" />
+            <div className="w-1 h-1 rounded-full bg-lime-primary flex-shrink-0" />
             <h2 className="font-ko text-text-primary"
               style={{ fontSize: 'clamp(1.7rem, 3.2vw, 3.5rem)', letterSpacing: '-0.02em', lineHeight: 1.1 }}>
               곧 오픈
@@ -288,7 +288,7 @@ export default function PopUpPage() {
             />
             <button
               className="px-6 font-mono text-xs tracking-widest uppercase whitespace-nowrap"
-              style={{ backgroundColor: 'var(--lime-primary)', color: '#111111', border: '1px solid #D8FF3E' }}
+              style={{ backgroundColor: 'var(--lime-primary)', color: '#111111', border: '1px solid var(--lime-primary)' }}
             >
               구독하기
             </button>
