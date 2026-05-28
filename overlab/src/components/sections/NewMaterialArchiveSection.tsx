@@ -13,7 +13,7 @@ const MATERIALS = [
     weight: '초경량 80–150g/m²',
     products: 8,
     desc: '알파인 상공을 가르며 사람의 무게를 지탱하도록 설계된 초경량 나일론. 하늘에서 은퇴한 지금, 상상할 수 없을 만큼 가볍고 내구성 강한 일상의 오브제로 거듭납니다.',
-    accentColor: 'rgba(196,200,40,0.12)',
+    accentColor: 'rgba(163,230,53,0.12)',
   },
   {
     id: 'tent',
@@ -24,7 +24,7 @@ const MATERIALS = [
     weight: '프로페셔널 등급',
     products: 12,
     desc: '극한의 조건을 버텨낸 다층 방수 원단. 구조적 기억이 짜여든 이 패널들은 세계 최고봉의 능선에서 등반가들을 지켜왔습니다.',
-    accentColor: 'rgba(196,200,40,0.08)',
+    accentColor: 'rgba(163,230,53,0.08)',
   },
   {
     id: 'sail',
@@ -35,7 +35,7 @@ const MATERIALS = [
     weight: '극한 날씨 테스트 완료',
     products: 6,
     desc: '대양의 돌풍을 맞서고 망망대해를 항해한 내염성 다크론 라미네이트. 각 조각에는 그 항해의 지도가 — 로프, 태양, 파도의 흔적이 — 희미하게 새겨져 있습니다.',
-    accentColor: 'rgba(196,200,40,0.06)',
+    accentColor: 'rgba(163,230,53,0.06)',
   },
   {
     id: 'diving',
@@ -46,7 +46,7 @@ const MATERIALS = [
     weight: '고성능 단열',
     products: 5,
     desc: '수심에서 압력을 균형 잡고 차가운 바닷속 다이버를 따뜻하게 지켜온 열조절 네오프렌. 밀도 높고, 유연하고, 단열성이 뛰어나 — 쿠션, 패딩, 소프트 액세서리로 자연스럽게 변환됩니다.',
-    accentColor: 'rgba(196,200,40,0.1)',
+    accentColor: 'rgba(163,230,53,0.1)',
   },
 ];
 
@@ -87,7 +87,7 @@ export default function MaterialArchiveShowcaseSection() {
             >
               <div
                 className="inline-flex items-center gap-2 px-3 py-1.5"
-                style={{ border: '1px solid rgba(196,200,40,0.45)', backgroundColor: 'rgba(196,200,40,0.07)' }}
+                style={{ border: '1px solid rgba(163,230,53,0.45)', backgroundColor: 'rgba(163,230,53,0.07)' }}
               >
                 <div className="w-1 h-1 rounded-full bg-lime-primary flex-shrink-0" />
                 <span className="font-mono text-xs text-text-muted uppercase tracking-[0.3em]">

@@ -78,7 +78,7 @@ export default function ProjectsPage() {
         style={{ backgroundColor: '#181A16' }}
       >
         <div className="absolute inset-0 pointer-events-none"
-          style={{ background: 'radial-gradient(ellipse at 80% 50%, rgba(196,200,40,0.1) 0%, transparent 55%)' }} />
+          style={{ background: 'radial-gradient(ellipse at 80% 50%, rgba(163,230,53,0.1) 0%, transparent 55%)' }} />
         <div className="absolute inset-0 pointer-events-none"
           style={{
             backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E")`,
@@ -183,7 +183,7 @@ function ProjectRow({
         <div className="absolute left-0 top-0 h-full w-0.5 bg-lime-primary origin-top scale-y-0 group-hover:scale-y-100 transition-transform duration-300" />
         {/* Hover wash */}
         <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-400 pointer-events-none"
-          style={{ backgroundColor: 'rgba(196,200,40,0.03)' }} />
+          style={{ backgroundColor: 'rgba(163,230,53,0.03)' }} />
 
         {/* Year */}
         <div className="col-span-4 md:col-span-1 flex items-start">
@@ -194,7 +194,7 @@ function ProjectRow({
         <div className="hidden md:flex col-span-2 items-start pt-0.5">
           <span
             className="font-mono text-xs uppercase tracking-[0.15em] px-2.5 py-1"
-            style={{ border: '1px solid rgba(196,200,40,0.35)', color: 'rgba(196,200,40,0.75)' }}
+            style={{ border: '1px solid rgba(163,230,53,0.55)', backgroundColor: 'rgba(163,230,53,0.1)', color: 'var(--lime-on-light)', fontWeight: 500 }}
           >
             {project.category}
           </span>

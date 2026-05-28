@@ -40,7 +40,7 @@ export default function StockistPage() {
         style={{ backgroundColor: '#181A16' }}
       >
         <div className="absolute inset-0 pointer-events-none"
-          style={{ background: 'radial-gradient(ellipse at 30% 70%, rgba(196,200,40,0.1) 0%, transparent 55%)' }} />
+          style={{ background: 'radial-gradient(ellipse at 30% 70%, rgba(163,230,53,0.1) 0%, transparent 55%)' }} />
         <div className="absolute inset-0 pointer-events-none"
           style={{
             backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E")`,
@@ -80,7 +80,7 @@ export default function StockistPage() {
             transition={{ duration: 0.7 }}>
             <div
               className="inline-flex items-center gap-2 px-3 py-1.5 mb-6"
-              style={{ border: '1px solid rgba(196,200,40,0.45)', backgroundColor: 'rgba(196,200,40,0.07)' }}
+              style={{ border: '1px solid rgba(163,230,53,0.45)', backgroundColor: 'rgba(163,230,53,0.07)' }}
             >
               <div className="w-1 h-1 rounded-full bg-lime-primary flex-shrink-0" />
               <span className="font-mono text-xs text-text-muted uppercase tracking-[0.3em]">온라인 리테일러</span>
@@ -106,7 +106,7 @@ export default function StockistPage() {
                   <div className="flex items-center justify-between mb-4">
                     <span
                       className="font-mono text-xs uppercase tracking-[0.2em] px-2.5 py-1"
-                      style={{ backgroundColor: 'rgba(196,200,40,0.1)', color: 'rgba(196,200,40,0.8)' }}
+                      style={{ backgroundColor: 'rgba(163,230,53,0.15)', color: 'var(--lime-on-light)', fontWeight: 500 }}
                     >
                       {store.type}
                     </span>
@@ -147,7 +147,7 @@ export default function StockistPage() {
             transition={{ duration: 0.7 }}>
             <div
               className="inline-flex items-center gap-2 px-3 py-1.5 mb-6"
-              style={{ border: '1px solid rgba(196,200,40,0.45)', backgroundColor: 'rgba(196,200,40,0.07)' }}
+              style={{ border: '1px solid rgba(163,230,53,0.45)', backgroundColor: 'rgba(163,230,53,0.07)' }}
             >
               <div className="w-1 h-1 rounded-full bg-lime-primary flex-shrink-0" />
               <span className="font-mono text-xs text-text-muted uppercase tracking-[0.3em]">오프라인 매장</span>
@@ -172,12 +172,12 @@ export default function StockistPage() {
                   style={{ borderBottom: '1px solid rgba(17,17,17,0.08)' }}
                 >
                   <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-400 pointer-events-none"
-                    style={{ backgroundColor: 'rgba(196,200,40,0.03)' }} />
+                    style={{ backgroundColor: 'rgba(163,230,53,0.03)' }} />
 
                   {/* Type badge */}
                   <div className="col-span-12 md:col-span-2 flex items-center md:items-start md:pt-1">
                     <span className="font-mono text-xs uppercase tracking-[0.15em] px-2.5 py-1"
-                      style={{ border: '1px solid rgba(196,200,40,0.35)', color: 'rgba(196,200,40,0.75)' }}>
+                      style={{ border: '1px solid rgba(163,230,53,0.55)', backgroundColor: 'rgba(163,230,53,0.1)', color: 'var(--lime-on-light)', fontWeight: 500 }}>
                       {store.type}
                     </span>
                   </div>

@@ -51,7 +51,7 @@ export default function AboutPage() {
         style={{ backgroundColor: '#181A16' }}
       >
         <div className="absolute inset-0 pointer-events-none"
-          style={{ background: 'radial-gradient(ellipse at 70% 30%, rgba(196,200,40,0.1) 0%, transparent 60%)' }} />
+          style={{ background: 'radial-gradient(ellipse at 70% 30%, rgba(163,230,53,0.1) 0%, transparent 60%)' }} />
         <div
           className="absolute inset-0 pointer-events-none"
           style={{
@@ -127,7 +127,7 @@ export default function AboutPage() {
           >
             <div
               className="inline-flex items-center gap-2 px-3 py-1.5 mb-8"
-              style={{ border: '1px solid rgba(196,200,40,0.45)', backgroundColor: 'rgba(196,200,40,0.07)' }}
+              style={{ border: '1px solid rgba(163,230,53,0.45)', backgroundColor: 'rgba(163,230,53,0.07)' }}
             >
               <div className="w-1 h-1 rounded-full bg-lime-primary flex-shrink-0" />
               <span className="font-mono text-xs text-text-muted uppercase tracking-[0.3em]">우리의 이야기</span>
@@ -173,7 +173,7 @@ export default function AboutPage() {
           >
             <div
               className="inline-flex items-center gap-2 px-3 py-1.5 mb-6"
-              style={{ border: '1px solid rgba(196,200,40,0.45)', backgroundColor: 'rgba(196,200,40,0.07)' }}
+              style={{ border: '1px solid rgba(163,230,53,0.45)', backgroundColor: 'rgba(163,230,53,0.07)' }}
             >
               <div className="w-1 h-1 rounded-full bg-lime-primary flex-shrink-0" />
               <span className="font-mono text-xs text-text-muted uppercase tracking-[0.3em]">핵심 철학</span>
@@ -204,10 +204,10 @@ export default function AboutPage() {
                 <div className="relative z-10">
                   <div className="flex items-center gap-3 mb-8">
                     <span className="font-mono text-xs tracking-[0.25em] uppercase px-2.5 py-1"
-                      style={{ border: '1px solid rgba(196,200,40,0.4)', color: 'rgba(196,200,40,0.8)' }}>
+                      style={{ border: '1px solid rgba(163,230,53,0.55)', backgroundColor: 'rgba(163,230,53,0.1)', color: 'var(--lime-on-light)', fontWeight: 500 }}>
                       {v.tag}
                     </span>
-                    <div className="flex-1 h-px" style={{ backgroundColor: 'rgba(196,200,40,0.15)' }} />
+                    <div className="flex-1 h-px" style={{ backgroundColor: 'rgba(163,230,53,0.15)' }} />
                   </div>
                   <h3
                     className="font-ko text-text-primary mb-5"
@@ -236,7 +236,7 @@ export default function AboutPage() {
           >
             <div
               className="inline-flex items-center gap-2 px-3 py-1.5 mb-4"
-              style={{ border: '1px solid rgba(196,200,40,0.45)', backgroundColor: 'rgba(196,200,40,0.07)' }}
+              style={{ border: '1px solid rgba(163,230,53,0.45)', backgroundColor: 'rgba(163,230,53,0.07)' }}
             >
               <div className="w-1 h-1 rounded-full bg-lime-primary flex-shrink-0" />
               <span className="font-mono text-xs text-text-muted uppercase tracking-[0.3em]">숫자로 보는</span>

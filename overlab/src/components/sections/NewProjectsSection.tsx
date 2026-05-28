@@ -80,7 +80,7 @@ export default function ProjectsSection() {
           >
             <div
               className="inline-flex items-center gap-2 px-3 py-1.5"
-              style={{ border: '1px solid rgba(196,200,40,0.45)', backgroundColor: 'rgba(196,200,40,0.07)' }}
+              style={{ border: '1px solid rgba(163,230,53,0.45)', backgroundColor: 'rgba(163,230,53,0.07)' }}
             >
               <div className="w-1 h-1 rounded-full bg-lime-primary flex-shrink-0" />
               <span className="font-mono text-xs text-text-muted uppercase tracking-[0.3em]">
@@ -147,7 +147,7 @@ export default function ProjectsSection() {
                   <div className="absolute left-0 top-0 h-full w-0.5 bg-lime-primary origin-top scale-y-0 group-hover:scale-y-100 transition-transform duration-300" />
                   {/* Hover wash */}
                   <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-400 pointer-events-none"
-                    style={{ backgroundColor: 'rgba(196,200,40,0.03)' }} />
+                    style={{ backgroundColor: 'rgba(163,230,53,0.03)' }} />
 
                   {/* Year */}
                   <div className="col-span-2 md:col-span-1 flex items-center">
@@ -162,7 +162,7 @@ export default function ProjectsSection() {
                   <div className="hidden md:flex col-span-2 items-center">
                     <span
                       className="font-mono text-xs uppercase tracking-[0.15em] px-2.5 py-1"
-                      style={{ border: '1px solid rgba(196,200,40,0.3)', color: 'rgba(196,200,40,0.7)' }}
+                      style={{ border: '1px solid rgba(163,230,53,0.55)', backgroundColor: 'rgba(163,230,53,0.1)', color: 'var(--lime-on-light)', fontWeight: 500 }}
                     >
                       {project.category}
                     </span>

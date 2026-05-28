@@ -82,7 +82,7 @@ export default function PopUpPage() {
         style={{ backgroundColor: '#181A16' }}
       >
         <div className="absolute inset-0 pointer-events-none"
-          style={{ background: 'radial-gradient(ellipse at 60% 20%, rgba(196,200,40,0.1) 0%, transparent 55%)' }} />
+          style={{ background: 'radial-gradient(ellipse at 60% 20%, rgba(163,230,53,0.1) 0%, transparent 55%)' }} />
         <div className="absolute inset-0 pointer-events-none"
           style={{
             backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E")`,
@@ -147,7 +147,7 @@ export default function PopUpPage() {
               >
                 {/* Hover wash */}
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-400 pointer-events-none"
-                  style={{ backgroundColor: 'rgba(196,200,40,0.03)' }} />
+                  style={{ backgroundColor: 'rgba(163,230,53,0.03)' }} />
 
                 {/* Image placeholder */}
                 <div className="lg:col-span-4 relative img-placeholder overflow-hidden"
@@ -203,7 +203,7 @@ export default function PopUpPage() {
                   <div className="flex flex-wrap gap-2">
                     {popup.highlights.map((h) => (
                       <span key={h} className="font-mono text-xs uppercase tracking-[0.15em] px-3 py-1"
-                        style={{ backgroundColor: 'rgba(196,200,40,0.1)', color: 'rgba(196,200,40,0.8)' }}>
+                        style={{ backgroundColor: 'rgba(163,230,53,0.15)', color: 'var(--lime-on-light)', fontWeight: 500 }}>
                         {h}
                       </span>
                     ))}
@@ -238,7 +238,7 @@ export default function PopUpPage() {
                 viewport={{ once: true }}
               >
                 <span className="font-mono text-xs uppercase tracking-[0.2em] px-2.5 py-1 mb-5 inline-block"
-                  style={{ backgroundColor: 'rgba(196,200,40,0.1)', color: 'rgba(196,200,40,0.8)' }}>
+                  style={{ backgroundColor: 'rgba(163,230,53,0.15)', color: 'var(--lime-on-light)', fontWeight: 500 }}>
                   곧 오픈
                 </span>
                 <h3 className="font-ko text-text-primary mb-4 group-hover:text-lime-primary transition-colors duration-300"

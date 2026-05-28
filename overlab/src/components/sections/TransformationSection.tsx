@@ -67,7 +67,7 @@ export default function TransformationSection() {
           top: '50%', left: '50%',
           transform: 'translate(-50%, -50%)',
           width: '800px', height: '400px',
-          background: 'radial-gradient(ellipse, rgba(196,200,40,0.06) 0%, transparent 70%)',
+          background: 'radial-gradient(ellipse, rgba(163,230,53,0.06) 0%, transparent 70%)',
         }}
       />
 
@@ -129,7 +129,7 @@ export default function TransformationSection() {
               >
                 <div
                   className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
-                  style={{ backgroundColor: 'rgba(196,200,40,0.04)' }}
+                  style={{ backgroundColor: 'rgba(163,230,53,0.04)' }}
                 />
                 <div
                   className="absolute bottom-4 right-6 font-display leading-none pointer-events-none select-none"
@@ -146,7 +146,7 @@ export default function TransformationSection() {
                   </div>
                   <div
                     className="w-full h-px mb-8 group-hover:opacity-100 transition-opacity duration-300"
-                    style={{ backgroundColor: 'rgba(196,200,40,0.2)', opacity: 0.4 }}
+                    style={{ backgroundColor: 'rgba(163,230,53,0.2)', opacity: 0.4 }}
                   />
                   <h3
                     className="font-ko text-white mb-4 group-hover:text-lime-primary transition-colors duration-300"

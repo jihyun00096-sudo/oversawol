@@ -77,7 +77,7 @@ export default function ProductShowcaseSection() {
             >
               <div
                 className="inline-flex items-center gap-2 px-3 py-1.5"
-                style={{ border: '1px solid rgba(196,200,40,0.45)', backgroundColor: 'rgba(196,200,40,0.07)' }}
+                style={{ border: '1px solid rgba(163,230,53,0.45)', backgroundColor: 'rgba(163,230,53,0.07)' }}
               >
                 <div className="w-1 h-1 rounded-full bg-lime-primary flex-shrink-0" />
                 <span className="font-mono text-xs text-text-muted uppercase tracking-[0.3em]">

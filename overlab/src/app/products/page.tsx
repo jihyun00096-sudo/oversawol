@@ -44,7 +44,7 @@ export default function ProductsPage() {
         style={{ backgroundColor: '#181A16' }}
       >
         <div className="absolute inset-0 pointer-events-none"
-          style={{ background: 'radial-gradient(ellipse at 20% 80%, rgba(196,200,40,0.1) 0%, transparent 55%)' }} />
+          style={{ background: 'radial-gradient(ellipse at 20% 80%, rgba(163,230,53,0.1) 0%, transparent 55%)' }} />
         <div className="absolute inset-0 pointer-events-none"
           style={{
             backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E")`,
